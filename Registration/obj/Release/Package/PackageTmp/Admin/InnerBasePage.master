@@ -1,0 +1,72 @@
+
+<%@ Master Language="VB" Inherits="kfrcvb.InnerBasePage_a" Codebehind="InnerBasePage.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta content="" /> 
+    <title>Administrator Control Panel :: KFRC</title>
+     <link href="../Master.css" rel="stylesheet" type="text/css"/>
+     <script type="text/javascript" src="../MenuImages/dmenu.js"></script>
+    <script type="text/javascript" src="../MenuImages/data-index.js"></script>
+    <link href="../MenuImages/nav.css" rel="stylesheet" type="text/css" />	
+    <meta http-equiv="imagetoolbar" content="no" />
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+<div id="MyDIV" style="visibility: hidden;" class="opacity"></div>
+<table width="1000" border="0" cellpadding="0" cellspacing="0" id="Table2" align=center>
+<tr>
+    <!-- td height="28" bgcolor="#766a63" -->
+    <td height="28" bgcolor="#6da99a">
+       
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <!-- td width="234" height="149"><img src="../images/Logo.jpg" width="234"  height="149" /></td>
+            <td width="766"><img src="../images/care-new-template_aboutus_header.jpg" width="766" height="149" /></td -->
+             <td width="1000" height="149"><img src="../PublishingImages/omega_logo.gif"  /></td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+  <tr>
+    <td style="border-bottom:solid 1px #cdc2e7;">
+		<!-- Removed Header menu.inc -->
+    </td>
+  </tr>
+	<tr>
+	    <td>
+	        <table cellpadding=0 cellspacing=0>
+	            <tr>
+	                <td width="185" align="left" valign="top" style="background-color:#f3faed;" >
+		            </td>
+                    <td width="815" valign="top">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="33" height="30" bgcolor="#F0F0F0">&nbsp;</td>
+                                <td width="815" valign="middle" bgcolor="#f0f0f0" class="bodytext"><!-- InstanceBeginEditable name="EditRegion2" --><a href="default.aspx"><font class="SubList">Administrator Login</font> </a><asp:contentplaceholder id="NavigationPlaceHolder" runat="server"></asp:contentplaceholder><!-- InstanceEndEditable --></td>
+                                <td width="33" bgcolor="#F0F0F0">&nbsp;</td>
+                            </tr>
+                            <tr>
+                               <td width="33">&nbsp;</td>
+                               <td height="220"><asp:contentplaceholder id="ContentPlaceHolder" runat="server"></asp:contentplaceholder></td>
+                               <td width="33">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+	            </tr>
+	        </table>
+	    </td>
+	</tr>
+</table>
+                                   
+    </form>
+</body>
+</html>

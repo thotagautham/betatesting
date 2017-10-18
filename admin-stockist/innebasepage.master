@@ -1,0 +1,25 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="innebasepage.master.vb" Inherits="betatesting.innebasepage" %>
+
+<!DOCTYPE html>
+
+!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta content="" /> 
+    <title>Administrator Control Panel :: Hetero Stockist</title>
+    
+</head>
+<body >
+<form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+
+                                   
+
+    <asp:contentplaceholder id="NavigationPlaceHolder" runat="server"></asp:contentplaceholder>
+    <asp:contentplaceholder id="ContentPlaceHolder" runat="server"></asp:contentplaceholder>
+    </form>
+</body>
+</html>
+

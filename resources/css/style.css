@@ -1,0 +1,553 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'Myriad Pro';
+    /*src: url('futuraltbt.eot');
+    src: url('futuraltbt.eot?#iefix') format('embedded-opentype'),
+         url('futuraltbt.woff') format('woff'),
+         url('futuraltbt.ttf') format('truetype'),
+         url('futuraltbt.svg#futura_lt_btlight') format('svg');
+    font-weight: normal;
+    font-style: normal;*/
+
+}
+
+
+body {
+	
+	margin:0 auto;
+	padding:0;
+	font-family:Myriad Pro;
+	border:1px solid #ccc;
+	height:auto;
+}
+
+header {
+	height:100px;
+	width:950px;
+	margin:0 auto;
+}
+
+p{
+	font-family: Myriad Pro;
+	text-align: justify;
+}
+
+h1, h2, h3 {
+	font-family: Myriad Pro;
+}
+
+table td div p {
+	font-family:font-family:"Myriad Pro";
+}
+
+table tbody tr td {
+	font-family:"Myriad Pro";
+}
+
+
+.logo {
+	float:left;
+	font-size:28px;
+	color:#222;
+	font-family: Myriad Pro;
+	margin-right: 35px;
+}
+
+.logo a{
+	color: #222;
+}
+
+.logo a:hover{
+	color: #222;
+	text-decoration:none;
+}
+
+.login-bg{
+	
+	padding:7px 5px;
+	background-color:#5a5a90;
+	border-radius:3px;
+	border:1px solid #5a5a90;
+	
+}
+
+.login-bg:hover {
+	padding:8px 5px;
+	background-color:#fff;
+	border:1px solid #5a5a90;
+}
+
+.header-nav {
+	float:right;
+	width:493px;
+}
+
+.nav-links li{
+	float:left;
+	list-style-type:none;
+	line-height:18px;
+	font-family: "Myriad Pro";
+	font-size:22px;
+	color:#898888;
+	padding: 28px 0 0 15px;
+}	
+
+.nav-links li a {
+	color:#898888;
+}
+
+#login-nav {
+	color: #fff;
+}
+
+#login-nav:hover {
+	color: #5a5a90;
+}
+
+.nav-links li a:hover {
+	text-decoration:none;
+}
+
+.header-bottom {
+	height:15px;
+	background-color: #5b5b90;
+	margin-top:7px;
+}
+
+#banner {
+	background: url("../images/thinkbeyondageing-banner.jpg") center center no-repeat;
+	width:100%;
+	height: 240px;
+	margin-bottom: 17px;
+}
+
+.baverly-quotation {
+	height:500px;
+	widht:750px;
+	text-align:center;
+	font-size:21px; 
+	padding-right: 617px; 
+	padding-top: 65px;
+}
+
+.container {
+	width:1000px;
+	margin:0 auto;
+}
+.major-services {
+	width:720px;
+	margin:0 auto;
+}
+
+.handyman-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.handyman-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+
+.legal-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+
+.legal-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+
+.astro-spiritual-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.astro-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.adopt-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.adopt-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.social-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.social-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+.financial-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.financial-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.health-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.health-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.volunteer-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.volunteer-text{
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+
+.pilgrim-service{ 
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.pilgrim-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+.body-bottom {
+	height:116px;
+	background-color:#5a5a90;
+	margin:28px auto;
+	width:900px;
+}
+
+.body-bottom-inner {
+	padding:5px;
+}
+
+
+.donate-now {
+	background-color:#8a73ad;
+	width:118px;
+	height:76px;
+	padding:10px;
+	color:#fff;
+	float:right;
+	font-size:21px;
+	cursor:pointer;
+	position:relative;
+	bottom:39px;
+	right:10px;
+	border-radius:3px;
+	box-shadow:2px 5px 10px 0 rgb(51, 51, 51);
+	font-family: "Myriad Pro";
+	text-align:center;
+	}
+	
+.donate-now:hover {
+	text-decoration:none;
+	color:##5a5a90;
+}
+	
+
+footer{
+	background-color:#8a73ad;
+	height:43px;
+	font-family: "Myriad Pro";
+}
+
+footer p {
+	color:#fff;
+	text-align:center;
+	font-size:20px;
+	font-family: "Myriad Pro";
+}
+
+#sidecontact {
+   /* background-image: url("../images/bkg-side_contact.gif");*/
+   background-color:#5a5a90;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    display: none;
+    height: 280px;
+    margin: 0 -306px 0 0;
+    position: fixed;
+    right: 0;
+    top: 165px;
+    width: 299px;
+    z-index: 1000;
+}
+
+#sidecontact img {
+    left: -32px;
+    position: absolute;
+    top: 0;
+}
+
+#sidecontact img:hover{
+	cursor:pointer;
+}
+
+
+#major-services-img {
+	box-shadow:1px 5px 7px 0 rgb(51, 51, 51);
+	}
+	
+#major-services-img:hover {
+	box-shadow:none;
+}
+
+
+#health-banner {
+	width:100%;
+	background-color:#5a5a90;
+	background: url(../images/banner-health.jpg) center center no-repeat  rgba(91, 91, 145,11);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+#health-banner-inner {
+	
+}
+
+#legal-banner {
+	width:100%;
+	background-color: #7e64a5;
+	background: url(../images/banner-legal.jpg) center center no-repeat  rgba(126, 100, 165, 21);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+#legal-banner-inner{}
+
+
+#astro-banner{
+	width:100%;
+	background: url(../images/banner-Astro-Spiritual.jpg) center center no-repeat  rgba(91, 91, 145,11);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+	
+#astro-banner-inner {
+}
+
+#financial-banner {
+	width:100%;
+	background: url(../images/banner-Financial.jpg) center center no-repeat  rgba(91, 91, 145,11);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+	
+#financial-banner-inner {
+}
+	
+#pilgrims-banner {
+	width:100%;
+	background-color: #7e64a5;
+	background: url(../images/banner-PILGRIM-TOURISM.jpg) center center no-repeat  rgba(126, 100, 165, 21);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+
+#pilgrims-banner-inner{
+}
+
+#adopt-banner{
+	width:100%;
+	background: url(../images/banner-adopt.jpg) center center no-repeat  rgba(91, 91, 145,11);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+#adopt-banner-inner{
+}
+
+#volunteer-banner{
+	width:100%;
+	background-color: #7e64a5;
+	background: url(../images/banner-VOLUNTEER.jpg) center center no-repeat  rgba(126, 100, 165, 21);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+#volunteer-banner-inner{
+}
+
+#social-banner{
+	width:100%;
+	background-color: #7e64a5;
+	background: url(../images/banner-social.jpg) center center no-repeat  rgba(126, 100, 165, 21);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+}
+
+#social-banner-inner{
+}
+
+#handyman-banner{
+	width:100%;
+	background: url(../images/banner-Handyman-Services.jpg) center center no-repeat  rgba(91, 91, 145,11);
+	height:242px;
+	margin-bottom:15px;
+	box-shadow: 1px 2px 7px 0 rgb(51, 51, 51);
+	background-color:#5a5a90;
+	text-align:center;
+}
+
+#handyman-banner-inner{
+}
+
+
+.col-lg-5-title {
+	height: 71px;
+	width: 100%;
+	font-family: Myriad Pro;
+	color:#fff;
+	font-size:24px;
+	text-align:center;
+	padding-top:15px;
+}
+
+
+.col-lg-5 > #tabs-under-forum {
+	background-color: #cfc8da;
+}
+
+#tabs-under-forum > #myTab > li > a {
+	font-size: 21px;
+	font-family: myriad pro;
+	width: 113px;
+	color:#19161b;
+}
+
+
+.media > .media-body > a > h5{
+	color:#54609f;
+	text-transform:uppercase;
+}
+
+.media > .media-body > a > h5:hover {
+	text-decoration:none;
+}
+
+
+.media > .media-body > p{
+	color:#b2afb2;
+}
+
+.col-lg-5-bottom-heading {
+	border-bottom:1px solid #8a73ad;
+}
+.col-lg-5-body {
+	width: 100%;
+	min-height:167px;
+	background-color:#c5bcd4;
+	padding:15px;
+}
+
+.useful-links {
+	font-family: Myriad Pro;
+	font-size:15px;
+	color: #fff;
+}
+
+
+.service-navs > ul > li > a  {
+	font-family: Myriad Pro;
+	font-size:14px;
+	color: #898888;
+}
+
+
+.active {
+	background-color: #5a5a90;
+	color:#fff;
+}
+
+.btn-primary {
+	background-color: #8a73ad;
+	
+}
+
+.contactusForm >table {
+	background-color: #8a73ad;
+	width:70%;
+}
+
+.contactusForm > table > tbody > tr > td {
+	padding:5px;
+}

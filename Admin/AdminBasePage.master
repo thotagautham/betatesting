@@ -1,0 +1,328 @@
+<%@ Master Language="VB" Inherits="betatesting.AdminBasePage" Codebehind="AdminBasePage.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Administrator Control Panel :: Biogenesis</title>
+    <link type="text/css" rel="stylesheet" href= "../App_Themes/Skins/Admin.css" />
+    <script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+    <link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+    <script language="Javascript1.2"><!-- // load htmlarea
+_editor_url = "../../HTMLEditor/";                     // URL to htmlarea files
+var win_ie_ver = parseFloat(navigator.appVersion.split("MSIE")[1]);
+if (navigator.userAgent.indexOf('Mac')        >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Windows CE') >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Opera')      >= 0) { win_ie_ver = 0; }
+if (win_ie_ver >= 5.5) {
+  document.write('<scr' + 'ipt src="' +_editor_url+ 'editor.js"');
+  document.write(' language="Javascript"></scr' + 'ipt>');  
+} else { document.write('<scr'+'ipt>function editor_generate() { return false; }</scr'+'ipt>');  }
+// -->
+</script>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+<table width="100%" height="67px" border="0" cellpadding="0" cellspacing="0" class="header_bottom_white">
+  <tr>
+    <td width="253" bgcolor="#03ABD4">&nbsp;</td>
+    <td bgcolor="#03ABD4" align="center"><asp:Label ID="LblAdminHeader" runat="server"></asp:Label></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="header_bottom_white">
+  <tr>
+    <td width="812" bgcolor="#786a65">&nbsp;
+    </td>
+    <td width="65" bgcolor="#786A65" valign=top><a href="../default.aspx"></a>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/home_button.jpg" CausesValidation="False" /></td>
+    <td width="11" bgcolor="#786A65">
+        <asp:ImageButton ID="ImgBtnLogOut" runat="server" ImageUrl="images/logout_button.jpg" CausesValidation="False" /></td>
+    <td width="36" bgcolor="#786A65">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#eeeeee" valign="top" style="width: 253px">&nbsp;<asp:Panel runat="server" ID="menuPanel" Height="500" ScrollBars="Vertical">
+      <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+            <asp:TreeView ID="TreeView1" runat="server" CssClass="TreeText" ExpandDepth="0" Height="500px">
+                <Nodes>
+                    <asp:TreeNode Text="Manage Content" ToolTip="Manage Content" Value="CMS">
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-drug" Text="Drug Discovery"
+                            ToolTip="Drug Discovery" Value="Drug Discovery"></asp:TreeNode>
+
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-gcs" Text="GCS"
+                            ToolTip="GCS" Value="GCS"></asp:TreeNode>
+
+
+                          <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-geriatrics" Text="geriatrics"
+                            ToolTip="geriatrics" Value="geriatrics"></asp:TreeNode>
+
+                         <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-gynacology" Text="gynacology"
+                            ToolTip="gynacology" Value="gynacology"></asp:TreeNode>
+
+                         <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-healthcareconsorium" Text="healthcareconsorium"
+                            ToolTip="healthcareconsorium" Value="healthcareconsorium"></asp:TreeNode>
+                        
+                          <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-innovation" Text="innovation"
+                            ToolTip="innovation" Value="innovation"></asp:TreeNode>
+
+
+                          <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-vedic-agharaharam" Text="Vedic"
+                            ToolTip="Vedic" Value="Vedic"></asp:TreeNode>
+
+                         <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-wcw" Text="wcw"
+                            ToolTip="wcw" Value="wcw"></asp:TreeNode>
+                   </asp:TreeNode>
+
+
+                      <asp:TreeNode Text="GENETICS-GENOMICS-MEDICINE" ToolTip="GENETICS-GENOMICS-MEDICINE" Value="GENETICS-GENOMICS-MEDICINE">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-genetics-genomics-medicine" Text="genetics genomic smedicine enquiry"
+                            ToolTip="genetics genomics medicine Enquiry" Value="genetics genomics medicine Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-genetics-genomics-medicine" Text="genetics genomics medicine Abstract"
+                            ToolTip="genetics genomics medicine abstract" Value="genetics genomics medicine abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+                     <asp:TreeNode Text="WGC-BIOGENESIS" ToolTip="WGC-BIOGENESIS" Value="WGC-BIOGENESIS">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-wgcbiogenesis" Text="wgcbiogenesis enquiry"
+                            ToolTip="wgcbiogenesis Enquiry" Value="wgcbiogenesis Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/abstact-wgcbiogenesis" Text="wgcbiogenesis Abstract"
+                            ToolTip="wgcbiogenesis abstract" Value="wgcbiogenesis abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+                     <asp:TreeNode Text="UTOPIA-SILVER-STONE" ToolTip="UTOPIA-SILVER-STONE" Value="UTOPIA-SILVER-STONE">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-utopiasilverstone" Text="utopiasilverstone enquiry"
+                            ToolTip="wgcbiogenesis Enquiry" Value="wgcbiogenesis Enquiry"></asp:TreeNode>
+
+                     
+
+                    </asp:TreeNode>
+
+                      <asp:TreeNode Text="Drug" ToolTip="Drug" Value="DRUG">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-drug" Text="Drug Discovery enquiry"
+                            ToolTip="Drug Discovery" Value="Drug Discovery"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-drug" Text="Drug Discovery Abstract"
+                            ToolTip="Drug Discovery" Value="Drug Discovery"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+
+                      <asp:TreeNode Text="gcs" ToolTip="gcs" Value="GCS">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-gcs" Text="gcs enquiry"
+                            ToolTip="gcs Enquiry" Value="gcs Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-gcs" Text="gcs Abstract"
+                            ToolTip="gcs" Value="gcs abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+                      <asp:TreeNode Text="geriatrics" ToolTip="geriatrics" Value="GERIATRICS">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-geriatrics" Text="geriatrics enquiry"
+                            ToolTip="geriatrics Enquiry" Value="geriatrics Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-geriatrics" Text="geriatrics Abstract"
+                            ToolTip="geriatrics abstract" Value="geriatrics abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+
+                       <asp:TreeNode Text="gynacology" ToolTip="gynacology" Value="GYNACOLOGY">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-gynacology" Text="gynacology enquiry"
+                            ToolTip="gynacology Enquiry" Value="gynacology Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-gynacology" Text="gynacology Abstract"
+                            ToolTip="gynacology abstract" Value="geriatrics abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+                     <asp:TreeNode Text="innovation" ToolTip="innovation" Value="INNOVATION">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-innovation" Text="innovation enquiry"
+                            ToolTip="innovation Enquiry" Value="innovation Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-innovation" Text="innovation Abstract"
+                            ToolTip="innovation abstract" Value="innovation abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+
+                     <asp:TreeNode Text="wcw" ToolTip="wcw" Value="WCW">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-wcw" Text="wcw enquiry"
+                            ToolTip="innovation Enquiry" Value="innovation Enquiry"></asp:TreeNode>
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/Abstract-wcw" Text="wcw Abstract"
+                            ToolTip="wcw abstract" Value="wcw abstract"></asp:TreeNode>
+
+
+                    </asp:TreeNode>
+
+
+                        <asp:TreeNode Text="healthcareconsorium" ToolTip="healthcareconsorium" Value="HEALTHCARECONSORIUM">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-healthcareconsorium" Text="healthcareconsorium enquiry"
+                            ToolTip="healthcareconsorium Enquiry" Value="healthcareconsorium Enquiry"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+                      <asp:TreeNode Text="vedic" ToolTip="vedic" Value="VEDIC">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-vedic-agharaharam" Text="vedic enquiry"
+                            ToolTip="vedic Enquiry" Value="vedic Enquiry"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+                      <asp:TreeNode Text="RETIERMENT-HOMES" ToolTip="RETIERMENT-HOMES" Value="RETIERMENT-HOMES">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-retierment-homes" Text="vedic enquiry"
+                            ToolTip="vedic Enquiry" Value="vedic Enquiry"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+
+                    <asp:TreeNode Text="EPISTEMO-GLOBAL" ToolTip="EPISTEMO-GLOBAL" Value="EPISTEMO-GLOBAL">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-EPISTEMO-GLOBAL" Text="EPISTEMO-GLOBAL"
+                            ToolTip="EPISTEMO-GLOBAL" Value="EPISTEMO-GLOBAL"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+                   
+                     <asp:TreeNode Text="CARE" ToolTip="CARE" Value="CARE">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/care-resumes" Text="Care"
+                            ToolTip="Care" Value="care"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+
+                       <asp:TreeNode Text="Moksha" ToolTip="Moksha" Value="Moksha">
+
+                            <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-moksha-media-website.aspx" Text="Moksha"
+                            ToolTip="Moksha" Value="Moksha"></asp:TreeNode>
+
+                           
+
+
+                    </asp:TreeNode>
+
+                   
+
+
+
+
+                  <%-- <asp:TreeNode Text="Media" ToolTip="Media" Value="Media">
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/add-media.aspx" Text="Add Media" ToolTip="Add Media"
+                            Value="Add Media"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/all-videos.aspx" Text="All Video" ToolTip="All video"
+                            Value="all video"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/updatenavigationurl.aspx" Text="Update Navigation" ToolTip="Update Navigation"
+                            Value="Update Navigation"></asp:TreeNode>
+                         <asp:TreeNode NavigateUrl="NAdmin/cms/patient-experience.aspx" Text="Add video" ToolTip="Add video"
+                            Value="Add video"></asp:TreeNode>
+                         <asp:TreeNode NavigateUrl="NAdmin/cms/NewsPapers.aspx" Text="Manage News Papers" ToolTip="Manage News Papers"
+                            Value="Manage News Papers"></asp:TreeNode>
+                        
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/ManageNewsChannels.aspx" Text="Manage News Channels" ToolTip="Manage News Channels"
+                            Value="Manage News Channels"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/addblog.aspx" Text="Manage Blog" ToolTip="Manage Blog"
+                            Value="Manage Blog"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/doctorvideo.aspx" Text="Manage doctor interview" ToolTip="Manage doctor interview"
+                            Value="Manage doctor interview"></asp:TreeNode>
+                     <asp:TreeNode NavigateUrl="NAdmin/cms/addevents.aspx" Text="Manage Events" ToolTip="Manage events"
+                            Value="Manage Events"></asp:TreeNode>
+                    <asp:TreeNode NavigateUrl="NAdmin/cms/add-slide-share.aspx" Text="Manage Slide Share" ToolTip="Manage Slide Share"
+                            Value="Manage Slide Share"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/add-slide-share-images.aspx" Text="Manage Slise SHare Image" ToolTip="Manage Slise SHare Image"
+                            Value="Manage Slise SHare Image"></asp:TreeNode>
+
+                    </asp:TreeNode>--%>
+
+
+                    
+                      
+
+
+                    <asp:TreeNode Text="Users" ToolTip="Users" Value="Users">
+                        <asp:TreeNode NavigateUrl="NAdmin/Admins/AddAdmin.aspx" Text="Manage Users"
+                            ToolTip="Manage Users" Value="Manage Users"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Change Password" ToolTip="Change Password" Value="Change Password" NavigateUrl="NAdmin/ChangePassword.aspx"></asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+            </ContentTemplate>
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="TreeView1" EventName="SelectedNodeChanged" />
+                    </Triggers>
+                </asp:UpdatePanel>
+            </asp:Panel>
+        </td>
+    <td align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="middle">&nbsp;</td>
+        <td align="left" valign="middle"><br />
+                  <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                  </asp:contentplaceholder>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan=2>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="89%" class="footer_top_line"><div align="right"><br />
+                  <asp:Label ID="LblRights" runat="server" CssClass="body_text"></asp:Label>
+                  </div></td>
+              <td width="2%" class="footer_top_line">&nbsp;</td>
+              <td width="9%" class="footer_top_line"><br />
+                &nbsp;<br />
+                <br /></td>
+            </tr>
+        </table></td>
+  </tr>
+</table>
+    </form>
+    
+
+
+    
+</body>
+</html>

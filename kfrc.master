@@ -1,0 +1,426 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="kfrc.master.vb" Inherits="betatesting.kfrc" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+   
+<head runat="server" >
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+        		</asp:ContentPlaceHolder>
+
+
+
+
+<!-- Bootstrap -->
+ <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet"
+        type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="animated_favicon1.gif">
+<title>JMSR</title>
+<link href="/jmsr-files/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/jmsr-files/css/bootstrap.css">
+<!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
+<link rel="stylesheet" type="text/css" href="/jmsr-files/font/stylesheet.css">
+<link href="/jmsr-files/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="/jmsr-files/css/theme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/jmsr-files/css/font-awesome.css">
+<script src="/jmsr-files/js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body role="document">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+<div class="container-fluid top-strip">
+<div class="container">
+<div class="col-lg-offset-8 col-lg-4  col-sm-offset-7 col-sm-5 ">
+<ul class="nav-pills hidden-xs">
+
+ <li><a href="/tracking-manuscript/">Tracking Manuscript & Abstract</a></li>
+
+      
+    </ul></div>
+
+
+</div></div>
+
+<div class="container main-nav">
+  <div class="col-lg-7 col-md-6 col-sm-5"> <a href="/"><img src="/jmsr-files/images/journallogo.jpg" class="img-responsive kfrdlogo" /></a> </div>
+  <div class="col-lg-5 col-sm-7 col-md-6 col-xs-12"> <br />
+    
+    <div id="custom-search-input">
+      <div class="input-group col-lg-offset-3 col-lg-7 col-md-offset-3 col-md-7 col-sm-offset-3 col-sm-7 inputright">
+<a href="/advance-search/" class="btn red" style="color:#fff; float: right;">
+      Advance Search</a> </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <!-- <a class="navbar-brand" href="#">jmsr</a>--> 
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="/">Home</a></li>
+        <li><a href="/about-journal/">About Journal</a></li>
+        <li><a href="/editorial-board-members/">Editorial Board</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instructions <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/authors/">For Authors</a></li>
+            <li><a href="/reviewers/">For Reviewers</a></li>
+            <li><a href="/editors/">For Editors</a></li>
+          </ul>
+        </li>
+        <li><a href="/current-issue/">Current Issue</a></li>
+		
+	<li><a href="/archive/">Archive</a></li>
+	<li><a href="/submit-manuscript/">Submit Manuscript</a></li>
+       <!-- <li><a href="/abstracts/">Abstracts</a></li>-->
+        <li><a href="#" class="btn red" style="color:#fff">Indexing & Abstracting</a></li>
+		
+      </ul>
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</nav>
+
+<!--<img src="/jmsr-files/images/Journal-Banner.jpg" class="img-responsive" width="100%" />-->
+
+<div class="container theme-showcase" role="main">
+  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+    
+    <!-- End Carousel -->
+    
+   
+   <asp:Label ID="Lblcontent"  runat="server"></asp:Label>
+   
+   
+   	<asp:ContentPlaceHolder ID="bodymiddle" runat="server">
+        
+        		</asp:ContentPlaceHolder>
+   
+    <div class="clearfix"></div>
+    
+ </div>
+  <!-- /.col-sm-4 -->
+  
+  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+  
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="list-group"> <a href="/jmsr-files/images/jmsr-book.pdf" target="_blank"> <img src="/jmsr-files/images/flyer.jpg" class="img-responsive" alt="flyer" width="769" height="440" /> </a></div><!-- <div class="row author"> <a href="authors-journal.html">
+      <h3 class="graycolor">Authors Journal</h3>
+      <h5>Click here to know more</h5>
+      </a> </div> -->
+      <div runat="server" visible="false"><h3 class="graycolor">Testimonials</h3>
+      <div class="row testimonials">
+        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12"><img src="/jmsr-files/images/icon-img.jpg" class="img-responsive" /></div>
+        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+          <p class="paramonials">Journal of Medical and Scientific Research (JMSR) is an institutional journal published</p>
+          <a href="#" class="btn btn-sm btn-primary pull-right">Read more</a> </div>
+      </div>
+      <div class="row testimonials">
+        <div class="col-lg-4 col-md-4 col-sm-2 col-xs-12"><img src="/jmsr-files/images/icon-img.jpg" class="img-responsive" /></div>
+        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12">
+          <p class="paramonials">Journal of Medical and Scientific Research (JMSR) is an institutional journal published</p>
+          <a href="#" class="btn btn-sm btn-primary pull-right">Read more</a> </div>
+        <br />
+        </div>
+        <a href="/testimonials/" class="btn btn-sm btn-primary pull-right" style="color:#fff;">
+        View All</a> </div>
+      <div class="clearfix"></div>
+       <h3 class="graycolor">Subscription </h3>
+      <div class="well2 form-horizontal" action=" " method="post"  id="contact_form">
+
+          
+       
+          <div class="form-group">
+            <div class="col-md-12 inputGroupContainer">
+              <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+               <asp:TextBox ID="TxtName" runat="server" MaxLength="50" CssClass="form-control" Text="Type Name*" autocomplete="off" onfocus="Trim(this);this.value == 'Type Name*' ? this.value='' : Trim(this);" onblur="Trim(this);this.value == '' ? this.value='Type Name*' : Trim(this);"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RFVName" runat="server" 
+                        ControlToValidate="TxtName" ErrorMessage="Enter Name" 
+                        Display="None" ValidationGroup="VGEnquirysubscription" InitialValue="Type Name*"> </asp:RequiredFieldValidator>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          <div class="form-group">
+            <div class="col-md-12 inputGroupContainer">
+              <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  
+			    <asp:TextBox ID="TxtEmailID" runat="server" MaxLength="75"  CssClass="form-control" Text="Type Email*" autocomplete="off" onfocus="Trim(this);this.value == 'Type Email*' ? this.value='' : Trim(this);" onblur="Trim(this);this.value == '' ? this.value='Type Email*' : Trim(this);"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RFVEmailId" runat="server" 
+                    ControlToValidate="TxtEmailID" Display="None" ErrorMessage="Enter Email Id" ValidationGroup="VGEnquirysubscription" InitialValue="Type Email*"></asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="REVEmailId" runat="server" 
+                    ControlToValidate="TxtEmailID" Display="None" 
+                    ErrorMessage="Invalid Email ID" 
+                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ValidationGroup="VGEnquirysubscription"> </asp:RegularExpressionValidator>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Text input-->
+          
+          
+          
+          <!-- Success message -->
+          <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+          
+          <!-- Button -->
+          <div class="form-group">
+            <div class="col-md-12" style="text-align: right;">
+             <asp:ImageButton ID="ImgBtnSendEnquiry" runat="server" ImageUrl="~//jmsr-files/images/submit.JPG" ValidationGroup="VGEnquirysubscription" style=" margin:0 auto; padding:10px 0;" />
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowMessageBox="True" ShowSummary="False" ValidationGroup="VGEnquirysubscription" />
+            </div>
+          </div>
+   
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- /.col-sm-4 --> 
+  
+
+<!-- /container -->
+
+<div class="container-fluid panel-footer">
+  <div class="container">
+    
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
+      <ul class="row footer-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about-journal/">About Journal</a></li>
+        
+        
+        <li><a href="/current-issue/">Current Issue</a></li>
+		<li><a href="/archive/">Archive</a></li>
+		<li><a href="/authors-journal/">Submit Manuscript</a></li>
+       <!-- <li><a href="/abstracts/">Abstracts</a></li>
+        <li><a href="/call-for-papers/">Call For Papers</a></li>
+        <li><a href="/media/">Media</a></li>
+         <li><a href="/events/">Events</a></li>-->
+      <li><a href="/tracking-manuscript/">Tracking Manuscript & Abstract</a></li>
+
+    <!--<li><a href="careers">Careers</a></li> -->
+      <li><a href="/contact-us/">Contact</a></li>
+      </ul>
+      
+       </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 socialbg">
+       
+          <div class="social-network"><a href="#" class="icoFacebook" title="Facebook"><img src="/jmsr-files/images/facebook.png" /></a>
+          <a href="#" class="icoTwitter" title="Twitter"><img src="/jmsr-files/images/linkedin.png" /></a>
+          <a href="#" class="icoLinkedin" title="Linkedin"><img src="/jmsr-files/images/twitter.png" /></a></div>
+       
+      </div>
+   
+  
+  </div>
+</div>
+<div class="container-fluid panel-footer2">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <p class="companytext">Copyrights © 2016. All Rights Reserved. <a href="#" style="color:#fff; text-align:center;"> <u>Privacy Policy</u></a></p>
+      <p class="companytext">Designed & Developed by <a href="http://www.mokshamedia.co.in/" target="_blank" style="text-align:center;">moksha<span>media</span></a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="/jmsr-files/js/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="/jmsr-files/js/vendor/jquery.min.js"><\/script>')</script> 
+<script src="/jmsr-files/js/bootstrap.min.js"></script> 
+<script src="/jmsr-files/js/docs.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="/jmsr-files/js/ie10-viewport-bug-workaround.js"></script> 
+<script>
+    (function blink() {
+        $('.blink_text').fadeOut(500).fadeIn(500, blink);
+    })();
+
+</script>
+
+<script>
+    $('#myCarousel').carousel({
+        interval: 4000
+    });
+
+    var clickEvent = false;
+    $('#myCarousel').on('click', '.nav a', function () {
+        clickEvent = true;
+        $('.nav li').removeClass('active');
+        $(this).parent().addClass('active');
+    }).on('slid.bs.carousel', function (e) {
+        if (!clickEvent) {
+            var count = $('.nav').children().length - 1;
+            var current = $('.nav li.active');
+            current.removeClass('active').next().addClass('active');
+            var id = parseInt(current.data('slide-to'));
+            if (count == id) {
+                $('.nav li').first().addClass('active');
+            }
+        }
+        clickEvent = false;
+    });
+</script> 
+<script>
+
+    $(document).ready(function () {
+        $('#contact_form').bootstrapValidator({
+            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                first_name: {
+                    validators: {
+                        stringLength: {
+                            min: 2,
+                        },
+                        notEmpty: {
+                            message: 'Please supply your first name'
+                        }
+                    }
+                },
+                last_name: {
+                    validators: {
+                        stringLength: {
+                            min: 2,
+                        },
+                        notEmpty: {
+                            message: 'Please supply your last name'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your email address'
+                        },
+                        emailAddress: {
+                            message: 'Please supply a valid email address'
+                        }
+                    }
+                },
+                phone: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your phone number'
+                        },
+                        phone: {
+                            country: 'US',
+                            message: 'Please supply a vaild phone number with area code'
+                        }
+                    }
+                },
+                address: {
+                    validators: {
+                        stringLength: {
+                            min: 8,
+                        },
+                        notEmpty: {
+
+                            message: 'Please supply your street address'
+                        }
+                    }
+                },
+                city: {
+                    validators: {
+                        stringLength: {
+                            min: 4,
+                        },
+                        notEmpty: {
+                            message: 'Please supply your city'
+                        }
+                    }
+                },
+                state: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please select your state'
+                        }
+                    }
+                },
+                zip: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your zip code'
+                        },
+                        zipCode: {
+                            country: 'US',
+                            message: 'Please supply a vaild zip code'
+                        }
+                    }
+                },
+                comment: {
+                    validators: {
+                        stringLength: {
+                            min: 10,
+                            max: 200,
+                            message: 'Please enter at least 10 characters and no more than 200'
+                        },
+                        notEmpty: {
+                            message: 'Please supply a description of your project'
+                        }
+                    }
+                }
+            }
+        })
+            .on('success.form.bv', function (e) {
+                $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+                // Prevent form submission
+                e.preventDefault();
+
+                // Get the form instance
+                var $form = $(e.target);
+
+                // Get the BootstrapValidator instance
+                var bv = $form.data('bootstrapValidator');
+
+                // Use Ajax to submit form data
+                $.post($form.attr('action'), $form.serialize(), function (result) {
+                    console.log(result);
+                }, 'json');
+            });
+    });
+
+
+    </script>
+        </form>
+</body>
+</html>

@@ -1,0 +1,325 @@
+/* CSS Document */
+
+@font-face {
+    font-family: 'Myriad Pro';
+    /*src: url('futuraltbt.eot');
+    src: url('futuraltbt.eot?#iefix') format('embedded-opentype'),
+         url('futuraltbt.woff') format('woff'),
+         url('futuraltbt.ttf') format('truetype'),
+         url('futuraltbt.svg#futura_lt_btlight') format('svg');
+    font-weight: normal;
+    font-style: normal;*/
+
+}
+
+
+body {
+	
+	margin:0 auto;
+	padding:0;
+	font-family:Myriad Pro;
+	border:1px solid #ccc;
+	height:auto;
+}
+
+header {
+	height:100px;
+	width:1000px;
+	margin:0 auto;
+}
+
+p{
+	font-family: Myriad Pro;
+	text-align: justify;
+}
+
+h1 h2 h3 {
+	font-family: Myriad Pro;
+}
+
+table td div p {
+	font-family:font-family:"Myriad Pro";
+}
+
+table tbody tr td {
+	font-family:"Myriad Pro";
+}
+
+
+.logo {
+	float:left;
+	font-size:28px;
+	color:#222;
+}
+
+.login-bg{
+	
+	padding:8px 25px;
+	background-color:#5a5a90;
+	border-radius:3px;
+	border:1px solid #5a5a90;
+	
+}
+
+.login-bg:hover {
+	padding:8px 25px;
+	background-color:#fff;
+	border:1px solid #5a5a90;
+}
+
+.header-nav {
+	float:right;
+}
+
+.nav-links li{
+	float:left;
+	list-style-type:none;
+	line-height:18px;
+	font-family: "Myriad Pro";
+	font-size:22px;
+	color:#898888;
+	padding:35px 0 0 25px;
+}	
+
+.nav-links li a {
+	color:#898888;
+}
+
+.nav-links li a:hover {
+	text-decoration:none;
+}
+
+.header-bottom {
+	height:15px;
+	background-color: #5b5b90;
+}
+
+#banner {
+	background-image:url(../images/thinkbeyondageing-banner.jpg);
+	background-repeat: no-repeat;
+	width:100%;
+	height: 240px;
+	margin-bottom: 17px;
+}
+
+.container {
+	width:1000px;
+	margin:0 auto;
+}
+.major-services {
+	width:720px;
+	margin:0 auto;
+}
+
+.handyman-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.handyman-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+
+.legal-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+
+.legal-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+
+.astro-spiritual-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.astro-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.adopt-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.adopt-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.social-services {
+	width:247px;
+	height:250px;
+	background-color:#7e64a5;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.social-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+.financial-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.financial-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.health-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.health-text {
+	height:71px;
+	background-color:#6a6a9a;
+	font-family: "Myriad Pro";
+}
+
+.volunteer-services {
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.volunteer-text{
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+
+.pilgrim-service{ 
+	width:247px;
+	height:250px;
+	background-color:#5a5a90;
+	text-align:center;
+	color:#fff;
+	font-size:21px;
+}
+
+.pilgrim-text {
+	height:71px;
+	background-color:#8a73ad;
+	font-family: "Myriad Pro";
+}
+
+.body-bottom {
+	height:116px;
+	background-color:#5a5a90;
+	margin:28px auto;
+	width:1000px;
+}
+
+.body-bottom-inner {
+	padding:5px;
+}
+
+
+.donate-now {
+	background-color:#8a73ad;
+	width:168px;
+	height:50px;
+	padding:10px;
+	color:#fff;
+	float:right;
+	font-size:21px;
+	cursor:pointer;
+	position:relative;
+	bottom:39px;
+	right:10px;
+	border-radius:3px;
+	box-shadow:2px 5px 10px 0 rgb(51, 51, 51);
+	font-family: "Myriad Pro";
+	text-align:center;
+	}
+	
+.donate-now:hover {
+	text-decoration:none;
+	color:##5a5a90;
+}
+	
+
+footer{
+	background-color:#8a73ad;
+	height:43px;
+	font-family: "Myriad Pro";
+}
+
+footer p {
+	color:#fff;
+	text-align:center;
+	font-size:20px;
+	font-family: "Myriad Pro";
+}
+
+#sidecontact {
+   /* background-image: url("../images/bkg-side_contact.gif");*/
+   background-color:#5a5a90;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    display: none;
+    height: 280px;
+    margin: 0 -306px 0 0;
+    position: fixed;
+    right: 0;
+    top: 165px;
+    width: 299px;
+    z-index: 1000;
+}
+
+#sidecontact img {
+    left: -32px;
+    position: absolute;
+    top: 0;
+}
+
+#sidecontact img:hover{
+	cursor:pointer;
+}

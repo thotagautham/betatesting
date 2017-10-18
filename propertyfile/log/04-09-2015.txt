@@ -1,0 +1,831 @@
+------------------ Log Start At 09/04/2015 08:42:40 AM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 15-07-2015
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- Z123456
+ITC :- KIMS
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- AKASH
+ReturnURL :- http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx
+S2SReturnURL :- 
+TPSLTxnID :- 45454545
+ShoppingCartDetails :- KIMS.0_0.0
+txnDate :- 15-07-2015
+Email :- akash@indiainfoline.com
+MobileNumber :- 9867809597
+BankCode :- 10540
+CustomerName :- AKash Dubey
+PropertyPath :- D:\\DotnetIntegrationKit\\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 15-07-2015
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- Z123456
+ITC :- KIMS
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- AKASH
+ReturnURL :- http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx
+S2SReturnURL :- 
+TPSLTxnID :- 45454545
+ShoppingCartDetails :- KIMS.0_0.0
+txnDate :- 15-07-2015
+Email :- akash@indiainfoline.com
+MobileNumber :- 9867809597
+BankCode :- 10540
+CustomerName :- AKash Dubey
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=|rqst_rqst_dtls=KIMS.0_0.0|clnt_dt_tm=15-07-2015|tpsl_bank_cd=10540
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- d1686c083b4b3b18db3e2c8dc4977745fe65e8e9
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=|rqst_rqst_dtls=KIMS.0_0.0|clnt_dt_tm=15-07-2015|tpsl_bank_cd=10540|hash=d1686c083b4b3b18db3e2c8dc4977745fe65e8e9
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMSTWRlajnGup3x6KeFlAEq5+O6WDbCDwgOPNlqwhyvZ39j4zLuGkvc/klfArbOKRZpH/MQoDBS1BKngZQo8gIZJAqg+6yBLW9OZmJSMkKpYNcym7uPvfw58cyJxedXKNC48XLRpf4qyWnCVRvDwAb2mjksIRPpz1ObxGcatiqaS8=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:17 AM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMSTWRlajnGup3x6KeFlAEq5+O6WDbCDwgOPNlqwhyvZ39j4zLuGkvc/klfArbOKRZpH/MQoDBS1BKngZQo8gIZJAqg+6yBLW9OZmJSMkKpYNcym7uPvfw58cyJxedXKNC48XLRpf4qyWnCVRvDwAb2mjksIRPpz1ObxGcatiqaS8=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:44:26 AM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 15-07-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=9d72d361-a555-4159-9e01-a280f1f16a78
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 04-09-2015
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- Z123456
+ITC :- KIMS
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- AKASH
+ReturnURL :- http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx
+S2SReturnURL :- https://www.tekprocess.co.in/LoginModule/Test.jsp
+TPSLTxnID :- 45454545
+ShoppingCartDetails :- KIMS.0_0.0
+txnDate :- 04-09-2015
+Email :- akash@indiainfoline.com
+MobileNumber :- 9867809597
+BankCode :- 10540
+CustomerName :- AKash Dubey
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=KIMS.0_0.0|clnt_dt_tm=04-09-2015|tpsl_bank_cd=10540
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- 209013ff8d947740467178cbadbb092725822bed
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=KIMS.0_0.0|clnt_dt_tm=04-09-2015|tpsl_bank_cd=10540|hash=209013ff8d947740467178cbadbb092725822bed
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMKeVo6mV7BiL6yTDI+d8gu1dYJVagRomiE1DPoFHzFgoq/sm9a+Vqr+i7zAwZi5S0eb1h86gV1NwTBT6WnzA2KYxVU3yhZHdYY33pe76Vby3Ph7ZLkHjFXP7CT48N17/m4zMnge42Pguz4RC1enxjvxacM6vThGiATor0RHOJIRp7rC2qVvxSV0Mq8SZw9Z2Qjc59semMofA5hlvNdxUdp4i15bRMPCVRp7aVr0YXcUo=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:46 AM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMKeVo6mV7BiL6yTDI+d8gu1dYJVagRomiE1DPoFHzFgoq/sm9a+Vqr+i7zAwZi5S0eb1h86gV1NwTBT6WnzA2KYxVU3yhZHdYY33pe76Vby3Ph7ZLkHjFXP7CT48N17/m4zMnge42Pguz4RC1enxjvxacM6vThGiATor0RHOJIRp7rC2qVvxSV0Mq8SZw9Z2Qjc59semMofA5hlvNdxUdp4i15bRMPCVRp7aVr0YXcUo=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:47:49 AM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=0e53b450-32dc-4dd3-bddb-7995a3b26e52
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 04-09-2015
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- Z123456
+ITC :- KIMS
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- AKASH
+ReturnURL :- http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx
+S2SReturnURL :- https://www.tekprocess.co.in/LoginModule/Test.jsp
+TPSLTxnID :- 45454545
+ShoppingCartDetails :- kims_1.0_0.0
+txnDate :- 04-09-2015
+Email :- akash@indiainfoline.com
+MobileNumber :- 9867809597
+BankCode :- 10540
+CustomerName :- AKash Dubey
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=04-09-2015|tpsl_bank_cd=10540
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- afd18f4930f5f9c8510cb65209d7b7f849ace541
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=Z123456|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/Cardiac-package/pay/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=04-09-2015|tpsl_bank_cd=10540|hash=afd18f4930f5f9c8510cb65209d7b7f849ace541
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMKeVo6mV7BiL6yTDI+d8gu1dYJVagRomiE1DPoFHzFgoq/sm9a+Vqr+i7zAwZi5S0eb1h86gV1NwTBT6WnzA2KVSFAIroh5VxLZ33J1poMUTyz8hT2Tz9Br+xnzAQI84ZwEblagpO/NOxtWkQk8Tq9E9IeEMmW5D//PTCBF9chNWLBMLe3VTvVu/GPEaqXTh+Zt+pI4rVZDJW1M+KgMWzHUqfH/wdoNlOanHAnPeuXTM=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:58 AM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFebC1H/wezxvYb4Xh9cuN9NrstsPrf95SI4xz7AIfppVzNVFwqLx1rHJL4a87A+LUjDCNessVDhclfhhk6HXd+TK2BvRiR71rm/9liFVgxBsOhtLuWS3DOt0fNlFSLAT5y2/LkZWuZb9pUPFA3mFnhypygEujWc19Ul1UjwFj0nN1qLTZSxUI+cJPD5nmbA+nGmQWegbA1VlOkBNKeT2Rr60T13J6Kvyv/lgmzMZVOzOePjxbTAfoVhFsjqcj2kFGnkMxlcuragS7x4p8YOgkLSKpS/GLirpcPgU3QpsflDMKeVo6mV7BiL6yTDI+d8gu1dYJVagRomiE1DPoFHzFgoq/sm9a+Vqr+i7zAwZi5S0eb1h86gV1NwTBT6WnzA2KVSFAIroh5VxLZ33J1poMUTyz8hT2Tz9Br+xnzAQI84ZwEblagpO/NOxtWkQk8Tq9E9IeEMmW5D//PTCBF9chNWLBMLe3VTvVu/GPEaqXTh+Zt+pI4rVZDJW1M+KgMWzHUqfH/wdoNlOanHAnPeuXTM=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:48:59 AM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 04-09-2015
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 45454545
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=02d903a5-7121-4983-9a88-15b37e19b586
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:49:50 AM ------------------
+ 
+Event :- 9 :: Response From PG
+Request Type :- T
+MerchantCode :- 
+TxnDate :- 
+MerchantTxnRefNumber :- 
+TPSLTxnID :- 
+strData :- VPNGM0GYx+3LmP8UlRLvw/w/z/XGSq8HvqgtKC2AvvLWVUWZOToVvu1JBV438AdgtKnAKVX/0u6U
+Lb9sEPCbYelXdEawastWt3jx9Wa0sS9f8Cs8UphWPfrOxGvRq32HZo3VOZHTZUcTUBwuQqNp64jF
+S0GtNCMY5RxDRSjn0o6R3S+Wq7DqxXvR0b2FVQ0JBj9FaV5ykPPITV2hBkr/0FZoJYA+9KgeUoX5
+PiStvnk2Li7RTBLWCb3OOegB3p4dWK21KcrNGIekPRhbE/BGAzyR0EKLNz7DO4pZivcBZeMO+eNS
+3KI9rnX9wDPE7+DbBsV8Jz7xkleQgV9dD7uKUqu+SFEF36emUAeXUhgXEj7BL13+VFcauBL8hCOt
+EAFl88V+PDFUADWOe4x+nrqSvqz9g307C+TE4e7Etgki0an4TyNU6ivhemzjW26Jc3k3y/rwELu6
+bsXwrdosjK+qOyGQX5Awe701tZrf0ZYQ8FJpvBFPFDN344e6oDyrBc6x
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 08:49:50 AM ------------------
+ 
+Event :- 10 :: Descrypted PGResponse
+Request Type :- T
+MerchantCode :- 
+TxnDate :- 
+MerchantTxnRefNumber :- Z123456
+TPSLTxnID :- 172559009
+strData :- txn_status=0300|txn_msg=success|txn_err_msg=NA|clnt_txn_ref=Z123456|tpsl_bank_cd=470|tpsl_txn_id=172559009|txn_amt=1.00|clnt_rqst_meta={itc:KIMS}{email:akash@indiainfoline.com}{mob:9867809597}{custid:AKASH}{custname:AKash Dubey}|tpsl_txn_time=04-09-2015 08:49:25|tpsl_rfnd_id=NA|bal_amt=NA|rqst_token=02d903a5-7121-4983-9a88-15b37e19b586
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:40:35 AM ------------------
+ 
+Event :- 9 :: Response From PG
+Request Type :- T
+MerchantCode :- 
+TxnDate :- 
+MerchantTxnRefNumber :- 
+TPSLTxnID :- 
+strData :- 
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:43 AM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 16-07-2014
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- 1234567889585
+ITC :- sunil_mumbai
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- 8457125412512
+ReturnURL :- http://localhost:42724/ResponsePage.aspx
+S2SReturnURL :- https://www.tekprocess.co.in/LoginModule/Test.jsp
+TPSLTxnID :- 
+ShoppingCartDetails :- kims_1.0_0.0
+txnDate :- 16-07-2014
+Email :- sunil.sahu@techprocess.co.in
+MobileNumber :- 8451053257
+BankCode :- 10310
+CustomerName :- sunil
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:43 AM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:43 AM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:43 AM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- 7164ee3231c4b91fc14e90007a018e3af4e06538
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:43 AM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310|hash=7164ee3231c4b91fc14e90007a018e3af4e06538
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:44 AM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfVxAQAx0FZADD8l4yuy/eiKURsD0k6kpBeEFnOL5afksY6kfuVej12onh3j3OSsWFxaCL61dmgQEUU8ZoiwG4ftvRcPF1sIRyvnsU4U3ISfBmDWS2Wy6w1WNZEuAOiusxpm2f6ydgm4XddGzrwggc5Y37CQOBoqqkpf+hvOOi47Wo94fguXYhxNUshZYjyzO0udqrk+p2x/kTvEmyYbm3Hvaew/ZoxlGSMdyK+bd8X52rJ7CHcvgPUfQCa357Hqo+B3s3xzSmbYOkWEalL//IHXk=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:44 AM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:44 AM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfVxAQAx0FZADD8l4yuy/eiKURsD0k6kpBeEFnOL5afksY6kfuVej12onh3j3OSsWFxaCL61dmgQEUU8ZoiwG4ftvRcPF1sIRyvnsU4U3ISfBmDWS2Wy6w1WNZEuAOiusxpm2f6ydgm4XddGzrwggc5Y37CQOBoqqkpf+hvOOi47Wo94fguXYhxNUshZYjyzO0udqrk+p2x/kTvEmyYbm3Hvaew/ZoxlGSMdyK+bd8X52rJ7CHcvgPUfQCa357Hqo+B3s3xzSmbYOkWEalL//IHXk=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:48:45 AM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=1d458202-8afd-4f9a-9f18-d97ec73914b4
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:51:25 AM ------------------
+ 
+Event :- 9 :: Response From PG
+Request Type :- T
+MerchantCode :- 
+TxnDate :- 
+MerchantTxnRefNumber :- 
+TPSLTxnID :- 
+strData :- VPNGM0GYx+3LmP8UlRLvw/w/z/XGSq8HvqgtKC2AvvLWVUWZOToVvu1JBV438AdgwZTsKNKrVB/w
+hu88/3q/hAo81Kz3/v1xHaogITfgXhHd0WxMhAVR7szeWc6+RAC7Z7Lv4j3c32W7a2M+ADPi+X8t
+Nb6x6cHO/22jtEai5J82t6zeSdzWCnd6DtWFe0YvTPNAGEYWFLg15Bmj9L3zd32lVzRGSRa6lscj
+EX9pSiMRVFNb7MULBQFwJmOZoBHjfZGN9RGRYDYw+5XL9z51TqCXLrjWBPRA0U86MZLKO5PCW0/j
+Xq/TnYL4tvYGWEPm0OXOMCJp6QlHjEOx+GY+KGxVvM3oB09JWbAVCL7r/GDGtz5DaeIZLRzRK4Hb
+QKBZ33pYDldbIJvgTkFkgH2bnTErXG05ENu5336jpYQDdLfvVCz/HLGVuDu3hpXQPvkS1DyMmF6m
+dRvgWz1JrYh3gEKVeddZm8lEVlJxzVlLMwJyn2unW3IJ60xKiddVxe88Aru+qIBW8YjbpblGdnK6
+Ssg6Onzfe2qMkMEQPGJlxP4=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 11:51:25 AM ------------------
+ 
+Event :- 10 :: Descrypted PGResponse
+Request Type :- T
+MerchantCode :- 
+TxnDate :- 
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 172559062
+strData :- txn_status=0300|txn_msg=success|txn_err_msg=NA|clnt_txn_ref=1234567889585|tpsl_bank_cd=470|tpsl_txn_id=172559062|txn_amt=1.00|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|tpsl_txn_time=04-09-2015 11:49:14|tpsl_rfnd_id=NA|bal_amt=NA|rqst_token=1d458202-8afd-4f9a-9f18-d97ec73914b4
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 16-07-2014
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- 1234567889585
+ITC :- sunil_mumbai
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- 8457125412512
+ReturnURL :- http://localhost:42724/ResponsePage.aspx
+S2SReturnURL :- https://www.tekprocess.co.in/LoginModule/Test.jsp
+TPSLTxnID :- 
+ShoppingCartDetails :- kims_1.0_0.0
+txnDate :- 16-07-2014
+Email :- sunil.sahu@techprocess.co.in
+MobileNumber :- 8451053257
+BankCode :- 10310
+CustomerName :- sunil
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- 7164ee3231c4b91fc14e90007a018e3af4e06538
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/ResponsePage.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310|hash=7164ee3231c4b91fc14e90007a018e3af4e06538
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfVxAQAx0FZADD8l4yuy/eiKURsD0k6kpBeEFnOL5afksY6kfuVej12onh3j3OSsWFxaCL61dmgQEUU8ZoiwG4ftvRcPF1sIRyvnsU4U3ISfBmDWS2Wy6w1WNZEuAOiusxpm2f6ydgm4XddGzrwggc5Y37CQOBoqqkpf+hvOOi47Wo94fguXYhxNUshZYjyzO0udqrk+p2x/kTvEmyYbm3Hvaew/ZoxlGSMdyK+bd8X52rJ7CHcvgPUfQCa357Hqo+B3s3xzSmbYOkWEalL//IHXk=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:27 PM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfVxAQAx0FZADD8l4yuy/eiKURsD0k6kpBeEFnOL5afksY6kfuVej12onh3j3OSsWFxaCL61dmgQEUU8ZoiwG4ftvRcPF1sIRyvnsU4U3ISfBmDWS2Wy6w1WNZEuAOiusxpm2f6ydgm4XddGzrwggc5Y37CQOBoqqkpf+hvOOi47Wo94fguXYhxNUshZYjyzO0udqrk+p2x/kTvEmyYbm3Hvaew/ZoxlGSMdyK+bd8X52rJ7CHcvgPUfQCa357Hqo+B3s3xzSmbYOkWEalL//IHXk=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 01:12:28 PM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=72f1b811-aa23-4a81-98ec-c8f29ab5b491
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 1 :: SendRequest
+Request Type :- T
+Merchant Code :- T4624
+Txn Date :- 16-07-2014
+RequestType :- T
+MerchantCode :- T4624
+MerchantTxnRefNumber :- 1234567889585
+ITC :- sunil_mumbai
+Amount :- 1.00
+CurrencyCode :- INR
+UniqueCustomerId :- 8457125412512
+ReturnURL :- http://localhost:42724/responcepage2.aspx
+S2SReturnURL :- https://www.tekprocess.co.in/LoginModule/Test.jsp
+TPSLTxnID :- 
+ShoppingCartDetails :- kims_1.0_0.0
+txnDate :- 16-07-2014
+Email :- sunil.sahu@techprocess.co.in
+MobileNumber :- 8451053257
+BankCode :- 10310
+CustomerName :- sunil
+PropertyPath :- D:\gauthamthota\kims\kims\propertyfile\Merchant.property
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :-  2 :: ValidateData 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- NOERROR
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 3 :: Plain Request befor HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/responcepage2.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 4 :: HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- 51d38a5e1ed3dcdf1c2bcfcee29f66fc3181d8bc
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 5 :: Plain Request with HASH
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- rqst_type=T|rqst_kit_vrsn=1.1.1|tpsl_clnt_cd=T4624|clnt_txn_ref=1234567889585|clnt_rqst_meta={itc:sunil_mumbai}{email:sunil.sahu@techprocess.co.in}{mob:8451053257}{custid:8457125412512}{custname:sunil}|rqst_amnt=1.00|rqst_crncy=INR|rtrn_url=http://localhost:42724/responcepage2.aspx|s2s_url=https://www.tekprocess.co.in/LoginModule/Test.jsp|rqst_rqst_dtls=kims_1.0_0.0|clnt_dt_tm=16-07-2014|tpsl_bank_cd=10310|hash=51d38a5e1ed3dcdf1c2bcfcee29f66fc3181d8bc
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 6 :: AESEncrypted Request
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfV9y224bV4WF+LGAvlAevQt+tT+hvFS6clVSa5AdaUjjnf76Uxg7Rsy0ooeho0cgCwJJDRqzwVRfzOT4Cxh7S8Mk6e0YawAPUlSCfEDzJGlSCR3RJYWmVirMgvY2AUy/Qh7n+SdnXUM2fomXDIVjrmMI5xnlu/vSNo1czMGwzXdCXcbtvYxQtZWMi9Glvp0h3gsX1dBh7vzT39j/xEBTCVtgdCKAhUblHtbV+1ty8LstuUmFKQC/pL4+HGRGNFIXnpRzfRwwNveqHZewnK6NGDFY=
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- Proxy Authentication required block
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- ProxyAuthReq:
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:44:58 PM ------------------
+ 
+Event :- 7 :: Fianl AESEncrypted Request to POST at PG END
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- QQ4S4HvhEPfjLZusg4rcL9kuQyMGL8xeUV8VfI6oNFHC3YEA38xSa6bv3Gf0FkvtiUnwZY2i2D/CGtUl92owFReErJqtGbirmVLMvMLtXicNUwPX7SBojeKp4uTuPzo3ubtUCa4ocCmWFen2rOVqaGw0Isnx1eK7tJF6ObEovB6eNo21bvmqWkLbqnX5yJWKsaPI1oMCHfsFlBy3SD1Ow/St8jJW8Ia/hLT5cF805maGm649zdVBaEMMb9r1qA2uSLs6NyHt/r8WJTNwVwE6uhO1kQGVnbAJ8h8F8nNjwlrcrjjX0yQEnmPJSL6Ir8jKNYeZ+9YBZaWXycsZ+kkfV9y224bV4WF+LGAvlAevQt+tT+hvFS6clVSa5AdaUjjnf76Uxg7Rsy0ooeho0cgCwJJDRqzwVRfzOT4Cxh7S8Mk6e0YawAPUlSCfEDzJGlSCR3RJYWmVirMgvY2AUy/Qh7n+SdnXUM2fomXDIVjrmMI5xnlu/vSNo1czMGwzXdCXcbtvYxQtZWMi9Glvp0h3gsX1dBh7vzT39j/xEBTCVtgdCKAhUblHtbV+1ty8LstuUmFKQC/pL4+HGRGNFIXnpRzfRwwNveqHZewnK6NGDFY=|T4624~
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/04/2015 03:45:08 PM ------------------
+ 
+Event :- 8 :: Response From PGService for Token
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- https://www.tekprocess.co.in/PaymentGateway/txnreq.pg?id=932bca5d-ce4e-4014-9386-f74d9316a07f
+ 
+------------------------------------
+ 

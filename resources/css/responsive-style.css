@@ -1,0 +1,64 @@
+/* CSS Document */
+
+/*iphone*/
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation : portrait) {
+	#registerModal{
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 430px;
+		margin: auto;
+		overflow: hidden;
+		width: 70%;
+	}
+	
+	#loginModal{
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 430px;
+		margin: auto;
+		overflow: hidden;
+		width: 70%;
+	}
+	
+		.baverly-quotation {
+		
+		font-size:11px;
+		padding-left:0px;
+	}
+}
+
+/*iphonelandscape*/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 640px) and (orientation : landscape) {
+	#registerModal{
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 430px;
+		margin: auto;
+		overflow: hidden;
+		width: 70%;
+	}
+	
+	#loginModal{
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+		height: 430px;
+		margin: auto;
+		overflow: hidden;
+		width: 70%;
+	}
+	
+	.baverly-quotation {
+		
+		font-size:11px;
+		padding-left:0px;
+	}
+}
+
+
+/*Laptop*/
+ @media screen and (min-width: 1224px) and (max-width: 1440px) {
+	 
+	.baverly-quotation {
+		padding-left:220px;
+	}
+}

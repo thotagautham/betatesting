@@ -1,0 +1,86 @@
+------------------ Log Start At 09/02/2015 12:28:36 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- Message:Unable to connect to the remote serverStatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg)
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean)InnerExceptionSystem.Net.Sockets.SocketException (0x80004005): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 121.241.242.240:443
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/02/2015 12:28:36 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl()_Retry_0
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- Unable to connect to the remote server
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/02/2015 12:28:37 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- Message:The remote name could not be resolved: 'www.tekprocess.co.in'StatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg)
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean)InnerException
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/02/2015 12:28:37 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl()_Retry_1
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- The remote name could not be resolved: 'www.tekprocess.co.in'
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/02/2015 12:28:37 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- Message:The remote name could not be resolved: 'www.tekprocess.co.in'StatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg)
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean)InnerException
+ 
+------------------------------------
+ 
+------------------ Log Start At 09/02/2015 12:28:37 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl()_Retry_2
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 02-09-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- NA
+strData :- The remote name could not be resolved: 'www.tekprocess.co.in'
+ 
+------------------------------------
+ 

@@ -1,0 +1,90 @@
+------------------ Log Start At 08/28/2015 12:58:27 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Message:Unable to connect to the remote serverStatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\TransactionDetailsService.cs:line 30
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\RequestURL.cs:line 2037InnerExceptionSystem.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 10.10.100.8:8000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+ 
+------------------------------------
+ 
+------------------ Log Start At 08/28/2015 12:58:27 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl_UsingKeyIV_Retry_0
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Unable to connect to the remote server
+ 
+------------------------------------
+ 
+------------------ Log Start At 08/28/2015 12:58:28 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Message:Unable to connect to the remote serverStatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\TransactionDetailsService.cs:line 30
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\RequestURL.cs:line 2037InnerExceptionSystem.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 10.10.100.8:8000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+ 
+------------------------------------
+ 
+------------------ Log Start At 08/28/2015 12:58:28 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl_UsingKeyIV_Retry_1
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Unable to connect to the remote server
+ 
+------------------------------------
+ 
+------------------ Log Start At 08/28/2015 12:58:30 PM ------------------
+ 
+Event :-  Exception_PG_getTransactionToken() 
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Message:Unable to connect to the remote serverStatckTrace:   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at DotNetIntegrationKit.TransactionDetailsService.getTransactionToken(String msg) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\TransactionDetailsService.cs:line 30
+   at DotNetIntegrationKit.RequestURL.PG_getTransactionToken(String EncryptRequest, TransactionRequestBean objTransactionRequestBean) in D:\Projects\PG_IntegrationSingleURL_2_0_Adv\PG_IntegrationSingleURL_2_0\DotNetIntegrationKit\RequestURL.cs:line 2037InnerExceptionSystem.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 10.10.100.8:8000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+ 
+------------------------------------
+ 
+------------------ Log Start At 08/28/2015 12:58:30 PM ------------------
+ 
+Event :-  Exception_ReqURL_getRequestUrl_UsingKeyIV_Retry_2
+Request Type :- T
+MerchantCode :- T4624
+TxnDate :- 16-07-2014
+MerchantTxnRefNumber :- 1234567889585
+TPSLTxnID :- 
+strData :- Unable to connect to the remote server
+ 
+------------------------------------
+ 

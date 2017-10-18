@@ -1,0 +1,5381 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+betatesting
+</name>
+</assembly>
+<members>
+<member name="F:betatesting._default10.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default10.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.Doctors.DoctorMeetingsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorPersonalCoursesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.PATIENTSBYDoctorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsEventsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsTrainingClassesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsToDoListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsGroupByDoctroIDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DOCTORSListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMessagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgSendToDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_SpecialisationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_BranchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_MyCareDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DownloadsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DocumentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_LinksDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_PhotosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorEmailIdsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.TIMEREGIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_VideosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMeetingsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorPersonalCoursesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.PATIENTSBYDoctorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsEventsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsTrainingClassesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsToDoListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsGroupByDoctroIDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DOCTORSListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMessagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgSendToRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_SpecialisationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_BranchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_MyCareRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DownloadsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DocumentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_LinksRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_PhotosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorEmailIdsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.TIMEREGIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_VideosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMeetingsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorPersonalCoursesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.PATIENTSBYDoctorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsEventsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsTrainingClassesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsToDoListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorsGroupByDoctroIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DOCTORSListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMessagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorMsgSendToRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_SpecialisationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_BranchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_MyCareRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DownloadsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_DocumentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_LinksRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_PhotosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.DoctorEmailIdsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.TIMEREGIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors.Doctors_VideosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Doctors">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorMeetingsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorPersonalCoursesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.PATIENTSBYDoctorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorsEventsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorsTrainingClassesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorsToDoListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorsGroupByDoctroIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DOCTORSListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorMessagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorMsgListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorMsgSendToTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_SpecialisationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_BranchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_MyCareTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_DownloadsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_DocumentsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_LinksTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_PhotosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.DoctorEmailIdsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.TIMEREGIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DoctorsTableAdapters.Doctors_VideosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnAddNew">
+	<summary>
+BtnAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnView">
+	<summary>
+BtnView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.PnlAddNew">
+	<summary>
+PnlAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtName">
+	<summary>
+TxtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtLoginId">
+	<summary>
+TxtLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.RFVLoginId">
+	<summary>
+RFVLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.CBLSections">
+	<summary>
+CBLSections control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.PnlView">
+	<summary>
+PnlView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtName_s">
+	<summary>
+TxtName_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtLoginId_s">
+	<summary>
+TxtLoginId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.TxtEmailId_s">
+	<summary>
+TxtEmailId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnSearch">
+	<summary>
+BtnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.BtnViewAll">
+	<summary>
+BtnViewAll control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.GVAdmins">
+	<summary>
+GVAdmins control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.LblGridSource">
+	<summary>
+LblGridSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.LblOtherAdminID">
+	<summary>
+LblOtherAdminID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.LblActiveStatus">
+	<summary>
+LblActiveStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Admins_AddAdmin.LblPassword">
+	<summary>
+LblPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.lbPages">
+	<summary>
+lbPages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.FuImage">
+	<summary>
+FuImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.RFVImage">
+	<summary>
+RFVImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.txtAlternateText">
+	<summary>
+txtAlternateText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.txtSortOrder">
+	<summary>
+txtSortOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.RevSortOrder">
+	<summary>
+RevSortOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.txtDescription">
+	<summary>
+txtDescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.lblId">
+	<summary>
+lblId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.GvBannerImages">
+	<summary>
+GvBannerImages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.BannerImages.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.DDLSection">
+	<summary>
+DDLSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.btnmoveup">
+	<summary>
+btnmoveup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.btnmovedown">
+	<summary>
+btnmovedown control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.Delete">
+	<summary>
+Delete control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.BtnShow">
+	<summary>
+BtnShow control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.BtnHide">
+	<summary>
+BtnHide control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.BtnShowURL">
+	<summary>
+BtnShowURL control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_MenuManager.LBPages">
+	<summary>
+LBPages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.OurHospitals.OHPVDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHBroadCastDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHDeptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInfraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInsuranceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInternetDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOtherNewsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOutPatientDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHPrintMediaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHFAQSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHEVENTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.News_SpecializationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Internet_SpecialisationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_Websites_ListDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_SpecialisationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_SpecialisationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_BranchesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.PrintMedia_BranchesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_BranchesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_BranchesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHCorporatesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.BRANCHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHPVRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHBroadCastRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHDeptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInfraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInsuranceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInternetRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOtherNewsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOutPatientRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHPrintMediaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHFAQSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHEVENTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.News_SpecializationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Internet_SpecialisationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_Websites_ListRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_SpecialisationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_SpecialisationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_BranchesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.PrintMedia_BranchesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_BranchesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_BranchesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHCorporatesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.BRANCHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHPVRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHBroadCastRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHDeptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInfraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInsuranceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHInternetRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOtherNewsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHOutPatientRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHPrintMediaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHFAQSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHEVENTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.News_SpecializationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.Internet_SpecialisationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_Websites_ListRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_SpecialisationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_SpecialisationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.Events_BranchesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.PrintMedia_BranchesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.InternetNews_BranchesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OtherNews_BranchesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.OHCorporatesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals.BRANCHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.OurHospitals">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHPVTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHBroadCastTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHDeptTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHInfraTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHInsuranceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHInternetTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHOtherNewsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHOutPatientTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHPrintMediaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHFAQSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHEVENTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.News_SpecializationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.Internet_SpecialisationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.InternetNews_Websites_ListTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OtherNews_SpecialisationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.Events_SpecialisationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.Events_BranchesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.PrintMedia_BranchesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.InternetNews_BranchesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OtherNews_BranchesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.OHCorporatesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.OurHospitalsTableAdapters.BRANCHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.AdminBasePage.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.LblAdminHeader">
+	<summary>
+LblAdminHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.ImageButton1">
+	<summary>
+ImageButton1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.ImgBtnLogOut">
+	<summary>
+ImgBtnLogOut control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.menuPanel">
+	<summary>
+menuPanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.UpdatePanel2">
+	<summary>
+UpdatePanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.TreeView1">
+	<summary>
+TreeView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.AdminBasePage.LblRights">
+	<summary>
+LblRights control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.DDLPages">
+	<summary>
+DDLPages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.RFVPage">
+	<summary>
+RFVPage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.sectionrow">
+	<summary>
+sectionrow control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.DDLSection">
+	<summary>
+DDLSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.pagenamerow">
+	<summary>
+pagenamerow control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtPageName">
+	<summary>
+TxtPageName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtTitle">
+	<summary>
+TxtTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.RFVTitle">
+	<summary>
+RFVTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtSortOrder">
+	<summary>
+TxtSortOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.REVSortOrder">
+	<summary>
+REVSortOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtKeywords">
+	<summary>
+TxtKeywords control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.RFVKeywords">
+	<summary>
+RFVKeywords control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtContent">
+	<summary>
+TxtContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.CVMessage">
+	<summary>
+CVMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.BtnSubmit">
+	<summary>
+BtnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.BtnDelete">
+	<summary>
+BtnDelete control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.TxtShowHide">
+	<summary>
+TxtShowHide control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_cms_editpage.txtOldPageUrl">
+	<summary>
+txtOldPageUrl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.txtname">
+	<summary>
+txtname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.txthomepage">
+	<summary>
+txthomepage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.txtaboutus">
+	<summary>
+txtaboutus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.DDLActiveStatus">
+	<summary>
+DDLActiveStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.btnSearch">
+	<summary>
+btnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.CVsection">
+	<summary>
+CVsection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.GVVENDORTYPES">
+	<summary>
+GVVENDORTYPES control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default2.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtfirstname">
+	<summary>
+txtfirstname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtlastname">
+	<summary>
+txtlastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtreenterpassword">
+	<summary>
+txtreenterpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.HeaderBanner.BannerImagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.HeaderBanner.BannerImagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.HeaderBanner.BannerImagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.HeaderBanner">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.HeaderBannerTableAdapters.BannerImagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:betatesting.HeaderBannerTableAdapters.TableAdapterManager.UpdateUpdatedRows(betatesting.HeaderBanner,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:betatesting.HeaderBannerTableAdapters.TableAdapterManager.UpdateInsertedRows(betatesting.HeaderBanner,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:betatesting.HeaderBannerTableAdapters.TableAdapterManager.UpdateDeletedRows(betatesting.HeaderBanner,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:betatesting.HeaderBannerTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:betatesting.HeaderBannerTableAdapters.TableAdapterManager.UpdateAll(betatesting.HeaderBanner)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:betatesting.HeaderBannerTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:betatesting.HeaderBannerTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:betatesting.HeaderBannerTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:betatesting.OpenAuthProviders.providerDetails">
+	<summary>
+providerDetails control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.WebSearch.CleanHtml">
+	<summary> 
+ Summary description for CleanHtml. 
+ </summary>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.RFVOldPwd">
+	<summary>
+RFVOldPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.RFVNewPassword">
+	<summary>
+RFVNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.RFVConfPassword">
+	<summary>
+RFVConfPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_ChangePassword.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:betatesting.WebSearch.PagesDataset.Create">
+	<summary> 
+ Creates a datset for the pages and returns the result 
+ </summary>
+</member><member name="M:betatesting.WebSearch.PagesDataset.StoreFile(System.Data.DataSet,betatesting.WebSearch.Page)">
+	<summary> 
+ Creates a datset for the pages and returns the result 
+ </summary>
+</member><member name="T:betatesting.WebSearch.PagesDataset">
+	<summary> 
+ Defines shared methods to create and add records to dataset 
+ </summary>
+</member><member name="F:betatesting.Register.ErrorMessage">
+	<summary>
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Register.UserNameCtrl">
+	<summary>
+UserNameCtrl control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Register.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Register.ConfirmPassword">
+	<summary>
+ConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:betatesting.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:betatesting.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:betatesting.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:betatesting.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:betatesting.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:betatesting.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.DDLSection">
+	<summary>
+DDLSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.RFVSection">
+	<summary>
+RFVSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.TxtPageName">
+	<summary>
+TxtPageName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.TxtTitle">
+	<summary>
+TxtTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.RFVTitle">
+	<summary>
+RFVTitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.TxtSortOrder">
+	<summary>
+TxtSortOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.RFVKeyWords">
+	<summary>
+RFVKeyWords control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.TxtKeywords">
+	<summary>
+TxtKeywords control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.TxtContent">
+	<summary>
+TxtContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.CVMessage">
+	<summary>
+CVMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.BtnSubmit">
+	<summary>
+BtnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_AboutUs_addpages.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.TxtCountry">
+	<summary>
+TxtCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.RFVCountry">
+	<summary>
+RFVCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.GVCountries">
+	<summary>
+GVCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCityStateCountry.ObjDSCountries">
+	<summary>
+ObjDSCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.registerFrm">
+	<summary>
+registerFrm control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.TxtName">
+	<summary>
+TxtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.txtlastname">
+	<summary>
+txtlastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.RequiredFieldValidator">
+	<summary>
+RequiredFieldValidator control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.txtreenterpassword">
+	<summary>
+txtreenterpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default5.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.SiteMaster.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.Packages.PACKAGESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Packages.PackagesByBranchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Packages.BranchesByPackageIdDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Packages.PACKAGESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Packages.PackagesByBranchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Packages.BranchesByPackageIdRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Packages.PACKAGESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Packages.PackagesByBranchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Packages.BranchesByPackageIdRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Packages">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.PackagesTableAdapters.PACKAGESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.PackagesTableAdapters.PackagesByBranchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.PackagesTableAdapters.BranchesByPackageIdTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCM.SCMCategoriesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMTendersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.BidEmailIDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.VendorsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMPurchaseOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMVendorsProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsByVendorIDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMServiceCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductServiceCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.VendorProductServiceCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.BRANCHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMTenderProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.EditTendorProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMPOProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMCategoriesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMTendersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.BidEmailIDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.VendorsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMPurchaseOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMVendorsProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsByVendorIDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMServiceCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductServiceCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.VendorProductServiceCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.BRANCHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMTenderProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.EditTendorProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMPOProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.SCM.SCMCategoriesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMTendersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.BidEmailIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.VendorsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMPurchaseOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMVendorsProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductsByVendorIDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMServiceCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMProductServiceCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.VendorProductServiceCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.BRANCHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMTenderProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.EditTendorProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMBidProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM.SCMPOProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.SCM">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMCategoriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMTendersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.BidEmailIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.VendorsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMBidsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMPurchaseOrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMVendorsProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMProductsByVendorIDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMServiceCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMProductServiceCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.VendorProductServiceCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.BRANCHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMTenderProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.EditTendorProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMBidProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.SCMTableAdapters.SCMPOProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.DDLSection">
+	<summary>
+DDLSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.RBLFileReplace">
+	<summary>
+RBLFileReplace control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.BtnUpload">
+	<summary>
+BtnUpload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.FileUpload2">
+	<summary>
+FileUpload2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.FileUpload3">
+	<summary>
+FileUpload3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.FileUpload4">
+	<summary>
+FileUpload4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.FileUpload5">
+	<summary>
+FileUpload5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.RFVSection">
+	<summary>
+RFVSection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.CVFiles">
+	<summary>
+CVFiles control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.DDLImageTypes">
+	<summary>
+DDLImageTypes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_LoginPages_Uploads.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Default.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Default.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Default.TxtLoginID">
+	<summary>
+TxtLoginID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Default.TxtPwd">
+	<summary>
+TxtPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Default.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.InnerBasePage_a.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.InnerBasePage_a.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.InnerBasePage_a.NavigationPlaceHolder">
+	<summary>
+NavigationPlaceHolder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.InnerBasePage_a.ContentPlaceHolder">
+	<summary>
+ContentPlaceHolder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ImgPhoto">
+	<summary>
+ImgPhoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.FUPhoto">
+	<summary>
+FUPhoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.EmailId">
+	<summary>
+EmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtfirstname">
+	<summary>
+txtfirstname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtlastname">
+	<summary>
+txtlastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtreenterpassword">
+	<summary>
+txtreenterpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.DoctorCode">
+	<summary>
+DoctorCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Salutation">
+	<summary>
+Salutation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Age">
+	<summary>
+Age control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.DDLBG">
+	<summary>
+DDLBG control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.TxtQualification">
+	<summary>
+TxtQualification control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Address">
+	<summary>
+Address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtcity">
+	<summary>
+txtcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.TXTSTATE">
+	<summary>
+TXTSTATE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ddlCountry">
+	<summary>
+ddlCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Zip">
+	<summary>
+Zip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RegularExpressionValidator2">
+	<summary>
+RegularExpressionValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.MobPh">
+	<summary>
+MobPh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RegularExpressionValidator3">
+	<summary>
+RegularExpressionValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.LBBranch">
+	<summary>
+LBBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.LBSpecialities">
+	<summary>
+LBSpecialities control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Txtbriefprofile">
+	<summary>
+Txtbriefprofile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Txtpresentposition">
+	<summary>
+Txtpresentposition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.TxtQualifications">
+	<summary>
+TxtQualifications control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtsepcialtraining">
+	<summary>
+txtsepcialtraining control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtexperience">
+	<summary>
+txtexperience control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtexpertise">
+	<summary>
+txtexpertise control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtachievements">
+	<summary>
+txtachievements control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtpublications">
+	<summary>
+txtpublications control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtawardsandhonours">
+	<summary>
+txtawardsandhonours control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtacademicexposure">
+	<summary>
+txtacademicexposure control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txttalkdelivered">
+	<summary>
+txttalkdelivered control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtothers">
+	<summary>
+txtothers control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.txtmedia">
+	<summary>
+txtmedia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.UpdateDoctors">
+	<summary>
+UpdateDoctors control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RFVDoctorName">
+	<summary>
+RFVDoctorName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.LblDocPhoto">
+	<summary>
+LblDocPhoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.LblProfile">
+	<summary>
+LblProfile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:betatesting.WebSearch.Site.FilesTypesToSearch">
+	<summary> 
+ Retreive FilesTypesToSearch of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Site.DynamicFilesTypesToSearch">
+	<summary> 
+ Retreive DynamicFilesTypesToSearch of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Site.BarredFolders">
+	<summary> 
+ Retreive BarredFolders of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Site.BarredFiles">
+	<summary> 
+ Retreive BarredFiles of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Site.EnglishLanguage">
+	<summary> 
+ Retreive EnglishLanguage of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Site.ApplicationPath">
+	<summary> 
+ Assign and retreive ApplicationPath of the site 
+ </summary>
+</member><member name="T:betatesting.WebSearch.Site">
+	<summary> 
+ Properties are used to store configurations of the user 
+ </summary>
+</member><member name="P:betatesting.WebSearch.UserSearch.TotalFilesSearched">
+	<summary> 
+ Retreive TotalFilesSearched of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.UserSearch.TotalFilesFound">
+	<summary> 
+ Retreive TotalFilesFound of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.UserSearch.PageDataset">
+	<summary> 
+ Retreive data of tzh entire site of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.UserSearch.SearchCriteria">
+	<summary> 
+ Assign and retreive SearchCriteria of the site 
+ </summary>
+</member><member name="P:betatesting.WebSearch.UserSearch.SearchWords">
+	<summary> 
+ Assign and retreive SearchWords of the site 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.Search(System.String)">
+	<summary> 
+ Search the entire site 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.ProcessDirectory(System.String)">
+	<summary> 
+ Files in the directories are searched 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.ProcessFile(System.String)">
+	<summary> 
+ Real logic for processing found files would go here. 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetInfo(System.String)">
+	<summary> 
+ File data is picked in this method 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetFilePath(System.String,betatesting.WebSearch.Page)">
+	<summary> 
+ File path is modfied to be displayed as hyperlink in this method 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetFileInfo(System.String,betatesting.WebSearch.Page)">
+	<summary> 
+ File data is picked in this method 
+ </summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetStaticFileContent(System.String,betatesting.WebSearch.Page)">
+	<summary> 
+ File Content is picked in this method 
+</summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetDynamicFileContent(betatesting.WebSearch.Page)">
+	<summary> 
+ File Content is picked in this method 
+</summary>
+</member><member name="M:betatesting.WebSearch.UserSearch.GetMetaContent(System.String,System.String,System.String)">
+	<summary> 
+ Metacontent is stripped in this method 
+</summary>
+</member><member name="T:betatesting.WebSearch.UserSearch">
+	<summary> 
+ Properties are used to store search data of the user 
+ </summary>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.DDLCountry">
+	<summary>
+DDLCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.ObjDsCountry">
+	<summary>
+ObjDsCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.RFVCountry">
+	<summary>
+RFVCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.DDLState">
+	<summary>
+DDLState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.RFVState">
+	<summary>
+RFVState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.TxtCity">
+	<summary>
+TxtCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.RFVcity">
+	<summary>
+RFVcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.GVCity">
+	<summary>
+GVCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageCity.ObjDSCities">
+	<summary>
+ObjDSCities control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.txtname">
+	<summary>
+txtname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.txtdescription">
+	<summary>
+txtdescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.txtprocedures">
+	<summary>
+txtprocedures control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.Lbvendortypes">
+	<summary>
+Lbvendortypes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.DDLActiveStatus">
+	<summary>
+DDLActiveStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.btnSearch">
+	<summary>
+btnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.CVsection">
+	<summary>
+CVsection control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.GVVENDORTYPES">
+	<summary>
+GVVENDORTYPES control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default3.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.TxtDoctorName">
+	<summary>
+TxtDoctorName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.DDLSpecialisation">
+	<summary>
+DDLSpecialisation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.DDLBranch">
+	<summary>
+DDLBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.BtnSearch">
+	<summary>
+BtnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.Jobs.VolunteeringDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Jobs.JobseekerProfileDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Jobs.VolunteeringRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Jobs.JobseekerProfileRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Jobs.VolunteeringRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Jobs.JobseekerProfileRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Jobs">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.JobsTableAdapters.VolunteeringTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.JobsTableAdapters.JobseekerProfileTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.RegisterExternalLogin.userName">
+	<summary>
+userName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.DataSetCare.DOCTORSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALIZATIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.QUALIFICATIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DEPARTMENTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRYDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.STATEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITYDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BLOODGROUPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.EVENTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.PATIENTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorTimingsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchSpecialisationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchPackagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.NewsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.PatientReferDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCategoryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.USERSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobLocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobQualificationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSkillsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JOBSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ControlPanelIPStatsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCatRolesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekerWorkExperienceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobApplicationsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALITIESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CitiesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ViewAppointmentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DOCTORSBYBranchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamBySpecialisationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITIESBYCOUNTRYDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ASKCAREDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATES1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.getDeptsByBranchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsSortOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.mediaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.videoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSPECIALIZATIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESpecialisationsentryDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSUsersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.UPDATETIMESTATUSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SKILLSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRY1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DOCTORSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALIZATIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.QUALIFICATIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DEPARTMENTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRYRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.STATERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITYRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BLOODGROUPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.EVENTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.PATIENTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorTimingsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchSpecialisationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchPackagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.NewsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.PatientReferRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCategoryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.USERSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobLocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobQualificationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSkillsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JOBSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ControlPanelIPStatsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCatRolesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekerWorkExperienceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobApplicationsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALITIESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CitiesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ViewAppointmentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DOCTORSBYBranchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamBySpecialisationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITIESBYCOUNTRYRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ASKCARERow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATES1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.getDeptsByBranchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsSortOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.mediaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.videoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSPECIALIZATIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESpecialisationsentryRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSUsersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.UPDATETIMESTATUSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.SKILLSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRY1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.DOCTORSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALIZATIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.QUALIFICATIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DEPARTMENTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.STATERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.BLOODGROUPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.EVENTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.PATIENTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorTimingsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchSpecialisationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.BranchPackagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.NewsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.PatientReferRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCategoryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.USERSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobLocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobQualificationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSkillsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JOBSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.ControlPanelIPStatsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobCatRolesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekerWorkExperienceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobSeekersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.JobApplicationsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.SPECIALITIESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.CitiesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.ViewAppointmentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DOCTORSBYBranchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsTeamBySpecialisationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.CITIESBYCOUNTRYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.ASKCARERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.ESTIMATES1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.getDeptsByBranchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.DoctorsSortOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.mediaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.videoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSPECIALIZATIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORTYPESpecialisationsentryRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.VENDORSUsersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.UPDATETIMESTATUSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.SKILLSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.COUNTRY1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DOCTORSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.SPECIALIZATIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.QUALIFICATIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DEPARTMENTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.COUNTRYTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.STATETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.CITYTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.BLOODGROUPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.EVENTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.PATIENTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DoctorTimingsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.BranchSpecialisationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.BranchPackagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.NewsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.PatientReferTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobCategoryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.USERSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobLocationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobQualificationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobSkillsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JOBSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.ControlPanelIPStatsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobCatRolesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobSeekerWorkExperienceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobSeekersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.JobApplicationsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.SPECIALITIESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.CitiesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.ViewAppointmentsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DOCTORSBYBranchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DoctorsTeamTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DoctorsTeamBySpecialisationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.ESTIMATESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.CITIESBYCOUNTRYTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.ASKCARETableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.ESTIMATES1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.getDeptsByBranchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.DoctorsSortOrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.mediaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.videoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.VENDORTYPESTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.VENDORSPECIALIZATIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.VENDORTYPESpecialisationsentryTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.VENDORSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.VENDORSUsersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.UPDATETIMESTATUSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.SKILLSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.COUNTRY1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.Login.ErrorMessage">
+	<summary>
+ErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.FailureText">
+	<summary>
+FailureText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.UserName">
+	<summary>
+UserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.Password">
+	<summary>
+Password control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.RememberMe">
+	<summary>
+RememberMe control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.RegisterHyperLink">
+	<summary>
+RegisterHyperLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Login.OpenAuthLogin">
+	<summary>
+OpenAuthLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Photo">
+	<summary>
+Photo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.EmailId">
+	<summary>
+EmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.RFVEmailId">
+	<summary>
+RFVEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtfirstName">
+	<summary>
+txtfirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtlastName">
+	<summary>
+txtlastName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtreenterpassword">
+	<summary>
+txtreenterpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.DoctorCode">
+	<summary>
+DoctorCode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Salutation">
+	<summary>
+Salutation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Age">
+	<summary>
+Age control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.DDLBG">
+	<summary>
+DDLBG control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.TxtQualification">
+	<summary>
+TxtQualification control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Address">
+	<summary>
+Address control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtcity">
+	<summary>
+txtcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Txtstate">
+	<summary>
+Txtstate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.ddlCountry">
+	<summary>
+ddlCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Zip">
+	<summary>
+Zip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.REVZip">
+	<summary>
+REVZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.MobPh">
+	<summary>
+MobPh control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.REVMobph">
+	<summary>
+REVMobph control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.LBBranch">
+	<summary>
+LBBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.LBSpecialities">
+	<summary>
+LBSpecialities control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Txtbriefprofile">
+	<summary>
+Txtbriefprofile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.Txtpresentprofile">
+	<summary>
+Txtpresentprofile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.TxtQualifications">
+	<summary>
+TxtQualifications control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtsepcialtraining">
+	<summary>
+txtsepcialtraining control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtexperience">
+	<summary>
+txtexperience control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtexpertise">
+	<summary>
+txtexpertise control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtachievements">
+	<summary>
+txtachievements control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtpublications">
+	<summary>
+txtpublications control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtawardsandhonours">
+	<summary>
+txtawardsandhonours control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtacademicexposure">
+	<summary>
+txtacademicexposure control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txttalkdelivered">
+	<summary>
+txttalkdelivered control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtothers">
+	<summary>
+txtothers control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtmedia">
+	<summary>
+txtmedia control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.AddDoctors">
+	<summary>
+AddDoctors control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.cms.UploadFileNamesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.cms.FileTypesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.cms.PagesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.cms.UploadFileNamesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.cms.FileTypesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.cms.PagesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.cms.UploadFileNamesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.cms.FileTypesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.cms.PagesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.cms">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.cmsTableAdapters.UploadFileNamesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.cmsTableAdapters.FileTypesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.cmsTableAdapters.PagesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.newsevents.NewsPapersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.newsevents.News_PrintMediaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.newsevents.newschannelsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.newsevents._OHPrintMedia_newsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.newsevents.NewsPapersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.newsevents.News_PrintMediaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.newsevents.newschannelsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.newsevents._OHPrintMedia_newsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.newsevents.NewsPapersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.newsevents.News_PrintMediaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.newsevents.newschannelsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.newsevents._OHPrintMedia_newsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.newsevents">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.newseventsTableAdapters.NewsPapersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.newseventsTableAdapters.News_PrintMediaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.newseventsTableAdapters.newschannelsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.newseventsTableAdapters.OHPrintMedia_newsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.newseventsTableAdapters.CurrentIdentity">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMVendorsProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.VendorProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCustomerBaseDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTendersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProducts1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductServiceCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMServiceCentersDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCategoriesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.BRANCHDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidProductsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.Vendors_sDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMVendorsProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.VendorProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCustomerBaseRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTendersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProducts1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductServiceCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMServiceCentersRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCategoriesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.BRANCHRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidProductsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.Vendors_sRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMVendorsProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.VendorProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCustomerBaseRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTendersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMTenderProducts1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMProductServiceCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMServiceCentersRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMCategoriesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.BRANCHRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.SCMBidProductsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors.Vendors_sRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Vendors">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMVendorsProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.VendorProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMCustomerBaseTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMTendersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMTenderProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMBidsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMTenderProducts1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMProductServiceCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMServiceCentersTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMCategoriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.BRANCHTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.SCMBidProductsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.VendorsTableAdapters.Vendors_sTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.Manage.SuccessMessagePlaceHolder">
+	<summary>
+ SuccessMessagePlaceHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.setPassword">
+	<summary>
+ setPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.password">
+	<summary>
+ password control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.confirmPassword">
+	<summary>
+ confirmPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.changePasswordHolder">
+	<summary>
+ changePasswordHolder control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.changePasswordUserName">
+	<summary>
+ changePasswordUserName control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.CurrentPasswordLabel">
+	<summary>
+ CurrentPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.CurrentPassword">
+	<summary>
+ CurrentPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.NewPasswordLabel">
+	<summary>
+ NewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.NewPassword">
+	<summary>
+ NewPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.ConfirmNewPasswordLabel">
+	<summary>
+ ConfirmNewPasswordLabel control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="F:betatesting.Manage.ConfirmNewPassword">
+	<summary>
+ ConfirmNewPassword control.
+ </summary>
+	<remarks>
+ Auto-generated field.
+ To modify move field declaration from designer file to code-behind file.
+ </remarks>
+</member><member name="M:betatesting.Global_asax.InitializeComponent">
+	<summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor. 
+ </summary>
+</member><member name="T:betatesting.Appointments.APPOINTMENTSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Appointments.APPOINTMENTSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Appointments.APPOINTMENTSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Appointments">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.AppointmentsTableAdapters.APPOINTMENTSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.Corporates.CorporateMembershipsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.Corporates.CorporateMembershipsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.Corporates.CorporateMembershipsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.Corporates">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.CorporatesTableAdapters.CorporateMembershipsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminLoginsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminPermissionsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.UserAdminLoginsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminLoginsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminPermissionsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.UserAdminLoginsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminLoginsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.WebAdmins.OtherAdminPermissionsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.WebAdmins.UserAdminLoginsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.WebAdmins">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.WebAdminsTableAdapters.OtherAdminLoginsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.WebAdminsTableAdapters.OtherAdminPermissionsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.WebAdminsTableAdapters.UserAdminLoginsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.DDLCountry">
+	<summary>
+DDLCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.ObjDsCountry">
+	<summary>
+ObjDsCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.RFVCountry">
+	<summary>
+RFVCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.TxtState">
+	<summary>
+TxtState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.RFVState">
+	<summary>
+RFVState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.GVState">
+	<summary>
+GVState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_ManageState.ObjDSState">
+	<summary>
+ObjDSState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Settings_Qualification.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Settings_Qualification.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_Settings_Qualification.DsQual">
+	<summary>
+DsQual control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_Skills.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_Skills.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Admin_NAdmin_Settings_Skills.DsSkills">
+	<summary>
+DsSkills control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:betatesting.WebSearch.Page.Size">
+	<summary> 
+ Assign and retreive Size of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.Path">
+	<summary> 
+ Assign and retreive path of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.Title">
+	<summary> 
+ Assign and retreive title of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.Keywords">
+	<summary> 
+ Assign and retreive Keywords ( meta tags ) of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.Description">
+	<summary> 
+ Assign and retreive description ( meta tags ) of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.Contents">
+	<summary> 
+ Assign and retreive contents of the file 
+ </summary>
+</member><member name="P:betatesting.WebSearch.Page.MatchCount">
+	<summary> 
+ Assign and retreive MatchCount of the file 
+ </summary>
+</member><member name="M:betatesting.WebSearch.Page.CheckFileInfo">
+	<summary> 
+ Subroutine to the check the file contains title and decription 
+ </summary>
+</member><member name="M:betatesting.WebSearch.Page.Search(System.String,betatesting.WebSearch.SearchCriteria)">
+	<summary> 
+ Subroutine to the search file 
+ </summary>
+</member><member name="M:betatesting.WebSearch.Page.SearchPhrase(System.String)">
+	<summary> 
+ Subroutine to the search file 
+ </summary>
+</member><member name="M:betatesting.WebSearch.Page.SearchWords(System.String,betatesting.WebSearch.SearchCriteria)">
+	<summary> 
+ Subroutine to the search file 
+ </summary>
+</member><member name="F:betatesting.contact_us.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.FeaturedContent">
+	<summary>
+FeaturedContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Site_Mobile.ViewSwitcher1">
+	<summary>
+ViewSwitcher1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

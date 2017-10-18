@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\vmoksha</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>11/04/2014 13:07:24</publishTime>
+    </File>
+    <File Include="Account/Manage.aspx">
+      <publishTime>11/04/2014 13:07:24</publishTime>
+    </File>
+    <File Include="Account/OpenAuthProviders.ascx">
+      <publishTime>11/04/2014 13:07:24</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>11/04/2014 13:07:24</publishTime>
+    </File>
+    <File Include="Account/RegisterExternalLogin.aspx">
+      <publishTime>11/04/2014 13:07:24</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>11/04/2014 13:07:25</publishTime>
+    </File>
+    <File Include="Admin/AdminBasePage.master">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="Admin/Default.aspx">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/editor.js">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_about.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_align_center.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_align_left.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_align_right.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_blank.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_charmap.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_color_bg.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_color_fg.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_copy.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_custom.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_cut.gif">
+      <publishTime>11/04/2014 21:48:44</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_delete.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_bold.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_italic.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_strike.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_sub.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_sup.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_format_underline.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_help.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_hr.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_html.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_image.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_indent_less.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_indent_more.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_link.gif">
+      <publishTime>11/04/2014 21:48:45</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_list_bullet.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_list_num.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_redo.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/ed_undo.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/fullscreen_maximize.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/fullscreen_minimize.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/insert_table.gif">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/Thumbs.db">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/images/vssver2.scc">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/about.html">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/blank.html">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/custom2.html">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/editor_help.html">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/fullscreen.html">
+      <publishTime>11/04/2014 21:48:46</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/insert_image.html">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/insert_table.html">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/select_color.html">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/HTMLEditor/popups/vssver2.scc">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/aboutus_button.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/aboutus_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/banner_homepage.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/bottom_line.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/businesswithCare_.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/careAsso_button.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/careAsso_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/CareLogo_banner.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/corporates_button.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/corporates_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/D&amp;HP_button.jpg">
+      <publishTime>11/04/2014 21:48:47</publishTime>
+    </File>
+    <File Include="Admin/images/D&amp;HP_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/E&amp;T_button.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/E&amp;T_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/footer_logo.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/healthChecks.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/healthLibrary_button.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/healthLibrary_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/healthliving_image.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/healthliving_jpg.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/homeHealthcare_button.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/homeHealthcare_image.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/home_button.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/I&amp;P_button.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/I&amp;P_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:48</publishTime>
+    </File>
+    <File Include="Admin/images/Image_homepage.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/logout_button.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/logo_with_title.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/ourHospital_button.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/ourHospital_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/P&amp;V_button.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/P&amp;V_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/PartnerwithCare.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/research_button.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/research_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/rightsidePanel_home.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/video&amp;Prod_.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/virtualtour_button.jpg">
+      <publishTime>11/04/2014 21:48:49</publishTime>
+    </File>
+    <File Include="Admin/images/virtualtour_button_rollover.jpg">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/images/wellnessProgram.jpg">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/InnerBasePage.master">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/Admins/AddAdmin.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/ChangePassword.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/cms/addpages.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/cms/BannerImages.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/cms/editpage.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/cms/MenuManager.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/cms/Uploads.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/default.aspx">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/editor.js">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_about.gif">
+      <publishTime>11/04/2014 21:48:50</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_align_center.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_align_left.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_align_right.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_blank.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_charmap.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_color_bg.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_color_fg.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_copy.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_custom.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_cut.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_delete.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_bold.gif">
+      <publishTime>11/04/2014 21:48:51</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_italic.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_strike.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_sub.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_sup.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_format_underline.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_help.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_hr.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_html.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_image.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_indent_less.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_indent_more.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_link.gif">
+      <publishTime>11/04/2014 21:48:52</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_list_bullet.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_list_num.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_redo.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/ed_undo.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/fullscreen_maximize.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/fullscreen_minimize.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/images/insert_table.gif">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/about.html">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/blank.html">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/custom2.html">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/editor_help.html">
+      <publishTime>11/04/2014 21:48:53</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/fullscreen.html">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/insert_image.html">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/insert_table.html">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/HTMLEditor/popups/select_color.html">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBar.js">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBarDown.gif">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBarDownHover.gif">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBarHorizontal.css">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBarRight.gif">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryMenuBarRightHover.gif">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryTabbedPanels.css">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/SpryAssets/SpryTabbedPanels.js">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="Admin/NAdmin/web.config">
+      <publishTime>11/04/2014 21:48:54</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>11/04/2014 21:56:04</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll.refresh">
+      <publishTime>11/04/2014 21:56:04</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/04/2014 13:06:59</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>11/04/2014 13:07:07</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>11/04/2014 13:07:08</publishTime>
+    </File>
+    <File Include="bin/betatesting.dll">
+      <publishTime>11/04/2014 22:03:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/04/2014 13:07:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>11/04/2014 13:07:26</publishTime>
+    </File>
+    <File Include="bin/FredCK.FCKeditorV2.dll">
+      <publishTime>11/04/2014 22:01:07</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>11/04/2014 13:07:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>11/04/2014 13:07:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>11/04/2014 13:07:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>11/04/2014 13:07:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>11/04/2014 13:07:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>11/04/2014 13:07:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>11/04/2014 13:07:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>11/04/2014 13:07:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>11/04/2014 13:07:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>11/04/2014 13:07:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>11/04/2014 13:07:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>11/04/2014 13:07:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>11/04/2014 13:07:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>11/04/2014 13:07:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>11/04/2014 13:07:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/04/2014 13:07:18</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/04/2014 13:07:02</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/04/2014 13:07:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/04/2014 13:07:05</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>11/04/2014 13:07:35</publishTime>
+    </File>
+    <File Include="bin/WebForms_Basic.xml">
+      <publishTime>11/04/2014 22:03:42</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/04/2014 13:06:57</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="contact-us.aspx">
+      <publishTime>11/04/2014 20:57:07</publishTime>
+    </File>
+    <File Include="Contact.aspx">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/04/2014 13:07:25</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>11/04/2014 20:51:26</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-BOLD.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-BOLDCOND.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-BOLDCONDIT.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-BOLDIT.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-COND.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-CONDIT.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-IT.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-REGULAR.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-SEMIBOLD.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-SEMIBOLDCOND.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="font/MYRIADPRO-SEMIBOLDIT.OTF">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/04/2014 13:07:39</publishTime>
+    </File>
+    <File Include="resources/css/bootstrap-theme.css.map">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/bootstrap-theme.min.css">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/bootstrap.css.map">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/bootstrap.min.css">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/immersive-slider.css">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/jquery.bxslider.css">
+      <publishTime>11/04/2014 13:35:14</publishTime>
+    </File>
+    <File Include="resources/css/jquery.h5form-2.13.1.css">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/css/mainstyle.css">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/css/style.css">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/adopt-1.jpg">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/adopt.jpg">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/Astro-&amp;-Spiritual-1.jpg">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/Astro-&amp;-Spiritual.jpg">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/btn-showhide_contact.gif">
+      <publishTime>11/04/2014 13:35:15</publishTime>
+    </File>
+    <File Include="resources/images/Financial-1.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Financial.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/hacg-banner-image.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Handyman-Services-1.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Handyman-Services.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Health-1.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Health.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Legal-1.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Legal.jpg">
+      <publishTime>11/04/2014 13:35:16</publishTime>
+    </File>
+    <File Include="resources/images/Social-1.jpg">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/images/Social.jpg">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/images/thinkbeyondageing-banner.jpg">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/images/Volunteer-1.jpg">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/images/Volunteer.jpg">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/js/angular.min.js">
+      <publishTime>11/04/2014 13:35:17</publishTime>
+    </File>
+    <File Include="resources/js/bootstrap.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/bootstrap.min.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/countdown.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/ddaccordion.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/enquiry_script.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/filter_script.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/jquery-latest.min.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/jquery.bxslider.js">
+      <publishTime>11/04/2014 13:35:18</publishTime>
+    </File>
+    <File Include="resources/js/jquery.bxslider.min.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.contact.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.dataTables.min.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.easing.1.3.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.fitvids.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.h5form-2.13.1.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.h5form-2.13.1.min.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.immersive-slider.js">
+      <publishTime>11/04/2014 13:35:19</publishTime>
+    </File>
+    <File Include="resources/js/jquery.maskedinput-1.2.2.min.js">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="resources/js/jquery.min.js">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="resources/js/script.js">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="resources/js/scroll.js">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="resources/js/underscore-min.js">
+      <publishTime>11/04/2014 13:35:20</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/04/2014 13:06:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>11/04/2014 13:06:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/04/2014 13:06:25</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/04/2014 13:06:25</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/04/2014 13:06:51</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/04/2014 13:06:48</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/04/2014 13:06:48</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>11/04/2014 13:07:13</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>11/04/2014 13:07:13</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>11/04/2014 13:07:12</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>11/04/2014 13:07:16</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/04/2014 13:35:23</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>11/04/2014 13:07:25</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>11/04/2014 13:06:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/04/2014 22:05:20</publishTime>
+    </File>
+    <File Include="xsds/cms.xsc">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/cms.xss">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/DataSetCare.xsc">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/DataSetCare.xss">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/HeaderBanner.xsc">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/HeaderBanner.xss">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/WebAdmins.xsc">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+    <File Include="xsds/WebAdmins.xss">
+      <publishTime>11/04/2014 21:48:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

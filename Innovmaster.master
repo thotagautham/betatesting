@@ -1,0 +1,548 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Innovmaster.master.vb" Inherits="betatesting.Innovmaster" %>
+
+<%@ Register TagName="Right" TagPrefix="R" Src="~/innovation/Innovrightarea.ascx" %>
+
+<html lang="en">
+
+  <head>
+
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WORLD CONGRESS ON DRUG DISCOVERY & DEVELOPMENT</title>
+	
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../css/mainstyle.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/stylesheet.css">
+
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+    <!-- Owl Carousel Assets -->
+    <link href="../css/owl.carousel.css" rel="stylesheet">
+    <link href="../css/owl.theme.css" rel="stylesheet">
+     
+     
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.4.1.js"></script>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../../d/js/jquery.lwtCountdown-1.0.js"></script>
+	<script src="../js/basic.js"></script>
+    <script src="../js/jquery.simplemodal.js"></script>
+	 <script src="../js/owl.carousel.js"></script>
+    
+	
+	
+	
+	 <style type="text/css">
+	  #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+    
+    </style>
+    
+  </head>
+  <body>
+
+       <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+ 	
+	<div id="header-bg-a">
+    <div class="container"><h3 align="center">FRONTIERS IN ONCOLOGY: GENETICS, DIAGNOSTICS AND THERAPEUTICS</h3></div>
+	</div>
+	
+	
+	<div id="header-bg">
+    <div class="container">
+    	<div class="col-md-3 conferencedate">
+        	
+            <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                
+            </li>
+             <li>
+                <a href="/default.aspx">Home</a>
+            </li>
+            <li>
+                <a href="/about-conference">About Conference</a>
+            </li>
+            <li>
+                <a href="/Program">Program</a>
+            </li>
+            <li>
+                <a href="/Venue">Venue</a>
+            </li>
+      <!--      <li>
+                <a href="/media">Media</a>
+            </li>
+            
+			   <li>
+                <a href="/speakers">Speakers</a>
+            </li>
+            -->
+            						   <li>
+                <a href="/callforabstracts">Call for Abstracts</a>
+            </li>
+                        	
+            
+            <li>
+                <a href="/sponsors">Sponsors &amp; Exhibitors</a>
+            </li>
+            
+            <li>
+                <a href="/registration">Registration</a>
+            </li>
+            <li>
+                <a href="/contactus">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+        
+        
+            <h4> <span style="color:#42c2f3; font-size:25px; ">18<sup>th</sup>, 19<sup>th</sup> &amp; 20<sup>th</sup> <br /> July 2016 <br /></span>
+             <span style="text-transform:uppercase; line-height:23px; font-size:14px;">J.N.Tata Auditorium  <br> Indian Institute of Science <br> Bengaluru, India.</span></h4>
+        </div>
+                  
+        <div class="col-md-7 hacwlogo">
+        	 <div class="logo">
+                    <a href="/default.aspx"><img src="../images/logo.jpg" class="img-responsive" alt=""/></a>
+                </div>
+        </div>
+        <div class="col-md-2 headerright">
+        	<a href="/registration/" class="btn btn-danger">Registration</a><br><br>
+			<a href="../../images/cmecredits.jpg" target="_blank" class="btn btn-danger">6 CME Credit</a>
+			
+			 
+         
+          <!--  <div id='content'>
+		<div id='basic-modal'>
+			
+			<input type='button' name='basic' value='Enquiry' class='basic'/> 
+		</div>-->
+		
+		<!-- modal content -->
+		<!--<div id="basic-modal-content" style="margin-bottom:30px;">
+			<h3 style="color:#fff; font-family: 'latobold';">Drop Your Message</h3>
+			<div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" required="required" class="form-control" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" required="required" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="text" required="required" class="form-control" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea rows="8" class="form-control" required id="message" name="message"></textarea>
+                        </div>                        
+                        <div class="form-group">
+                            <button required="required" class="btn btn-default btn-lg" name="submit" type="submit">Submit Message</button>
+                        </div>
+		</div>-->
+
+		<!-- preload the images -->
+		<!--<div style='display:none'>
+			<img src='../img/basic/x.png' alt='' />
+		</div>
+	</div>-->
+    <!--   <h5 style=" color:#b2368e"> <a href="#">6CME Credits</a></h3>-->
+        
+        </div> 
+    	
+    
+    </div>
+    </div> <!--- end header-bg -->
+    
+     <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+  <!-- Indicators -->
+  
+   <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+   <li data-target="#myCarousel" data-slide-to="1"></li>
+
+	
+		
+    
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active"> <img src="../images/gcs-imag-banner8.jpg" style="width:100%" alt="First slide">
+      <div class="container">
+     
+      </div>
+    </div>
+	
+	  <div class="item"> <img src="../images/gcs-imag-banner9.jpg" style="width:100%" data-src="" alt="Second slide">
+      <div class="container">
+       <!-- <div class="carousel-caption">
+          <h1>Slide 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus. </p>
+         
+        </div> -->
+      </div>
+    </div>
+	
+	 
+  </div>
+<!--  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> --> </div>
+  
+ <!-- <div class="countdown">
+  
+  	<div class="container">
+        <div class="col-md-3">
+            <h3 style="font-family: 'trajan_probold'; font-size:23px;">Event Countdown</h3>
+        </div>
+        <div class="col-md-5">
+        	<div id="countdown_dashboard">
+			<div class="dash weeks_dash">
+				<span class="dash_title">weeks</span>
+				<div class="digit">00</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash days_dash">
+				<span class="dash_title">days</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash hours_dash">
+				<span class="dash_title">hours</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>
+
+			<div class="dash minutes_dash">
+				<span class="dash_title">minutes</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div> -->
+
+			<!--<div class="dash seconds_dash">
+				<span class="dash_title">seconds</span>
+				<div class="digit">0</div>
+				<div class="digit">0</div>
+			</div>-->
+
+		<!--</div>
+        </div>
+        <div class="col-md-4">
+          <ul><li style="list-style:none;"> <a href="/online-registration/" class="btn btn-danger">Online Registration</a><br>
+<br>
+</li>
+        <li  style="list-style:none;"> <a href="/hotel-reservation/" class="btn btn-danger">Hotel Reservation</a></li>
+        </ul>
+
+
+        </div>
+        
+       
+    </div>
+  </div> -->
+  
+  <div class="main_ct">
+  <div class="container">
+  	<div class="row">
+    
+    <div class="col-md-8">
+   		<asp:ContentPlaceHolder ID="ContentPlaceHolderBodyLeft" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+    <div class="col-md-4 ">
+         <asp:ContentPlaceHolder ID="bodyright" runat="server">
+      </asp:ContentPlaceHolder>
+    <h3 style="font-family: 'trajan_probold'; color:#000; font-size:30px;">Enquiry</h3>  <br />
+     				 <R:Right runat="server" ID="R2" />
+    
+    			<h3 style=" width:300px;padding-left:0px; padding-top:0px; font-family: 'trajan_probold'; color:#000; font-size:30px; margin-top:50px; ">Quick Links</h3><br />
+            	 
+				 <a href="/callforabstracts/" class="btn btn-toolbar">Call for Abstracts </a> <br />
+				 <a href="/registration/" class="btn btn-toolbar">Online Registration</a> <br />
+                <!--<a href="images/GlobalCancerSummit2015Brochure.pdf" class="btn btn-toolbar">Download Brochure </a> <br />-->
+               <!-- <a href="/cancer/" class="btn btn-toolbar">About Cancer</a> <br />-->
+              <a href="#" class="btn btn-toolbar">Download Registration Form</a> <br />
+              
+    </div></div>
+  </div>
+    </div> 
+    
+    
+    
+    
+    	 
+      		<div class="container-fluid main_organizers">
+            	<div class="container">
+                	<div class="col-xs-12 col-sm-6 col-md-6">
+                    <h3 style="text-align:left; color:#fff; font-family: 'trajan_probold'; padding-bottom:20px;">Organizers</h3>
+                   	<div class="col-md-6"><img src="../images/sample-logo.jpg" class="img-responsive" style="margin-bottom:6px;"></div>
+                    <div class="col-md-6"></div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h3 style="text-align:left; color:#fff; font-family: 'trajan_probold'; padding-bottom:20px;">Supporters</h3>
+                   	<div class="col-md-6"><img src="../images/sample-logo.jpg" class="img-responsive" style="margin-bottom:6px;"></div>
+                    <div class="col-md-6"></div>
+                    </div>
+                    
+                  <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h3 style="text-align:left; color:#fff; font-family: 'trajan_probold'; padding-bottom:20px;">Country Partners</h3>
+                   	<div class="col-md-6"><img src="../images/sample-logo.jpg" class="img-responsive" style="margin-bottom:6px;"></div>
+                    <div class="col-md-6"></div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                    <h3 style="text-align:left; color:#fff; font-family: 'trajan_probold'; padding-bottom:20px;">Branding Partners</h3>
+                   	<div class="col-md-6"><img src="../images/sample-logo.jpg" class="img-responsive" style="margin-bottom:6px;"></div>
+                    <div class="col-md-6"></div>
+                    </div>
+                
+                </div>
+            </div>
+		
+		     
+                   <div class="container-fluid main_organizers">
+      
+            <div class="container">
+
+       <h1 style="color:#fff; font-family: 'trajan_probold'; padding-top:50px; text-align:center; border-top:#fff 1px solid;">
+Sponsors</h1>
+                
+                    <h3 style="color:#fff; text-align:center;padding:0 0 20px 0;">Gold Sponsor</h3>
+                   	<div align="center"><img style="margin-bottom:6px;" class="img-responsive" src="../images/sample-logo.jpg"></div>
+               
+                 </div>
+            
+            </div>
+              
+               <div class="container-fluid main_organizers">
+      
+            <div class="container">
+
+      
+                     <h3 style="color:#fff; font-family: 'trajan_probold'; padding:0 0 20px 0; text-align:center;">Session Sponsors</h3>
+					 <div class="col-xs-12 col-sm-6 col-md-4"><img style="margin-bottom:6px;" class="img-responsive" src="../images/sample-logo.jpg"></div>
+					 <div class="col-xs-12 col-sm-6 col-md-4"><img style="margin-bottom:6px;" class="img-responsive" src="../images/sample-logo.jpg"></div>
+					 <div class="col-xs-12 col-sm-6 col-md-4"><img style="margin-bottom:6px;" class="img-responsive" src="../images/sample-logo.jpg"></div>
+					
+                   
+                    </div></div>
+            
+		
+		
+		
+		<div class="container-fluid carouselfull" style="background:#eee;">	
+       <div id="demo">
+        <div class="container" >
+          <div class="row">
+            <div class="span12">
+
+              <div id="owl-demo" class="owl-carousel">
+                <div class="item"><img src="../images/client/AIMSRC.jpg" alt="AIMSRC"></div>
+                <div class="item"><img src="../images/client/Annamalai-University.jpg" alt="Annamalai-University"></div>
+                <div class="item"><img src="../images/client/ANU.jpg" alt="ANU"></div>
+                <div class="item"><img src="../images/client/A-PLACE-OF-MIND-LOGO.jpg" alt="A-PLACE-OF-MIND-LOGO"></div>
+                <div class="item"><img src="../images/client/BITS-Pilani-Logo.jpg" alt="BITS-Pilani-Logo"></div>
+                <div class="item"><img src="../images/client/BOSE-INSTITUTE.jpg" alt="BOSE-INSTITUTE"></div>
+                <div class="item"><img src="../images/client/Carbone.jpg" alt="Carbone"></div>
+                <div class="item"><img src="../images/client/CHAPEL-HILL-LOGO.jpg" alt="CHAPEL-HILL-LOGO"></div>
+                <div class="item"><img src="../images/client/CIPS.jpg" alt="CIPS"></div>
+                <div class="item"><img src="../images/client/CROAN-LOGO.jpg" alt="CROAN-LOGO"></div>
+                <div class="item"><img src="../images/client/CSIR-IICT-Logo.jpg" alt="CSIR-IICT-Logo"></div>
+                <div class="item"><img src="../images/client/csir-logo.jpg" alt="csir-logo"></div>
+                <div class="item"><img src="../images/client/Dr-Boorah-LOGO.jpg" alt="Dr-Boorah-LOGO"></div>
+                <div class="item"><img src="../images/client/DTE-LOGO.jpg" alt="DTE-LOGO"></div>
+                <div class="item"><img src="../images/client/Gauhati-univ.jpg" alt="Gauhati-univ"></div>
+                <div class="item"><img src="../images/client/georgetown-university-hospital.jpg" alt="georgetown-university-hospital"></div>
+                <div class="item"><img src="../images/client/GURU-GOBIND-SINGH.jpg" alt="GURU-GOBIND-SINGH"></div>
+                <div class="item"><img src="../images/client/hfhs-logo.jpg" alt="hfhs-logo"></div>
+                <div class="item"><img src="../images/client/HNIBERSITP-OF-MUMBAI-LOGO.jpg" alt="HNIBERSITP-OF-MUMBAI-LOGO"></div>
+                <div class="item"><img src="../images/client/icon-logo.jpg" alt="icon-logo"></div>
+                <div class="item"><img src="../images/client/INSTITUTE-OF-ONCOLOGY.jpg" alt="INSTITUTE-OF-ONCOLOGY"></div>
+                <div class="item"><img src="../images/client/jss-medical-college.jpg" alt="jss-medical-college"></div>
+                <div class="item"><img src="../images/client/KANPOOR.jpg" alt="KANPOOR"></div>
+                <div class="item"><img src="../images/client/KIIT-LOGO.jpg" alt="KIIT-LOGO"></div>
+                <div class="item"><img src="../images/client/KMCT-LOGO.jpg" alt="KMCT-LOGO"></div>
+                <div class="item"><img src="../images/client/LOGO.jpg" alt="LOGO"></div>
+                <div class="item"><img src="../images/client/Madras-University-Logo.jpg" alt="Madras-University-Logo"></div>
+                <div class="item"><img src="../images/client/MAHARISHI-LOGO.jpg" alt="MAHARISHI-LOGO"></div>
+                <div class="item"><img src="../images/client/Mahatma-Gandhi-University.jpg" alt="Mahatma-Gandhi-University"></div>
+                <div class="item"><img src="../images/client/Manipal-University-Logo.jpg" alt="Manipal-University-Logo"></div>
+                <div class="item"><img src="../images/client/MAX-PLANCK-LOGO.jpg" alt="MAX-PLANCK-LOGO"></div>
+                <div class="item"><img src="../images/client/MAYO-CLINIC-LOGO.jpg" alt="MAYO-CLINIC-LOGO"></div>
+                <div class="item"><img src="../images/client/MAZUMDAR-LOGO.jpg" alt="MAZUMDAR-LOGO"></div>
+                <div class="item"><img src="../images/client/MEDICAL-STATISTICS-LOGO.jpg" alt="MEDICAL-STATISTICS-LOGO"></div>
+                <div class="item"><img src="../images/client/MILLXNNIUM-HOPE.jpg" alt="MILLXNNIUM-HOPE"></div>
+                <div class="item"><img src="../images/client/NATIONAL-INSTITUTE-LOGO.jpg" alt="NATIONAL-INSTITUTE-LOGO"></div>
+                <div class="item"><img src="../images/client/NORTH-EASTERN-LOGO.jpg" alt="NORTH-EASTERN-LOGO"></div>
+                <div class="item"><img src="../images/client/PONDICHERRY-LOGO.jpg" alt="PONDICHERRY-LOGO"></div>
+                <div class="item"><img src="../images/client/PREMIER-HOSPITAL-LOGO.jpg" alt="PREMIER-HOSPITAL-LOGO"></div>
+                <div class="item"><img src="../images/client/PUNJABI-UNIVERSITE-LOGO.jpg" alt="PUNJABI-UNIVERSITE-LOGO"></div>
+                <div class="item"><img src="../images/client/RAJIV-GANDHI-LOGO.jpg" alt="RAJIV-GANDHI-LOGO"></div>
+                <div class="item"><img src="../images/client/SDM.jpg" alt="SDM"></div>
+                <div class="item"><img src="../images/client/SHIV-NADAR-LOGO.jpg" alt="SHIV-NADAR-LOGO"></div>
+                <div class="item"><img src="../images/client/SWAN-LOGO.jpg" alt="SWAN-LOGO"></div>
+                <div class="item"><img src="../images/client/THAPAR-UNIVERSITY-LOGO.jpg" alt="THAPAR-UNIVERSITY-LOGO"></div>
+                <div class="item"><img src="../images/client/THE-PENNSYLVANIA-LOGO.jpg" alt="THE-PENNSYLVANIA-LOGO"></div>
+                <div class="item"><img src="../images/client/TIFR-LOGO.jpg" alt="TIFR-LOGO"></div>
+                <div class="item"><img src="../images/client/UCL-LOGO.jpg" alt="UCL-LOGO"></div>
+                <div class="item"><img src="../images/client/UNITY-IN-DIVERSITY.jpg" alt="UNITY-IN-DIVERSITY"></div>
+                <div class="item"><img src="../images/client/University-of-Calcutta.jpg" alt="University-of-Calcutta"></div>
+                <div class="item"><img src="../images/client/University-of-Cincinnati-logo.jpg" alt="University-of-Cincinnati-logo"></div>
+                <div class="item"><img src="../images/client/UNIVERSITY-OF-MYSORE-LOGO.jpg" alt="UNIVERSITY-OF-MYSORE-LOGO"></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+    </div>
+      </div>
+		
+		
+      <div class="container-fluid footer-text">
+      		<div class="container">
+      			<h3 style="text-align:center; color:#fff; line-height:40px;">ation in Healthcare Summit - 2016 <br />
+Provides a Fascinating Glimpse in to :::<br />
+"The Future of Cancer treatments and a brilliant new perspective on the way doctors, scientists, philosophers and lay people have observed and understood the human body for millennia.</h3>
+            </div>	
+      </div>
+    
+    	
+        
+         
+         <div class="container-fluid footer" >
+         	<div class="container">
+            	<div class="col-xm-12 col-sm-6 col-md-4">
+                	<p> © ation in Healthcare Summit &reg; <br> by BioGenesis Conferences. </p>
+                </div>
+                <div class="col-xm-12 col-sm-6 col-md-4">
+                	
+                	<p>Designed & Developed by <a href="http://mokshamedia.co.in" target="_blank"><span style="color:#cf046a;"> moksha</span><span style="color:#9ad845;">media</span></a></p>
+                </div>
+                <div class="col-xm-12 col-sm-6 col-md-4">
+                
+                <div class="social">
+                            <ul class="social-share">
+                                <li><a href="https://www.facebook.com/globalcancersummit" target="_blank"><img src="../images/facebook-square.png"></a></li>
+                                <!--<li><a href="https://twitter.com/cancersummit" target="_blank"><img src="../images/linkedin.png"></a></li>-->
+                                <li><a href="https://twitter.com/cancersummit" target="_blank"><img src="../images/twitter.png"></a></li> 
+                                <!--<li><a href="http://www.youtube.com/channel/UCbVvxO9LJeOzJ98GlhrdO2g" target="_blank"><img src="../images/mail.png"></a></li>-->
+                               
+                            </ul>
+                            
+                       </div>
+                
+                </div>
+            	
+                
+            
+            </div>
+         
+         
+         </div>
+
+  
+    <script>
+        $('#myCarousel2').carousel({
+            interval: 4000
+        });
+</script>
+
+ <script>
+     $('#myCarousel3').carousel({
+         interval: 4000
+     });
+</script>
+       <script language="javascript" type="text/javascript">
+           jQuery(document).ready(function () {
+               $('#countdown_dashboard').countDown({
+                   targetDate: {
+                       'day': 18,
+                       'month': 07,
+                       'year': 2016,
+                       'hour': 10,
+                       'min': 0,
+                       'sec': 0
+                   }
+               });
+
+
+           });
+		</script>
+        
+         <script>
+             // Closes the sidebar menu
+             $("#menu-close").click(function (e) {
+                 e.preventDefault();
+                 $("#sidebar-wrapper").toggleClass("active");
+             });
+
+             // Opens the sidebar menu
+             $("#menu-toggle").click(function (e) {
+                 e.preventDefault();
+                 $("#sidebar-wrapper").toggleClass("active");
+             });
+
+             // Scrolls to the selected menu item on the page
+             $(function () {
+                 $('a[href*=#]:not([href=#])').click(function () {
+                     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                         var target = $(this.hash);
+                         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                         if (target.length) {
+                             $('html,body').animate({
+                                 scrollTop: target.offset().top
+                             }, 1000);
+                             return false;
+                         }
+                     }
+                 });
+             });
+    </script>
+     <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 4,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
+
+    });
+    </script>
+
+         </form>
+		 
+		 
+		 
+		 
+
+
+
+
+
+   
+		 
+		 
+  </body>
+</html>

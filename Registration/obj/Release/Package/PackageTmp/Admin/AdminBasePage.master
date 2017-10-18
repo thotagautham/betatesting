@@ -1,0 +1,106 @@
+<%@ Master Language="VB" Inherits="kfrcvb.AdminBasePage" Codebehind="AdminBasePage.master.vb" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Administrator Control Panel :: KFRC</title>
+    <link type="text/css" rel="stylesheet" href= "../App_Themes/Skins/Admin.css" />
+    <script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+    <link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+    <script language="Javascript1.2"><!-- // load htmlarea
+_editor_url = "../../HTMLEditor/";                     // URL to htmlarea files
+var win_ie_ver = parseFloat(navigator.appVersion.split("MSIE")[1]);
+if (navigator.userAgent.indexOf('Mac')        >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Windows CE') >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Opera')      >= 0) { win_ie_ver = 0; }
+if (win_ie_ver >= 5.5) {
+  document.write('<scr' + 'ipt src="' +_editor_url+ 'editor.js"');
+  document.write(' language="Javascript"></scr' + 'ipt>');  
+} else { document.write('<scr'+'ipt>function editor_generate() { return false; }</scr'+'ipt>');  }
+// -->
+</script>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+<table width="100%" height="67px" border="0" cellpadding="0" cellspacing="0" class="header_bottom_white">
+  <tr>
+    <td width="253" bgcolor="#03ABD4">&nbsp;</td>
+    <td bgcolor="#03ABD4" align="center"><asp:Label ID="LblAdminHeader" runat="server"></asp:Label></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="header_bottom_white">
+  <tr>
+    <td width="812" bgcolor="#786a65">&nbsp;
+    </td>
+    <td width="65" bgcolor="#786A65" valign=top><a href="../default.aspx"></a>
+        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/home_button.jpg" CausesValidation="False" /></td>
+    <td width="11" bgcolor="#786A65">
+        <asp:ImageButton ID="ImgBtnLogOut" runat="server" ImageUrl="images/logout_button.jpg" CausesValidation="False" /></td>
+    <td width="36" bgcolor="#786A65">&nbsp;</td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td bgcolor="#eeeeee" valign="top" style="width: 253px">&nbsp;<asp:Panel runat="server" ID="menuPanel" Height="500" ScrollBars="Vertical">
+      <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+            <asp:TreeView ID="TreeView1" runat="server" CssClass="TreeText" ExpandDepth="0" Height="500px">
+                <Nodes>
+                    <asp:TreeNode Text="Manage Content" ToolTip="Manage Content" Value="CMS">
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/addpages.aspx" Text="Add Page"
+                            ToolTip="Add Page" Value="Add Page"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/editpage.aspx" Text="Edit Page Content"
+                            ToolTip="Edit Page Content" Value="Edit Page Content"></asp:TreeNode>
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/bannerimages.aspx" Text="Manage Banners"
+                            ToolTip="Manage Banners" Value="Manage Banners"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Users" ToolTip="Users" Value="Users">
+                        <asp:TreeNode NavigateUrl="NAdmin/Admins/AddAdmin.aspx" Text="Manage Users"
+                            ToolTip="Manage Users" Value="Manage Users"></asp:TreeNode>
+                    </asp:TreeNode>
+                    <asp:TreeNode Text="Change Password" ToolTip="Change Password" Value="Change Password" NavigateUrl="NAdmin/ChangePassword.aspx"></asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+            </ContentTemplate>
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="TreeView1" EventName="SelectedNodeChanged" />
+                    </Triggers>
+                </asp:UpdatePanel>
+            </asp:Panel>
+        </td>
+    <td align="left" valign="top">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="middle">&nbsp;</td>
+        <td align="left" valign="middle"><br />
+                  <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                  </asp:contentplaceholder>
+        </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan=2>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="89%" class="footer_top_line"><div align="right"><br />
+                  <asp:Label ID="LblRights" runat="server" CssClass="body_text"></asp:Label>
+                  </div></td>
+              <td width="2%" class="footer_top_line">&nbsp;</td>
+              <td width="9%" class="footer_top_line"><br />
+                &nbsp;<br />
+                <br /></td>
+            </tr>
+        </table></td>
+  </tr>
+</table>
+    </form>
+    
+
+
+    
+</body>
+</html>

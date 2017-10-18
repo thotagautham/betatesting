@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="adminbasepage.master.vb" Inherits="betatesting.adminbasepage1" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Administrator Control Panel :: Biogenesis</title>
+    <link type="text/css" rel="stylesheet" href= "../App_Themes/Skins/Admin.css" />
+    <script src="../SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+    <link href="../SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+    <script language="Javascript1.2"><!-- // load htmlarea
+_editor_url = "../../HTMLEditor/";                     // URL to htmlarea files
+var win_ie_ver = parseFloat(navigator.appVersion.split("MSIE")[1]);
+if (navigator.userAgent.indexOf('Mac')        >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Windows CE') >= 0) { win_ie_ver = 0; }
+if (navigator.userAgent.indexOf('Opera')      >= 0) { win_ie_ver = 0; }
+if (win_ie_ver >= 5.5) {
+  document.write('<scr' + 'ipt src="' +_editor_url+ 'editor.js"');
+  document.write(' language="Javascript"></scr' + 'ipt>');  
+} else { document.write('<scr'+'ipt>function editor_generate() { return false; }</scr'+'ipt>');  }
+// -->
+</script>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+<asp:Label ID="LblAdminHeader" runat="server"></asp:Label>
+
+        <div>
+            <a href="../default.aspx"></a>
+            <asp:Button ID="button1" runat="server" Text="Home" />
+            <asp:Button ID="btnlogout" runat="server" Text="LogOut" />
+
+           
+        </div>
+        <div>
+            <asp:Panel runat="server" ID="menuPanel" Height="500" ScrollBars="Vertical">
+      <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+            <asp:TreeView ID="TreeView1" runat="server" CssClass="TreeText" ExpandDepth="0" Height="500px">
+                <Nodes>
+                    <asp:TreeNode Text="Manage Content" ToolTip="Manage Content" Value="CMS">
+                        <asp:TreeNode NavigateUrl="NAdmin/cms/enquiry-drug" Text="Drug Discovery"
+                            ToolTip="Drug Discovery" Value="Drug Discovery"></asp:TreeNode>
+
+                    
+                   </asp:TreeNode>
+                    <asp:TreeNode Text="Users" ToolTip="Users" Value="Users">
+                        <asp:TreeNode NavigateUrl="NAdmin/Admins/manage-admins.aspx" Text="Manage Users"
+                            ToolTip="Manage Users" Value="Manage Users"></asp:TreeNode>
+                    </asp:TreeNode>
+                   
+                    
+                     <asp:TreeNode Text="Change Password" ToolTip="Change Password" Value="Change Password" NavigateUrl="NAdmin/ChangePassword.aspx"></asp:TreeNode>
+                </Nodes>
+            </asp:TreeView>
+            </ContentTemplate>
+                    <Triggers>
+                        <asp:AsyncPostBackTrigger ControlID="TreeView1" EventName="SelectedNodeChanged" />
+                    </Triggers>
+                </asp:UpdatePanel>
+            </asp:Panel>
+
+        </div>
+
+
+        <div>
+
+              <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                  </asp:contentplaceholder>
+
+        </div>
+        <div>
+
+             <asp:Label ID="LblRights" runat="server" CssClass="body_text"></asp:Label>
+        </div>
+    </form>
+    
+
+
+    
+</body>
+</html>

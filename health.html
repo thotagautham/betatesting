@@ -1,0 +1,488 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>GERIATRICS :: THINK BEYOND AGEING</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/responsive-style.css">
+        <!--<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">-->
+        <!--<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-theme.min.css">-->
+        
+        <link data-require="bootstrap@*" data-semver="3.2.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css" />
+    <link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script data-require="bootstrap@*" data-semver="3.2.0" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+    <script data-require="angular.js@*" data-semver="1.3.0" src="//code.angularjs.org/1.3.0/angular.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+        <!--<script src="resources/js/jquery.min.js"></script>-->
+        <!--<script src="resources/js/bootstrap.js"></script>-->
+		<!--<script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/js/jquery-latest.min.js"></script>-->
+		
+        <!--<script src="resources/js/angular.min.js"></script>-->
+     
+      
+        
+        
+        
+        <!-- script for angular starts here-->
+        <script>
+       		 var app = angular.module('myApp',[]);
+
+			app.controller('vmokshaNgCtrl',['$scope', function($scope){
+			  
+			 
+				/* $scope.user=[
+								  {"fname":""},
+								  {"lname":""},
+								  {"email":""},
+								  {"mobile":""},
+								  {"password":""},
+								  {"verifyPassword":""},
+								  {"comments":""}
+					  ];
+					  */
+					 /* $scope.submitDetails = function() {
+						
+						if(!angular.equals($scope.password, $scope.verifyPassword)) {
+						alert("passwords mismatch !");
+					   }
+					  };
+					  */
+					  
+					  /*$scope.checkPassword = function() {
+						$scope.frm.verifyPassword.$error.dontMatch = $scope.password !== $scope.verifyPassword;
+					  };*/
+ 
+ 			}]);
+ 		 </script>
+		
+        <!-- script for angular ends here -->
+        
+        <style>
+			
+				 input.ng-invalid.ng-dirty {
+					border:1px solid red;
+				}
+				.table {
+				  	border:2px solid black;
+				}
+				
+				.modal {
+					  background: #fff;
+					  width: 25%;
+					  height: 430px;
+					  margin: auto;
+					  overflow: hidden;
+					  background:none;
+				}
+				
+				.active td {
+				  background: #ccc;
+				}
+				
+				.sorted {
+				  background: #ccc;
+				}
+				
+				.ng-pristine.ng-valid-email.ng-invalid.ng-invalid-required.ng-valid-minlength.ng-valid-maxlength td{
+					padding:5px;
+				}
+		</style>
+        
+        <!-- script for Tabs -->
+       <!-- <script>
+				$( document ).ready(function() {
+					$(function () {
+						$('#myTab a:last').tab('show');
+												
+					});
+				});
+					
+		</script>-->
+        
+    </head>
+
+    <body>
+    	
+                
+            <header>
+                <div class="logo">
+                    <h2 title="VMoksha">VMOKSHA </h2>            
+                </div>
+                <div class="header-nav">
+                
+                        <ul class="nav-links">
+                            <li> <a href="/" title="Home">Home</a> </li>
+                            <li> <a href="contactus.html" title="Contact Us">Contact Us</a> </li>
+                            <li> <a data-toggle="modal" href="#loginModal" class="login-bg" title="Sign In">Sign In </a></li>
+                            <li> <a data-toggle="modal" href="#registerModal" class="login-bg" title="Register">Register </a></li>
+                        </ul>
+                </div>
+               
+                
+            </header>
+            
+            <div class="header-bottom"></div>
+            
+            <div id="health-banner"><!--<img src="resources/images/thinkbeyondageing-banner.jpg" width="1900" height="240"  alt=""/>-->
+                <div id="health-banner-inner">
+                	<!--<table border="0">
+                    	<tr>
+                        	<td>
+                            	<img src="resources/images/Health-1.jpg" alt="Health Service Image" />
+                            </td>
+                            <td>
+                            	<h1 style="font-family: Myriad Pro; color:#fff;">HEALTH</h1> 
+                            </td>
+                         </tr>
+                       </table>-->
+                </div>
+            </div>
+            
+            <div class="container" style="margin:0 auto; width:1000px;">
+            
+            
+            	<div class="service-navs">
+                	<ul class="nav nav-pills">
+                    	<li><a class="active" title="Health">HEALTH</a></li>
+                       	<li><a href="legal.html" title="LEGAL">LEGAL</a></li>
+                    	<li><a href="astro-and-spiritual.html" title="ASTRO & SPIRITUAL">ASTRO & SPIRITUAL</a></li>
+                    	<li><a href="health.html" title="PILGRIM TOURISM">PILGRIM TOURISM</a></li>
+                    	<li><a href="adopt.html" title="ADOPT">ADOPT</a></li>
+                    	<li><a href="volunteer.html" title="VOLUNTEER">VOLUNTEER</a></li>
+                    	<li><a href="financial.html" title="FINANCIAL">FINANCIAL</a></li>
+                    	<li><a href="social.html" title="SOCIAL">SOCIAL</a></li>   
+                 		<li><a href="handyman-services.html" title="HANDYMAN SERVICES">HANDYMAN SERVICES</a></li>  
+                        
+                    </ul>
+                </div>
+                
+                <br>
+                
+                <div class="col-lg-12" style=" height:auto; margin-bottom:10px;">
+                
+                	<div class="col-lg-5" style="background-color:#f0f0f0;">
+                    	
+                        <p style="background-color:#5a5a90;"  class="col-lg-5-title" >HEALTH FORUM</p>
+                        
+                        <!--<div id="tabs-under-forum">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active"><a data-target="#talk" data-toggle="tab" href="#talk">TALK</a></li>
+                                <li><a data-target="#photo" data-toggle="tab" href="#photo">PHOTO</a></li>
+                                <li><a data-target="#video" data-toggle="tab" href="#video">VIDEO</a></li>
+                                
+                            </ul>
+                                 
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="talk">TALK INFO..</div>
+                                <div class="tab-pane" id="photo">PHOTO INFO..</div>
+                                <div class="tab-pane" id="video">VIDEO INFO..</div>
+                            </div>
+                        </div>
+                        <br>-->
+                        
+                        <div class="media" style="background-color:#f6f7f9; border:6px solid #fff;">
+                              <a class="pull-left" href="http://forumblog.org/2012/04/the-grey-tsunami-how-to-reap-a-healthy-longevity-dividend/" target="_blank">
+                                <img src="resources/images/an-elderly-man.jpg" width="120" height="120" alt="image1">
+                              </a>
+                              <div class="media-body">
+                                <a href="http://forumblog.org/2012/04/the-grey-tsunami-how-to-reap-a-healthy-longevity-dividend/" target="_blank"><h5 class="media-heading">How can we make old age a blessing, not a burden?</h5></a>
+                                <p>In January the World Economic Forum at Davos released a major report, "Global Population Ageing: Peril or Promise?"</p>
+                              </div>
+						</div>
+                         
+                        
+                        
+                        <div class="media" style="background-color:#f6f7f9; border:6px solid #fff;">
+                              <a class="pull-left" href="http://www.oldagesolutions.org/Health/Healthybones.aspx" target="_blank">
+                                <img src="resources/images/Health-1.jpg" width="120" height="120" alt="image1">
+                              </a>
+                              <div class="media-body">
+                                <a href="http://www.oldagesolutions.org/Health/Healthybones.aspx" target="_blank"><h5 class="media-heading">Depression is a common problem in advancing years</h5></a>
+                             <p>Bones are living tissues changing constantly with the formation of new bones and loss of old bones throughout our lives.</p>
+                              </div>
+						</div>
+                        
+                        <div class="media" style="background-color:#f6f7f9; border:6px solid #fff;">
+                              <a class="pull-left" href="http://www.oldagesolutions.org/health/Depression.aspx" target="_blank">
+                                <img src="resources/images/Health-1.jpg" width="120" height="120" alt="image1">
+                              </a>
+                              <div class="media-body">
+                                <a href="http://www.oldagesolutions.org/health/Depression.aspx" target="_blank"><h5 class="media-heading">Healthy Bones</h5></a>
+                             <p>It causes enormous human suffering and interferes with normal day-to-day life.</p>
+                          </div>
+					  </div>
+                        
+                        
+                        <div class="media" style="background-color:#f6f7f9; border:6px solid #fff;">
+                              <a class="pull-left" href="http://blog.ecaring.com/6-dietary-habits-that-trigger-elderly-urinary-incontinence/" target="_blank">
+                              <img src="resources/images/Elderly-Urinary-Incontinence.jpg" width="120" height="120" alt="image1">
+                              </a>
+                              <div class="media-body">
+                                <a href="http://blog.ecaring.com/6-dietary-habits-that-trigger-elderly-urinary-incontinence/" target="_blank"><h5 class="media-heading">8 Dietary Habits That Trigger Elderly Urinary Incontinence</h5></a>
+                             <p>Urinary incontinence (UI) affects men and women of all ages, but is particularly common among the elderly. </p>
+                          </div>
+					  </div>
+                      
+                      <div class="media" style="background-color:#f6f7f9; border:6px solid #fff;">
+                              <a class="pull-left" href="http://www.seniorindian.com/exercises.htm" target="_blank">
+                              <img src="resources/images/Health-1.jpg" width="120" height="120" alt="image1">
+                              </a>
+                              <div class="media-body">
+                                <a href="http://www.seniorindian.com/exercises.htm" target="_blank"><h5 class="media-heading">Exercising by Elders</h5></a>
+                             <p>There are many myths about Elders Exercising. Here are the myths and realities. </p>
+                          </div>
+					  </div>
+                            
+                        
+                        <div id="col-lg-5-bottom">
+                        
+                        	<div class="col-lg-5-bottom-heading">
+                            	<h3>HEALTH</h3>
+                            </div>
+                            <br>
+                            
+                            <div class="col-lg-5-body">
+                            	<marquee class="scroll" onmouseout="this.start()" onmouseover="this.stop()" scrolldelay="8" behavior="scroll" scrollamount="2" direction="up">
+	                                    <p align="justify" class="text">
+	                                        
+	                                        &#x27a9; <a target="_blank" title="Click Here to View More" href="http://geriatricsconference.com" class="useful-links">World Congress of Gerontology and Geriatrics 3rd International Conference</a><br><br>
+
+	                                       &#x27a9; <a target="_blank" title="Click Here to View More" href="http://womangirlconference.com" class="useful-links">  International Conference on "Women and Girl Child for Social and Economic Equality-2014" </a><br><br>
+
+	                                       &#x27a9; <a target="_blank" title="Click Here to View More" href="http://timesofindia.indiatimes.com/life-style/health-fitness/diet/Top-15-diabetic-diet-tips-for-Indians/articleshow/20063520.cms" class="useful-links">Top 15 diabetic diet tips for Indians </a><br><br>
+
+	                                      &#x27a9; <a target="_blank" title="Click Here to View More" href="http://www.kimshospitals.com/MediaFiles/mediauploads/69..jpg" class="useful-links"> Hyderabad City Has Highest Number of Diabetic Patients</a><br><br>
+                                            
+	                                      &#x27a9; <a target="_blank" title="Click Here to View More" href="resources/images/bloodpressure-and-diabetes.pdf" class="useful-links"> Blood Pressures and Diabetees Information</a><br><br>
+	                                        
+	                                        
+	                                        </p>
+	                              </marquee>
+                            </div>
+                        
+                        </div> 
+                             
+                            
+                        
+                    </div>
+                    
+                    <div class="col-lg-4">
+                    	<p style="background-color:#7e64a5;"  class="col-lg-5-title" >OUR TEAM OF EXPERTS</p>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td width="35%" height="112" valign="top" style="background-color:#e5e0ed;"><img src="resources/images/Anoop-Amarnath.jpg" width="112" height="92" /></td>
+                            <td width="65%" valign="top" style="background-color:#e5e0ed;"><b>Dr. Anoop Amarnath</b><br>
+							  Apollo Hospitals,<br>
+											Bangaluru, INDIA.
+                             </td>
+                          </tr>
+                          
+                        <tr>
+                            <td height="112" valign="top" style="background-color:#cec4dd;"><img src="resources/images/anandambali.jpg" width="112" height="92" /></td>
+                            <td valign="top" style="background-color:#cec4dd;"><b>Dr. Anand P. Ambali</b><br>
+																BLDEUs Sri B M Patil Medical College,<br>
+						  Karnataka, INDIA.</td>
+                          </tr>
+                          
+                        <tr>
+                            <td height="112" valign="top" style="background-color:#e5e0ed;"><img src="resources/images/Dr-Dominic-Benjamin.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#e5e0ed;"><b>Dr. Dominic Benjamin</b><br>
+							  Consultant Geriatrician & Diabetic Specialist for older people<br>
+															Bangalore Baptist Hospital,<br>
+						  Bangalore, INDIA. </td>
+                          </tr>
+                          
+                        <tr>
+                            <td height="112" valign="top" style="background-color:#cec4dd;"><img src="resources/images/Dr.-Jai-Prakash-Narayanan-s.jpg" width="112" height="92" /></td>
+                            <td valign="top" style="background-color:#cec4dd;"><b>Dr. Jai Prakash Narayan</b><br>
+																	Ayurveda Specialist,<br>
+						  INDIA.</td>
+                          </tr>
+                          
+                        <tr>
+                            <td height="112" valign="top" style="background-color:#e5e0ed;"><img src="resources/images/Dr.Meera-Pattabhi-sp.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#e5e0ed;"><b>Mrs. Meera Pattabiraman</b><br>
+																	Alzheimer's and Related Disorders Society of India,<br>
+						  Chennai, INDIA.</td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="112" valign="top" style="background-color:#cec4dd;"><img src="resources/images/PadminiPrasad.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#cec4dd;"><b>Dr. Padmini Prasad</b><br>
+																	Obstetrician & Gynaecologist,<br>
+																	Sexologist & Marriage Counsellor,<br>
+																	Ramamani Nursing & Maternity Home and Institute of Sexual Medicine,
+							Bangalore, INDIA.</td>
+                        </tr>
+                          
+                          <tr>
+                            <td height="112" valign="top" style="background-color:#e5e0ed;"><img src="resources/images/P-S-Shankar.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#e5e0ed;"><b>Dr. P. S. Shankar</b><br>
+																	Rajiv Gandhi University of Health Sciences, <br>
+																	Banglore, INDIA.
+                            </td>
+																
+                        </tr>
+                          
+                          <tr>
+                            <td height="112" valign="top" style="background-color:#cec4dd;"><img src="resources/images/T-Rajeswari.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#cec4dd;"><b>Dr. Rajeshwari</b><br>
+																	Rajiv Gandhi University of Health Sciences (RGUHS),<br>
+																	Banglore, INDIA.
+                            </td>
+																
+                        </tr>
+                          
+                          <tr>
+                            <td height="112" valign="top" style="background-color:#e5e0ed;"><img src="resources/images/Dr.P.Nazni-sp.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#e5e0ed;"><b>Dr. P. Nazni</b><br>
+																	Periyar University,<br>
+																	Tamilnadu, INDIA.
+                            </td>
+																
+                        </tr>
+                          
+                          <tr>
+                            <td height="112" valign="top" style="background-color:#cec4dd;"><img src="resources/images/Prabha-Adhikari.jpg" width="112" height="92" /></td>
+                            <td valign="top"  style="background-color:#cec4dd;"><b>Dr. Prabha Adhikari</b> <br>
+																	Manipal University, <br>
+																	Banglore, INDIA.
+                            </td>
+																
+                        </tr>
+                          
+                      </table>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div style="background-color:#7e64a5;">
+                        	<p style="background-color:#8a73ad;"  class="col-lg-5-title" >FIND A DOCTOR</p>
+                            
+                            <form>
+                            	<table width="100%">
+                                	<tbody>
+                                    	                                    
+                                        <tr>
+                                        	<td>
+                                                <select style="width:100%; background-color: #8a73ad; color: #fff; height: 38px;">
+                                                    <option >SEARCH BY  SPECIALTY</option>
+                                                    <option value="Accident">Accident</option>
+                                                    <option value="Anesthesiology">Anesthesiology</option>
+                                                    <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                                    <option value="Cancer Rehabilitation">Cancer Rehabilitation</option>
+                                                    <option value="Cardiology">Cardiology</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                        	<td>
+                                                <select style="width:100%; background-color: #8a73ad; color: #fff; height: 38px">
+                                                    <option >SEARCH BY  AREA</option>
+                                                    <option value="Accident">Accident</option>
+                                                    <option value="Anesthesiology">Anesthesiology</option>
+                                                    <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                                    <option value="Cancer Rehabilitation">Cancer Rehabilitation</option>
+                                                    <option value="Cardiology">Cardiology</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <select style="width:100%; background-color: #8a73ad; color: #fff; height: 38px">
+                                                    <option >SEARCH BY  NAME</option>
+                                                    <option value="Accident">Accident</option>
+                                                    <option value="Anesthesiology">Anesthesiology</option>
+                                                    <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                                    <option value="Cancer Rehabilitation">Cancer Rehabilitation</option>
+                                                    <option value="Cardiology">Cardiology</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                        	<td align="center" style="padding: 18px;">
+                                                <input type="submit" name="submit" style="background-color: #5a5a90; color:#fff;width: 107px; height: 30px; font-family:Myriad Pro;" value="SEARCH" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+
+                        </div>
+                            <br>
+
+                        <div style="background-color:#7e64a5;">
+                            <p style="background-color:#8a73ad;"  class="col-lg-5-title" >ASK AN EXPERT</p>
+                            
+                            <form>
+                                <table width="100%">
+                                    <tbody>
+                                                                            
+                                        <tr>
+                                            <td>
+                                                <input style="width:100%; background-color: #8a73ad; color: #fff; height: 38px; padding-left:10px;" placeholder="NAME">
+                                             
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <input style="width:100%; background-color: #8a73ad; color: #fff; height: 38px; padding-left:10px;" placeholder="MOBILE">
+
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <input type="email" style="width:100%; background-color: #8a73ad; height: 38px; padding-left:10px;" placeholder="EMAIL">
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <select style="width:100%; background-color: #8a73ad; color: #fff; height: 38px">
+                                                    <option >SELECT AN EXPERT</option>
+                                                    <option value="Accident">Accident</option>
+                                                    <option value="Anesthesiology">Anesthesiology</option>
+                                                    <option value="Bariatric Surgery">Bariatric Surgery</option>
+                                                    <option value="Cancer Rehabilitation">Cancer Rehabilitation</option>
+                                                    <option value="Cardiology">Cardiology</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <textarea placeholder="TYPE YOUR QUERY" style="width: 100%;height: 80px; background-color: #8a73ad; color:#fff; padding-left:10px;"></textarea>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="center" style="padding: 18px;">
+                                                <input type="submit" name="submit" style="background-color: #5a5a90; color:#fff;width: 107px; height: 30px; font-family:Myriad Pro;" value="ASK" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                
+                </div>
+                
+            </div>
+            
+            <footer>
+                <p>© Think Beyond Ageing® </p>
+            </footer>
+            
+            
+    	
+    </body>
+</html>
