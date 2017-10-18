@@ -1326,6 +1326,17 @@
     <Content Include="xsds\Jobs.xsc">
       <DependentUpon>Jobs.xsd</DependentUpon>
     </Content>
+    <Content Include="xsds\hhc.xsc">
+      <DependentUpon>hhc.xsd</DependentUpon>
+    </Content>
+    <None Include="xsds\hhc.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hhc.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="xsds\hhc.xss">
+      <DependentUpon>hhc.xsd</DependentUpon>
+    </Content>
     <None Include="xsds\Jobs.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>Jobs.Designer.vb</LastGenOutput>
@@ -2304,6 +2315,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HeaderBanner.xsd</DependentUpon>
     </Compile>
+    <Compile Include="xsds\hhc.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hhc.xsd</DependentUpon>
+    </Compile>
     <Compile Include="xsds\Jobs.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -2363,6 +2379,7 @@
     <Content Include="ViewSwitcher.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="admin-hhc\" />
     <Folder Include="App_Data\" />
     <Folder Include="dandia\" />
     <Folder Include="Expertphotos\" />
