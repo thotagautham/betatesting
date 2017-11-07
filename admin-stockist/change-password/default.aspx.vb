@@ -1,8 +1,7 @@
 ﻿Imports betatesting.CorporatesTableAdapters
 Imports System.Data.SqlClient
-Public Class _default8
+Public Class _default33
     Inherits System.Web.UI.Page
-
     Dim DsAdmins As New HstockistdetailsTableAdapter
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -18,9 +17,9 @@ Public Class _default8
 
             If CInt(DsAdmins.getcountbyidpwd(Session("HstockistdetailsID"), TxtOldPassword.Text)) > 0 Then
                 DsAdmins.updatepassword(TxtNewPassword.Text, Session("HstockistdetailsID"))
-                LblMsg.Text = "<br /><br />Password Changed Successfully !<br /><br />"
+                lblmsg.Text = "<br /><br />Password Changed Successfully !<br /><br />"
             Else
-                LblMsg.Text = "<br /><br />Invalid Password !, Please Try With The Other !<br /><br />"
+                lblmsg.Text = "<br /><br />Invalid Password !, Please Try With The Other !<br /><br />"
             End If
         Else
             lblmsg.Text = " <br /><br />Password is not equal !, Please re enter password correctly !<br /><br />"

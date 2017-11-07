@@ -1,17 +1,9 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="default.aspx.vb" Inherits="betatesting._default6" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/admin-stockist/innebasepage.master" CodeBehind="Default.aspx.vb" Inherits="betatesting._Default38" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="NavigationPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-
-         <asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-    <div>
+      <div>
 
         <asp:Label ID="LblMsg" runat="server" Font-Bold="True" 
         Font-Size="Medium"></asp:Label>
@@ -33,6 +25,5 @@
         			<asp:ValidationSummary ID="ValidationSummary1" runat="server" 
             		ShowMessageBox="True" ShowSummary="False" />
     </div>
-    </form>
-</body>
-</html>
+  
+</asp:Content>

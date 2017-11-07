@@ -1,16 +1,8 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="default.aspx.vb" Inherits="betatesting._default7" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/admin-stockist/stockistprofile.master" CodeBehind="default.aspx.vb" Inherits="betatesting._default36" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-          <asp:ScriptManager ID="ScriptManager1" runat="server">
-                    </asp:ScriptManager>
-   <div>
+    
             <div>
                 FullName
             </div>
@@ -88,35 +80,48 @@
                 <asp:Label ID="lblhscountry" runat="server" Text="Country"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthscountry" runat="server" Visible="false"></asp:TextBox>
+                <asp:DropDownList ID="DDLEnquiry_Country" runat="server" AppendDataBoundItems="true"  Visible="false" AutoPostBack="true" Width="198" >
+                        <asp:ListItem Value="0">Select Country</asp:ListItem>
+                      </asp:DropDownList>
             </div>
             <div>State</div>
             <div>
                 <asp:Label ID="lblhsstate" runat="server" Text="State"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthsstate" runat="server" Visible="false"></asp:TextBox>
+              
+            
+      <asp:DropDownList ID="ddlstate" runat="server"  Visible="false" AppendDataBoundItems="true" AutoPostBack="true" Width="198" Height="30">
+                                              <asp:ListItem Value="0">Select State</asp:ListItem>
+                      </asp:DropDownList>
+       
             </div>
             <div>HeadQuarter</div>
             <div>
                 <asp:Label ID="lblhsheadquater" runat="server" Text="HeadQuarter"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthsheadquater" runat="server" Visible="false"></asp:TextBox>
+               <asp:DropDownList ID="DDLCITY" runat="server"  Visible="false" AppendDataBoundItems="true" AutoPostBack="true" Width="198" Height="30">
+                        <asp:ListItem Value="0">Select City</asp:ListItem>
+                      </asp:DropDownList>
             </div>
             <div>SubArea</div>
             <div>
                 <asp:Label ID="lblhssubarea" runat="server" Text="SubArea"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthssubarea" runat="server" Visible="false"></asp:TextBox>
+              <asp:DropDownList ID="ddlsubcity" runat="server"  Visible="false" AppendDataBoundItems="true" AutoPostBack="true" Width="198" Height="30">
+                        <asp:ListItem Value="0">Select Sub City</asp:ListItem>
+                      </asp:DropDownList>
             </div>
             <div>Division</div>
             <div>
                 <asp:Label ID="lblhsdivision" runat="server" Text="Division"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthsdivision" runat="server" Visible="false"></asp:TextBox>
+                <asp:DropDownList ID="ddldivision" runat="server" AppendDataBoundItems="true"  Visible="false" AutoPostBack="true" Width="198" Height="30">
+                        <asp:ListItem Value="0">Select Division</asp:ListItem>
+                      </asp:DropDownList>
             </div>
             <div>Cnf</div>
             <div>
@@ -130,7 +135,9 @@
                 <asp:Label ID="lblhstherapatic" runat="server" Text="Therapatic"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthstherapatic" runat="server" Visible="false"></asp:TextBox>
+                 <asp:DropDownList ID="ddltherapatic" runat="server"  Visible="false" AppendDataBoundItems="true" AutoPostBack="true" Width="198" Height="30">
+                        <asp:ListItem Value="0">Select Division</asp:ListItem>
+                      </asp:DropDownList>
             </div>
             <div>PinCode</div>
             <div>
@@ -200,11 +207,23 @@
                 <asp:Label ID="lblhszone" runat="server" Text="Zone"></asp:Label>
             </div>
             <div>
-                <asp:TextBox ID="txthszone" runat="server" Visible="false"></asp:TextBox>
-            </div>
-            
+                <div>
 
+                </div>
+                <asp:TextBox ID="txthszone" runat="server" Visible="false"></asp:TextBox>
+                </div>
+                
+
+
+
+        <div>
+
+            <div>Edit</div>
+            <div>
+                <asp:Button ID="btnedit" runat="server" Text="Edit" />
+
+
+            </div>
         </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>

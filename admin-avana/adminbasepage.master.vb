@@ -16,14 +16,16 @@ Public Class adminbasepage1
         End If
 
         If Not IsPostBack Then
+            lblname.Text = Session("name")
+
 
             If CommonFunctions.CheckLisence(Request.ServerVariables("HTTP_HOST"), Request.ServerVariables("REMOTE_ADDR"), "Admin Control Panel") = False Then
                 Response.Redirect("http://www.mokshamedia.co.in/healthcarecounterfeit.html")
             Else
                 LblAdminHeader.Visible = True
-                LblAdminHeader.Text = "<table bgcolor='#03ABD4'><tr><td><font face='Arial' size='3px' color='#FFFFFF'><strong>AVANA ADMINISTRATOR CONTROL PANEL</strong></font></td></tr></table>"
+                LblAdminHeader.Text = "AVANA ADMINISTRATOR CONTROL PANEL"
                 LblRights.Visible = True
-                LblRights.Text = "<table><tr><td bgcolor='#FFFFFF'>All Rights Reserved @ <font class='TreeText'><a href='www.mokshamedia.in' target='_blank' title=' Hospitals'></a></font><br />Designed &amp; Developed by <font class='TreeText'><a href='http://www.mokshamedia.co.in' target='_blank' title='Moksha Media'>MOKSHA MEDIA</a></font></td></tr></table><br /><br />"
+                LblRights.Text = "All Rights Reserved @ <a href='www.mokshamedia.in' target='_blank' title=' Hospitals'></a><br />Designed &amp; Developed by <a href='http://www.mokshamedia.co.in' target='_blank' title='Moksha Media'>MOKSHA MEDIA</a>"
             End If
 
             Permissions = ""
@@ -70,7 +72,10 @@ Public Class adminbasepage1
     End Sub
 
     Protected Sub button1_Click(sender As Object, e As EventArgs) Handles button1.Click
-        Response.Redirect("~/admin/nadmin/default.aspx")
+        Response.Redirect("~/admin-avana/nadmin/default.aspx")
     End Sub
 
+    Protected Sub btnchangepassword_Click(sender As Object, e As EventArgs) Handles btnchangepassword.Click
+        Response.Redirect("~/admin-avana/nadmin/change-password.aspx")
+    End Sub
 End Class

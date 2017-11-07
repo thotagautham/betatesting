@@ -6,7 +6,7 @@ Public Class manage_state
     Dim i As Integer
 
     Protected Sub BtnSave_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnSave.Click
-        If CInt(DsState.CheckPrimary(TxtState.Text, DDLCountry.SelectedValue)) > 0 Then
+        If CInt(DsState.CheckPrimary(TxtState.Text)) > 0 Then
             LblMsg.Text = "State [ " & TxtState.Text & " ] Already Exists In Country [ " & DDLCountry.SelectedItem.Text & " ], Please Try With Any Other !"
         Else
             DsState.Insert(TxtState.Text, DDLCountry.SelectedValue, "Y")

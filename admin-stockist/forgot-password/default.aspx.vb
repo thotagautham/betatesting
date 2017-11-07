@@ -1,7 +1,6 @@
 ﻿Imports betatesting.CorporatesTableAdapters
 Imports System.Data.SqlClient
-
-Public Class _default9
+Public Class _default34
     Inherits System.Web.UI.Page
     Dim dsuser As New HstockistdetailsTableAdapter
     Dim emailid As String
@@ -15,10 +14,9 @@ Public Class _default9
         End If
     End Sub
 
+
     Protected Sub btnsave_Click(sender As Object, e As EventArgs) Handles btnsave.Click
 
-
-       
 
         emailid = dsuser.getemailidforgotpwd(TxtEmail.Text, TxtEmail.Text, TxtEmail.Text)
 
@@ -35,7 +33,7 @@ Public Class _default9
 
             Dim sapid = dsuser.getsapidbyemailid(emailid)
 
-           
+
 
             Dim msg = "<html><strong>Dear Customer,</strong><p></p>In response to your request to recover your password, KimsHospitals.com has reset your password." _
                     & "<p>Your New Password is: " & pwd & "</p><p>Click hear to login www.hetro.com/admin-stockist/sign-in/ </p><p>Best Regards,<br>Kims Hospitals.</p></html>"

@@ -1,0 +1,47 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admininner.master.vb" Inherits="betatesting.admininner" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+	
+
+<link href="/admin-hhc/admin-files/css/bootstrap.css"  rel="stylesheet" type="text/css"/>
+<link href="/admin-hhc/admin-files/css/bootstrap.min.css"  rel="stylesheet" type="text/css"/>
+<link href="/admin-hhc/admin-files/css/admin.css"  rel="stylesheet" type="text/css"/>
+
+
+ <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <div>
+	<div class="container-fluid header">
+	<div class="container">	<h1 class="heading1">Header</h1></div>
+	</div>
+	
+		<div class="container-fluid">
+	
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div>
+		
+		
+	<div class="container-fluid footer">
+	<div class="container">Copyright © Company Name. All Rights Reserved.</div>
+	</div>
+	
+	
+    </div>
+    </form>
+</body>
+</html>

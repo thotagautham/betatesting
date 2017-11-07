@@ -32,13 +32,13 @@ Partial Public Class adminbasepage1
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
 
     '''<summary>
-    '''LblAdminHeader control.
+    '''lblname control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblAdminHeader As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblname As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''button1 control.
@@ -50,6 +50,15 @@ Partial Public Class adminbasepage1
     Protected WithEvents button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''btnchangepassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnchangepassword As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''btnlogout control.
     '''</summary>
     '''<remarks>
@@ -57,6 +66,33 @@ Partial Public Class adminbasepage1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnlogout As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''ContentPlaceHolder1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+
+    '''<summary>
+    '''LblAdminHeader control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAdminHeader As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblRights control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblRights As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''menuPanel control.
@@ -84,22 +120,4 @@ Partial Public Class adminbasepage1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TreeView1 As Global.System.Web.UI.WebControls.TreeView
-
-    '''<summary>
-    '''ContentPlaceHolder1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-
-    '''<summary>
-    '''LblRights control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents LblRights As Global.System.Web.UI.WebControls.Label
 End Class

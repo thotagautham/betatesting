@@ -11,25 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class _default7
-
-    '''<summary>
-    '''form1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
-    '''<summary>
-    '''ScriptManager1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
+Partial Public Class _default36
 
     '''<summary>
     '''lblhsfullname control.
@@ -167,13 +149,13 @@ Partial Public Class _default7
     Protected WithEvents lblhscountry As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthscountry control.
+    '''DDLEnquiry_Country control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthscountry As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDLEnquiry_Country As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhsstate control.
@@ -185,13 +167,13 @@ Partial Public Class _default7
     Protected WithEvents lblhsstate As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthsstate control.
+    '''ddlstate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthsstate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlstate As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhsheadquater control.
@@ -203,13 +185,13 @@ Partial Public Class _default7
     Protected WithEvents lblhsheadquater As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthsheadquater control.
+    '''DDLCITY control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthsheadquater As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDLCITY As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhssubarea control.
@@ -221,13 +203,13 @@ Partial Public Class _default7
     Protected WithEvents lblhssubarea As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthssubarea control.
+    '''ddlsubcity control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthssubarea As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlsubcity As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhsdivision control.
@@ -239,13 +221,13 @@ Partial Public Class _default7
     Protected WithEvents lblhsdivision As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthsdivision control.
+    '''ddldivision control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthsdivision As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddldivision As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhscnf control.
@@ -275,13 +257,13 @@ Partial Public Class _default7
     Protected WithEvents lblhstherapatic As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''txthstherapatic control.
+    '''ddltherapatic control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txthstherapatic As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddltherapatic As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''lblhspincode control.
@@ -462,4 +444,13 @@ Partial Public Class _default7
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txthszone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnedit control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnedit As Global.System.Web.UI.WebControls.Button
 End Class

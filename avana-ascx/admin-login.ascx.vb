@@ -3,50 +3,54 @@ Public Class admin_login
     Inherits System.Web.UI.UserControl
 
 
-   
+
     Dim DsOtherAdmins As New avanaAdminLoginsTableAdapter
-    Dim Permissions As String
     Dim ObjCPIP As New avanaControlPanelIPStatsTableAdapter
+
+    Dim Permissions As String
+
     Dim i As Integer
 
     Dim userrole As String
-    Dim OtherAdminID As Integer
+    Dim OtherAdminID As String
+
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
 
+        End If
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
 
+        
 
-      
-            userrole = "OtherAdmin"
-            OtherAdminID = DsOtherAdmins.GetIdByUserNamePwd(TxtLoginID.Text, TxtPwd.Text)
+        userrole = "OtherAdmin"
+        OtherAdminID = DsOtherAdmins.GetIdByUserNamePwd(TxtLoginID.Text, TxtPwd.Text)
 
-            If OtherAdminID = 0 Then
-                LblMsg.Text = "Invalid User ID / Password, Please Try Again !!"
-                Exit Sub
-            Else
+        If OtherAdminID = 0 Or OtherAdminID = "" Then
+            LblMsg.Text = "Invalid User ID / Password, Please Try Again !!"
+            Exit Sub
+        Else
 
-                Dim dt As New Data.DataTable
-                Dim dr As Data.DataRow
+            Dim dt As New Data.DataTable
+            Dim dr As Data.DataRow
             dt = DsOtherAdmins.GetDataByid(OtherAdminID)
 
-                If dt.Rows.Count > 0 Then
-                    dr = dt.Rows(0)
-                    Session("OtherAdminID") = OtherAdminID
-                    Permissions = dr("Permissions")
+            If dt.Rows.Count > 0 Then
+                dr = dt.Rows(0)
+                Session("OtherAdminID") = OtherAdminID
+                Permissions = dr("Permissions")
                 Session("Permissions") = Permissions
                 Session("name") = TxtLoginID.Text
 
-                Else
-                    LblMsg.Text = "Invalid User ID / Password, Please Try Again !!"
-                    Exit Sub
-                End If
-            End If
-       
 
+            Else
+                LblMsg.Text = "Invalid User ID / Password, Please Try Again !!"
+                Exit Sub
+            End If
+        End If
 
         Session.Timeout = 3600
         Session("Roles") = userrole

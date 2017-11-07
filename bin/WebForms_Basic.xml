@@ -6,7 +6,335 @@ betatesting
 </name>
 </assembly>
 <members>
-<member name="F:betatesting.abstract_gynacology.GvBannerImages">
+<member name="F:betatesting._default31.login">
+	<summary>
+login control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.txtdivisionname">
+	<summary>
+txtdivisionname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.txtdivisiondescripton">
+	<summary>
+txtdivisiondescripton control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.RequiredFieldValidator33">
+	<summary>
+RequiredFieldValidator33 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.txtdivisioncode">
+	<summary>
+txtdivisioncode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.GVCountries">
+	<summary>
+GVCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_division.ObjDSCountries">
+	<summary>
+ObjDSCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.txtproductname">
+	<summary>
+txtproductname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.txtproductdescription">
+	<summary>
+txtproductdescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.txtcompanycode">
+	<summary>
+txtcompanycode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.ddlproducts">
+	<summary>
+ddlproducts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.ddlstockist">
+	<summary>
+ddlstockist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_vendor_products.GVPrintNews">
+	<summary>
+GVPrintNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.TxtEmail">
+	<summary>
+TxtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.RFVEmail">
+	<summary>
+RFVEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.btnsave">
+	<summary>
+btnsave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ImgSubmit">
+	<summary>
+ImgSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default9.HyperLink1">
+	<summary>
+HyperLink1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.abstract_gynacology.GvBannerImages">
 	<summary>
 GvBannerImages control.
 </summary>
@@ -514,6 +842,206 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="F:betatesting.addadmins.BtnAddNew">
+	<summary>
+BtnAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.BtnView">
+	<summary>
+BtnView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.PnlAddNew">
+	<summary>
+PnlAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtName">
+	<summary>
+TxtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtLoginId">
+	<summary>
+TxtLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.RFVLoginId">
+	<summary>
+RFVLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.CBLSections">
+	<summary>
+CBLSections control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.PnlView">
+	<summary>
+PnlView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtName_s">
+	<summary>
+TxtName_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtLoginId_s">
+	<summary>
+TxtLoginId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.TxtEmailId_s">
+	<summary>
+TxtEmailId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.BtnSearch">
+	<summary>
+BtnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.BtnViewAll">
+	<summary>
+BtnViewAll control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.GVAdmins">
+	<summary>
+GVAdmins control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.LblGridSource">
+	<summary>
+LblGridSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.LblOtherAdminID">
+	<summary>
+LblOtherAdminID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.LblActiveStatus">
+	<summary>
+LblActiveStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.addadmins.LblPassword">
+	<summary>
+LblPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.admin1.form1">
 	<summary>
 form1 control.
@@ -2250,6 +2778,350 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="F:betatesting.manage_catlog_images.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.catlogimages">
+	<summary>
+catlogimages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.txttitle">
+	<summary>
+txttitle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.txtlongdescriptiontext">
+	<summary>
+txtlongdescriptiontext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.txtsortorder">
+	<summary>
+txtsortorder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.FUNewsImage">
+	<summary>
+FUNewsImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.btnsave">
+	<summary>
+btnsave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog_images.GVPrintNews">
+	<summary>
+GVPrintNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnAddNew">
+	<summary>
+BtnAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnView">
+	<summary>
+BtnView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.PnlAddNew">
+	<summary>
+PnlAddNew control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtName">
+	<summary>
+TxtName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtLoginId">
+	<summary>
+TxtLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.RFVLoginId">
+	<summary>
+RFVLoginId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.REVEmailID">
+	<summary>
+REVEmailID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.CBLSections">
+	<summary>
+CBLSections control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.PnlView">
+	<summary>
+PnlView control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtName_s">
+	<summary>
+TxtName_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtLoginId_s">
+	<summary>
+TxtLoginId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.TxtEmailId_s">
+	<summary>
+TxtEmailId_s control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnSearch">
+	<summary>
+BtnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.BtnViewAll">
+	<summary>
+BtnViewAll control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.GVAdmins">
+	<summary>
+GVAdmins control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.LblGridSource">
+	<summary>
+LblGridSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.LblOtherAdminID">
+	<summary>
+LblOtherAdminID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.LblActiveStatus">
+	<summary>
+LblActiveStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_admins1.LblPassword">
+	<summary>
+LblPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting._default3.UpdatePanel1">
 	<summary>
 UpdatePanel1 control.
@@ -2285,6 +3157,414 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:betatesting._default3.Button1">
 	<summary>
 Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsfullname">
+	<summary>
+lblhsfullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsfullname">
+	<summary>
+txthsfullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhslastname">
+	<summary>
+lblhslastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthslastname">
+	<summary>
+txthslastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsemailid">
+	<summary>
+lblhsemailid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsemailid">
+	<summary>
+txthsemailid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsmobile">
+	<summary>
+lblhsmobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsmobile">
+	<summary>
+txthsmobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsplotno">
+	<summary>
+lblhsplotno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsplotno">
+	<summary>
+txthsplotno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsadressone">
+	<summary>
+lblhsadressone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsadressone">
+	<summary>
+txthsadressone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsadresstwo">
+	<summary>
+lblhsadresstwo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsadresstwo">
+	<summary>
+txthsadresstwo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhscountry">
+	<summary>
+lblhscountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.DDLEnquiry_Country">
+	<summary>
+DDLEnquiry_Country control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsstate">
+	<summary>
+lblhsstate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.ddlstate">
+	<summary>
+ddlstate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsheadquater">
+	<summary>
+lblhsheadquater control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.DDLCITY">
+	<summary>
+DDLCITY control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhssubarea">
+	<summary>
+lblhssubarea control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.ddlsubcity">
+	<summary>
+ddlsubcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsdivision">
+	<summary>
+lblhsdivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.ddldivision">
+	<summary>
+ddldivision control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhscnf">
+	<summary>
+lblhscnf control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthscnf">
+	<summary>
+txthscnf control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhstherapatic">
+	<summary>
+lblhstherapatic control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.ddltherapatic">
+	<summary>
+ddltherapatic control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhspincode">
+	<summary>
+lblhspincode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthspincode">
+	<summary>
+txthspincode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhstelephone">
+	<summary>
+lblhstelephone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthstelephone">
+	<summary>
+txthstelephone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsfax">
+	<summary>
+lblhsfax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsfax">
+	<summary>
+txthsfax control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsgstprovisionalid">
+	<summary>
+lblhsgstprovisionalid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsgstprovisionalid">
+	<summary>
+txthsgstprovisionalid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhspan">
+	<summary>
+lblhspan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthspan">
+	<summary>
+txthspan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsspocname">
+	<summary>
+lblhsspocname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsspocname">
+	<summary>
+txthsspocname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsspocmobile">
+	<summary>
+lblhsspocmobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsspocmobile">
+	<summary>
+txthsspocmobile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsssistatus">
+	<summary>
+lblhsssistatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsssistatus">
+	<summary>
+txthsssistatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhsdruglicenceno">
+	<summary>
+lblhsdruglicenceno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthsdruglicenceno">
+	<summary>
+txthsdruglicenceno control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.lblhszone">
+	<summary>
+lblhszone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.txthszone">
+	<summary>
+txthszone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default7.btnedit">
+	<summary>
+btnedit control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -2685,6 +3965,370 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:betatesting.test.form1">
 	<summary>
 form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:betatesting.hhc.hhcAdminLoginsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.hhcControlPanelIPStatsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.OtherAdminLoginsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HdivisionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HtherapaticDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistdescriptionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HstockistdetailsnewDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.HvproductslistDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.hhc.hhcAdminLoginsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.hhcControlPanelIPStatsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.OtherAdminLoginsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HdivisionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HtherapaticRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistdescriptionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HstockistdetailsnewRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.HvproductslistRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.hhc.hhcAdminLoginsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.hhcControlPanelIPStatsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.OtherAdminLoginsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HdivisionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HtherapaticRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HproductslistdescriptionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HstockistdetailsnewRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc.HvproductslistRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.hhc">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.hhcAdminLoginsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.hhcControlPanelIPStatsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.OtherAdminLoginsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HproductslistTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HdivisionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HtherapaticTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HproductslistdescriptionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HstockistdetailsnewTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.HvproductslistTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:betatesting.hhcTableAdapters.TableAdapterManager.UpdateUpdatedRows(betatesting.hhc,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:betatesting.hhcTableAdapters.TableAdapterManager.UpdateInsertedRows(betatesting.hhc,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:betatesting.hhcTableAdapters.TableAdapterManager.UpdateDeletedRows(betatesting.hhc,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:betatesting.hhcTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:betatesting.hhcTableAdapters.TableAdapterManager.UpdateAll(betatesting.hhc)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:betatesting.hhcTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:betatesting.change_password.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.RFVOldPwd">
+	<summary>
+RFVOldPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.RFVNewPassword">
+	<summary>
+RFVNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.RFVConfPassword">
+	<summary>
+RFVConfPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.DDLCountry">
+	<summary>
+DDLCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.ObjDsCountry">
+	<summary>
+ObjDsCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.rfvzone">
+	<summary>
+rfvzone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.DDLState">
+	<summary>
+DDLState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.rfvstate">
+	<summary>
+rfvstate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.TxtCity">
+	<summary>
+TxtCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.rfvcity">
+	<summary>
+rfvcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.GVCity">
+	<summary>
+GVCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_city1.ObjDSCities">
+	<summary>
+ObjDSCities control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3202,6 +4846,38 @@ ObjDSCities control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.login1.TxtLoginID">
+	<summary>
+TxtLoginID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.login1.TxtPwd">
+	<summary>
+TxtPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.login1.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.login1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="T:betatesting.WebSearch.CleanHtml">
 	<summary> 
  Summary description for CleanHtml. 
@@ -3238,7 +4914,7 @@ ContentPlaceHolderBodyLeft control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.form1">
+</member><member name="F:betatesting.states.form1">
 	<summary>
 form1 control.
 </summary>
@@ -3246,7 +4922,7 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.ScriptManager1">
+</member><member name="F:betatesting.states.ScriptManager1">
 	<summary>
 ScriptManager1 control.
 </summary>
@@ -3254,7 +4930,431 @@ ScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsfullname">
+</member><member name="F:betatesting.states.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.states.txtContactsSearch">
+	<summary>
+txtContactsSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.states.AutoCompleteExtender1">
+	<summary>
+AutoCompleteExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.states.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.CATLOG">
+	<summary>
+CATLOG control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtname">
+	<summary>
+txtname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtsku">
+	<summary>
+txtsku control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.ddlcolour">
+	<summary>
+ddlcolour control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RFVCountry">
+	<summary>
+RFVCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtlongdescriptiontext">
+	<summary>
+txtlongdescriptiontext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtshortdescriptiontext">
+	<summary>
+txtshortdescriptiontext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtmaerial">
+	<summary>
+txtmaerial control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtweight">
+	<summary>
+txtweight control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtshipping">
+	<summary>
+txtshipping control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtprice">
+	<summary>
+txtprice control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator10">
+	<summary>
+RequiredFieldValidator10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtmeasurments">
+	<summary>
+txtmeasurments control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtcare">
+	<summary>
+txtcare control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.txtnote">
+	<summary>
+txtnote control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.FUNewsImage">
+	<summary>
+FUNewsImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.FUNewsImage1">
+	<summary>
+FUNewsImage1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.RequiredFieldValidator8">
+	<summary>
+RequiredFieldValidator8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.FUNewsImage2">
+	<summary>
+FUNewsImage2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.FUNewsImage3">
+	<summary>
+FUNewsImage3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.FUNewsImage4">
+	<summary>
+FUNewsImage4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.btnsave">
+	<summary>
+btnsave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_catlog.GVPrintNews">
+	<summary>
+GVPrintNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.rfvzone">
+	<summary>
+rfvzone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password2.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default36.lblhsfullname">
 	<summary>
 lblhsfullname control.
 </summary>
@@ -3262,7 +5362,7 @@ lblhsfullname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsfullname">
+</member><member name="F:betatesting._default36.txthsfullname">
 	<summary>
 txthsfullname control.
 </summary>
@@ -3270,7 +5370,7 @@ txthsfullname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhslastname">
+</member><member name="F:betatesting._default36.lblhslastname">
 	<summary>
 lblhslastname control.
 </summary>
@@ -3278,7 +5378,7 @@ lblhslastname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthslastname">
+</member><member name="F:betatesting._default36.txthslastname">
 	<summary>
 txthslastname control.
 </summary>
@@ -3286,7 +5386,7 @@ txthslastname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsemailid">
+</member><member name="F:betatesting._default36.lblhsemailid">
 	<summary>
 lblhsemailid control.
 </summary>
@@ -3294,7 +5394,7 @@ lblhsemailid control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsemailid">
+</member><member name="F:betatesting._default36.txthsemailid">
 	<summary>
 txthsemailid control.
 </summary>
@@ -3302,7 +5402,7 @@ txthsemailid control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsmobile">
+</member><member name="F:betatesting._default36.lblhsmobile">
 	<summary>
 lblhsmobile control.
 </summary>
@@ -3310,7 +5410,7 @@ lblhsmobile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsmobile">
+</member><member name="F:betatesting._default36.txthsmobile">
 	<summary>
 txthsmobile control.
 </summary>
@@ -3318,7 +5418,7 @@ txthsmobile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsplotno">
+</member><member name="F:betatesting._default36.lblhsplotno">
 	<summary>
 lblhsplotno control.
 </summary>
@@ -3326,7 +5426,7 @@ lblhsplotno control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsplotno">
+</member><member name="F:betatesting._default36.txthsplotno">
 	<summary>
 txthsplotno control.
 </summary>
@@ -3334,7 +5434,7 @@ txthsplotno control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsadressone">
+</member><member name="F:betatesting._default36.lblhsadressone">
 	<summary>
 lblhsadressone control.
 </summary>
@@ -3342,7 +5442,7 @@ lblhsadressone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsadressone">
+</member><member name="F:betatesting._default36.txthsadressone">
 	<summary>
 txthsadressone control.
 </summary>
@@ -3350,7 +5450,7 @@ txthsadressone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsadresstwo">
+</member><member name="F:betatesting._default36.lblhsadresstwo">
 	<summary>
 lblhsadresstwo control.
 </summary>
@@ -3358,7 +5458,7 @@ lblhsadresstwo control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsadresstwo">
+</member><member name="F:betatesting._default36.txthsadresstwo">
 	<summary>
 txthsadresstwo control.
 </summary>
@@ -3366,7 +5466,7 @@ txthsadresstwo control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhscountry">
+</member><member name="F:betatesting._default36.lblhscountry">
 	<summary>
 lblhscountry control.
 </summary>
@@ -3374,15 +5474,15 @@ lblhscountry control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthscountry">
+</member><member name="F:betatesting._default36.DDLEnquiry_Country">
 	<summary>
-txthscountry control.
+DDLEnquiry_Country control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsstate">
+</member><member name="F:betatesting._default36.lblhsstate">
 	<summary>
 lblhsstate control.
 </summary>
@@ -3390,15 +5490,15 @@ lblhsstate control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsstate">
+</member><member name="F:betatesting._default36.ddlstate">
 	<summary>
-txthsstate control.
+ddlstate control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsheadquater">
+</member><member name="F:betatesting._default36.lblhsheadquater">
 	<summary>
 lblhsheadquater control.
 </summary>
@@ -3406,15 +5506,15 @@ lblhsheadquater control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsheadquater">
+</member><member name="F:betatesting._default36.DDLCITY">
 	<summary>
-txthsheadquater control.
+DDLCITY control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhssubarea">
+</member><member name="F:betatesting._default36.lblhssubarea">
 	<summary>
 lblhssubarea control.
 </summary>
@@ -3422,15 +5522,15 @@ lblhssubarea control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthssubarea">
+</member><member name="F:betatesting._default36.ddlsubcity">
 	<summary>
-txthssubarea control.
+ddlsubcity control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsdivision">
+</member><member name="F:betatesting._default36.lblhsdivision">
 	<summary>
 lblhsdivision control.
 </summary>
@@ -3438,15 +5538,15 @@ lblhsdivision control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsdivision">
+</member><member name="F:betatesting._default36.ddldivision">
 	<summary>
-txthsdivision control.
+ddldivision control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhscnf">
+</member><member name="F:betatesting._default36.lblhscnf">
 	<summary>
 lblhscnf control.
 </summary>
@@ -3454,7 +5554,7 @@ lblhscnf control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthscnf">
+</member><member name="F:betatesting._default36.txthscnf">
 	<summary>
 txthscnf control.
 </summary>
@@ -3462,7 +5562,7 @@ txthscnf control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhstherapatic">
+</member><member name="F:betatesting._default36.lblhstherapatic">
 	<summary>
 lblhstherapatic control.
 </summary>
@@ -3470,15 +5570,15 @@ lblhstherapatic control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthstherapatic">
+</member><member name="F:betatesting._default36.ddltherapatic">
 	<summary>
-txthstherapatic control.
+ddltherapatic control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhspincode">
+</member><member name="F:betatesting._default36.lblhspincode">
 	<summary>
 lblhspincode control.
 </summary>
@@ -3486,7 +5586,7 @@ lblhspincode control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthspincode">
+</member><member name="F:betatesting._default36.txthspincode">
 	<summary>
 txthspincode control.
 </summary>
@@ -3494,7 +5594,7 @@ txthspincode control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhstelephone">
+</member><member name="F:betatesting._default36.lblhstelephone">
 	<summary>
 lblhstelephone control.
 </summary>
@@ -3502,7 +5602,7 @@ lblhstelephone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthstelephone">
+</member><member name="F:betatesting._default36.txthstelephone">
 	<summary>
 txthstelephone control.
 </summary>
@@ -3510,7 +5610,7 @@ txthstelephone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsfax">
+</member><member name="F:betatesting._default36.lblhsfax">
 	<summary>
 lblhsfax control.
 </summary>
@@ -3518,7 +5618,7 @@ lblhsfax control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsfax">
+</member><member name="F:betatesting._default36.txthsfax">
 	<summary>
 txthsfax control.
 </summary>
@@ -3526,7 +5626,7 @@ txthsfax control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsgstprovisionalid">
+</member><member name="F:betatesting._default36.lblhsgstprovisionalid">
 	<summary>
 lblhsgstprovisionalid control.
 </summary>
@@ -3534,7 +5634,7 @@ lblhsgstprovisionalid control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsgstprovisionalid">
+</member><member name="F:betatesting._default36.txthsgstprovisionalid">
 	<summary>
 txthsgstprovisionalid control.
 </summary>
@@ -3542,7 +5642,7 @@ txthsgstprovisionalid control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhspan">
+</member><member name="F:betatesting._default36.lblhspan">
 	<summary>
 lblhspan control.
 </summary>
@@ -3550,7 +5650,7 @@ lblhspan control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthspan">
+</member><member name="F:betatesting._default36.txthspan">
 	<summary>
 txthspan control.
 </summary>
@@ -3558,7 +5658,7 @@ txthspan control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsspocname">
+</member><member name="F:betatesting._default36.lblhsspocname">
 	<summary>
 lblhsspocname control.
 </summary>
@@ -3566,7 +5666,7 @@ lblhsspocname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsspocname">
+</member><member name="F:betatesting._default36.txthsspocname">
 	<summary>
 txthsspocname control.
 </summary>
@@ -3574,7 +5674,7 @@ txthsspocname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsspocmobile">
+</member><member name="F:betatesting._default36.lblhsspocmobile">
 	<summary>
 lblhsspocmobile control.
 </summary>
@@ -3582,7 +5682,7 @@ lblhsspocmobile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsspocmobile">
+</member><member name="F:betatesting._default36.txthsspocmobile">
 	<summary>
 txthsspocmobile control.
 </summary>
@@ -3590,7 +5690,7 @@ txthsspocmobile control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsssistatus">
+</member><member name="F:betatesting._default36.lblhsssistatus">
 	<summary>
 lblhsssistatus control.
 </summary>
@@ -3598,7 +5698,7 @@ lblhsssistatus control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsssistatus">
+</member><member name="F:betatesting._default36.txthsssistatus">
 	<summary>
 txthsssistatus control.
 </summary>
@@ -3606,7 +5706,7 @@ txthsssistatus control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhsdruglicenceno">
+</member><member name="F:betatesting._default36.lblhsdruglicenceno">
 	<summary>
 lblhsdruglicenceno control.
 </summary>
@@ -3614,7 +5714,7 @@ lblhsdruglicenceno control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthsdruglicenceno">
+</member><member name="F:betatesting._default36.txthsdruglicenceno">
 	<summary>
 txthsdruglicenceno control.
 </summary>
@@ -3622,7 +5722,7 @@ txthsdruglicenceno control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.lblhszone">
+</member><member name="F:betatesting._default36.lblhszone">
 	<summary>
 lblhszone control.
 </summary>
@@ -3630,9 +5730,17 @@ lblhszone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default7.txthszone">
+</member><member name="F:betatesting._default36.txthszone">
 	<summary>
 txthszone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default36.btnedit">
+	<summary>
+btnedit control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -3902,23 +6010,7 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default9.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default9.Label1">
+</member><member name="F:betatesting._default34.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -3926,7 +6018,7 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.Panel1">
+</member><member name="F:betatesting._default34.Panel1">
 	<summary>
 Panel1 control.
 </summary>
@@ -3934,7 +6026,7 @@ Panel1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.TxtEmail">
+</member><member name="F:betatesting._default34.TxtEmail">
 	<summary>
 TxtEmail control.
 </summary>
@@ -3942,7 +6034,7 @@ TxtEmail control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.RFVEmail">
+</member><member name="F:betatesting._default34.RFVEmail">
 	<summary>
 RFVEmail control.
 </summary>
@@ -3950,7 +6042,7 @@ RFVEmail control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.btnsave">
+</member><member name="F:betatesting._default34.btnsave">
 	<summary>
 btnsave control.
 </summary>
@@ -3958,7 +6050,7 @@ btnsave control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.ImgSubmit">
+</member><member name="F:betatesting._default34.ImgSubmit">
 	<summary>
 ImgSubmit control.
 </summary>
@@ -3966,7 +6058,7 @@ ImgSubmit control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.ValidationSummary1">
+</member><member name="F:betatesting._default34.ValidationSummary1">
 	<summary>
 ValidationSummary1 control.
 </summary>
@@ -3974,7 +6066,7 @@ ValidationSummary1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default9.HyperLink1">
+</member><member name="F:betatesting._default34.HyperLink1">
 	<summary>
 HyperLink1 control.
 </summary>
@@ -4091,9 +6183,9 @@ ScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting.adminbasepage1.LblAdminHeader">
+</member><member name="F:betatesting.adminbasepage1.lblname">
 	<summary>
-LblAdminHeader control.
+lblname control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -4107,9 +6199,41 @@ button1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.adminbasepage1.btnchangepassword">
+	<summary>
+btnchangepassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.adminbasepage1.btnlogout">
 	<summary>
 btnlogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage1.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage1.LblAdminHeader">
+	<summary>
+LblAdminHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage1.LblRights">
+	<summary>
+LblRights control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -4134,22 +6258,6 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:betatesting.adminbasepage1.TreeView1">
 	<summary>
 TreeView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.adminbasepage1.ContentPlaceHolder1">
-	<summary>
-ContentPlaceHolder1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.adminbasepage1.LblRights">
-	<summary>
-LblRights control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -4835,6 +6943,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:betatesting.WebAdmins.avanaAdminLoginsxyzDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:betatesting.WebAdmins.OtherAdminLoginsRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -4847,6 +6959,10 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:betatesting.WebAdmins.avanaAdminLoginsxyzRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:betatesting.WebAdmins.OtherAdminLoginsRowChangeEvent">
 	<summary>
 Row event argument class
@@ -4856,6 +6972,10 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:betatesting.WebAdmins.UserAdminLoginsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.WebAdmins.avanaAdminLoginsxyzRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -4875,7 +6995,11 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="F:betatesting._default8.form1">
+</member><member name="T:betatesting.WebAdminsTableAdapters.avanaAdminLoginsxyzTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:betatesting.admininner.form1">
 	<summary>
 form1 control.
 </summary>
@@ -4883,79 +7007,23 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default8.ScriptManager1">
+</member><member name="F:betatesting.admininner.ContentPlaceHolder1">
 	<summary>
-ScriptManager1 control.
+ContentPlaceHolder1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default8.TxtOldPassword">
+</member><member name="F:betatesting.manage_country1.TxtCountry">
 	<summary>
-TxtOldPassword control.
+TxtCountry control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default8.RFVOldPwd">
-	<summary>
-RFVOldPwd control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.TxtNewPassword">
-	<summary>
-TxtNewPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.RFVNewPassword">
-	<summary>
-RFVNewPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.lblmsg">
-	<summary>
-lblmsg control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.TxtConfirmPassword">
-	<summary>
-TxtConfirmPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.RFVConfPassword">
-	<summary>
-RFVConfPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.CVPassword">
-	<summary>
-CVPassword control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default8.BtnSave">
+</member><member name="F:betatesting.manage_country1.BtnSave">
 	<summary>
 BtnSave control.
 </summary>
@@ -4963,7 +7031,111 @@ BtnSave control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default8.ValidationSummary1">
+</member><member name="F:betatesting.manage_country1.RFVCountry">
+	<summary>
+RFVCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_country1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_country1.GVCountries">
+	<summary>
+GVCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_country1.ObjDSCountries">
+	<summary>
+ObjDSCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.RFVOldPwd">
+	<summary>
+RFVOldPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.RFVNewPassword">
+	<summary>
+RFVNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.lblmsg">
+	<summary>
+lblmsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.RFVConfPassword">
+	<summary>
+RFVConfPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default33.ValidationSummary1">
 	<summary>
 ValidationSummary1 control.
 </summary>
@@ -5084,46 +7256,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:betatesting.abstract_geriatrics.LblGridDataSource">
-	<summary>
-LblGridDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetero_vendor_sales.GvBannerImages">
-	<summary>
-GvBannerImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetero_vendor_sales.filename">
-	<summary>
-filename control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetero_vendor_sales.fileId">
-	<summary>
-fileId control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetero_vendor_sales.LblSearchStr">
-	<summary>
-LblSearchStr control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetero_vendor_sales.LblGridDataSource">
 	<summary>
 LblGridDataSource control.
 </summary>
@@ -5787,6 +7919,14 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITY2DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITYbystateDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:betatesting.DataSetCare.DOCTORSRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -6331,6 +8471,14 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITY2Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITYbystateRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
 </member><member name="T:betatesting.DataSetCare.DOCTORSRowChangeEvent">
 	<summary>
 Row event argument class
@@ -6872,6 +9020,14 @@ Row event argument class
 Row event argument class
 </summary>
 </member><member name="T:betatesting.DataSetCare.ASTROLOGYRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITY2RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.DataSetCare.subareaCITYbystateRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -7423,6 +9579,14 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.subareaCITY2TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.DataSetCareTableAdapters.subareaCITYbystateTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
 </member><member name="F:betatesting.Manage.SuccessMessagePlaceHolder">
 	<summary>
  SuccessMessagePlaceHolder control.
@@ -7719,9 +9883,265 @@ LblPassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default11.form1">
+</member><member name="F:betatesting.manage_sub_area.DDLCountry">
 	<summary>
-form1 control.
+DDLCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.rfvzone">
+	<summary>
+rfvzone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.ObjDsCountry">
+	<summary>
+ObjDsCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.DDLState">
+	<summary>
+DDLState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.ddlcity">
+	<summary>
+ddlcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.TxtsubCity">
+	<summary>
+TxtsubCity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.RequiredFieldValidator33">
+	<summary>
+RequiredFieldValidator33 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.gvcity">
+	<summary>
+gvcity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_sub_area.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.txtproductname">
+	<summary>
+txtproductname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.txtproductdescription">
+	<summary>
+txtproductdescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.txtcompanycode">
+	<summary>
+txtcompanycode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default35.GVPrintNews">
+	<summary>
+GVPrintNews control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default39.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default39.btnImport">
+	<summary>
+btnImport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default39.GvBannerImages">
+	<summary>
+GvBannerImages control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -8271,6 +10691,206 @@ form1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.change_password1.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.rfvzone">
+	<summary>
+rfvzone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.change_password1.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.txtproducts">
+	<summary>
+txtproducts control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.rfvzone">
+	<summary>
+rfvzone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.txtproductdescription">
+	<summary>
+txtproductdescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.txtsapid">
+	<summary>
+txtsapid control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.GVCountries">
+	<summary>
+GVCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_products.ObjDSCountries">
+	<summary>
+ObjDSCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.uploaf_file.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.uploaf_file.btnImport">
+	<summary>
+btnImport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.uploaf_file.GvBannerImages">
+	<summary>
+GvBannerImages control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.enquiry_vedic_agharaharam.GvBannerImages">
 	<summary>
 GvBannerImages control.
@@ -8304,46 +10924,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:betatesting.enquiry_vedic_agharaharam.LblGridDataSource">
-	<summary>
-LblGridDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetro_products.GvBannerImages">
-	<summary>
-GvBannerImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetro_products.filename">
-	<summary>
-filename control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetro_products.fileId">
-	<summary>
-fileId control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetro_products.LblSearchStr">
-	<summary>
-LblSearchStr control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.hetro_products.LblGridDataSource">
 	<summary>
 LblGridDataSource control.
 </summary>
@@ -8394,6 +10974,638 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:betatesting.RegisterExternalLogin.userName">
 	<summary>
 userName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.TxtHproductslistdescriptionDESC">
+	<summary>
+TxtHproductslistdescriptionDESC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdquantityperpack">
+	<summary>
+txthpdquantityperpack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdquantityperstrip">
+	<summary>
+txthpdquantityperstrip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdratevalidform">
+	<summary>
+txthpdratevalidform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdpricetoretailer">
+	<summary>
+txthpdpricetoretailer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdmrp">
+	<summary>
+txthpdmrp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdstandardrate">
+	<summary>
+txthpdstandardrate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator8">
+	<summary>
+RequiredFieldValidator8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdpricetostockist">
+	<summary>
+txthpdpricetostockist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthpdbrandname">
+	<summary>
+txthpdbrandname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator10">
+	<summary>
+RequiredFieldValidator10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.ddlhdpcategoryname">
+	<summary>
+ddlhdpcategoryname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator11">
+	<summary>
+RequiredFieldValidator11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.lbBranch">
+	<summary>
+lbBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.txthdpmanfacturename">
+	<summary>
+txthdpmanfacturename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.RequiredFieldValidator13">
+	<summary>
+RequiredFieldValidator13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.btnSearch">
+	<summary>
+btnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.GVAddVideo">
+	<summary>
+GVAddVideo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description1.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.DDLCountry">
+	<summary>
+DDLCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.ObjDsCountry">
+	<summary>
+ObjDsCountry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.TxtState">
+	<summary>
+TxtState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.GVState">
+	<summary>
+GVState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_state1.ObjDSState">
+	<summary>
+ObjDSState control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.txtHtherapaticDESC">
+	<summary>
+txtHtherapaticDESC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.txththeterocode">
+	<summary>
+txththeterocode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.txththetroname">
+	<summary>
+txththetroname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.lbBranch">
+	<summary>
+lbBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.btnSearch">
+	<summary>
+btnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.lblmsg">
+	<summary>
+lblmsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.GVAddVideo">
+	<summary>
+GVAddVideo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_therapatic.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.txtproductname">
+	<summary>
+txtproductname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.txtproductdescription">
+	<summary>
+txtproductdescription control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.txtcompanycode">
+	<summary>
+txtcompanycode control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default11.GVPrintNews">
+	<summary>
+GVPrintNews control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -8512,46 +11724,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:betatesting.enquiry_utopiasilverstone.LblGridDataSource">
-	<summary>
-LblGridDataSource control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.HETERO_VENDOR_PRODUCTS.GvBannerImages">
-	<summary>
-GvBannerImages control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.HETERO_VENDOR_PRODUCTS.filename">
-	<summary>
-filename control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.HETERO_VENDOR_PRODUCTS.fileId">
-	<summary>
-fileId control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.HETERO_VENDOR_PRODUCTS.LblSearchStr">
-	<summary>
-LblSearchStr control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting.HETERO_VENDOR_PRODUCTS.LblGridDataSource">
 	<summary>
 LblGridDataSource control.
 </summary>
@@ -9883,6 +13055,118 @@ ConfirmPassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting._default4.txtfirstname">
+	<summary>
+txtfirstname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RFVName">
+	<summary>
+RFVName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtlastname">
+	<summary>
+txtlastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.Rfvlastname">
+	<summary>
+Rfvlastname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtEmailId">
+	<summary>
+txtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RFVEmailId">
+	<summary>
+RFVEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.REVEmailId">
+	<summary>
+REVEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.txtmobilenumber">
+	<summary>
+txtmobilenumber control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.RFVTelephone">
+	<summary>
+RFVTelephone control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.btnSubmit">
+	<summary>
+btnSubmit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.ValidationSummary2">
+	<summary>
+ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default4.lblmsg">
+	<summary>
+lblmsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.abstract_wcw.GvBannerImages">
 	<summary>
 GvBannerImages control.
@@ -10364,9 +13648,25 @@ To modify move field declaration from designer file to code-behind file.
  Required method for Designer support - do not modify 
  the contents of this method with the code editor. 
  </summary>
+</member><member name="F:betatesting.innerbasepage.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.innerbasepage.form1">
 	<summary>
 form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.innerbasepage.ScriptManager1">
+	<summary>
+ScriptManager1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -10380,23 +13680,7 @@ ContentPlaceHolder1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default6.ScriptManager1">
-	<summary>
-ScriptManager1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:betatesting._default6.LblMsg">
+</member><member name="F:betatesting._Default38.LblMsg">
 	<summary>
 LblMsg control.
 </summary>
@@ -10404,7 +13688,7 @@ LblMsg control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.TxtEmailId">
+</member><member name="F:betatesting._Default38.TxtEmailId">
 	<summary>
 TxtEmailId control.
 </summary>
@@ -10412,7 +13696,7 @@ TxtEmailId control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.RequiredFieldValidator1">
+</member><member name="F:betatesting._Default38.RequiredFieldValidator1">
 	<summary>
 RequiredFieldValidator1 control.
 </summary>
@@ -10420,7 +13704,7 @@ RequiredFieldValidator1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.txtpassword">
+</member><member name="F:betatesting._Default38.txtpassword">
 	<summary>
 txtpassword control.
 </summary>
@@ -10428,7 +13712,7 @@ txtpassword control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.RequiredFieldValidator4">
+</member><member name="F:betatesting._Default38.RequiredFieldValidator4">
 	<summary>
 RequiredFieldValidator4 control.
 </summary>
@@ -10436,7 +13720,7 @@ RequiredFieldValidator4 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.BtnSave">
+</member><member name="F:betatesting._Default38.BtnSave">
 	<summary>
 BtnSave control.
 </summary>
@@ -10444,7 +13728,7 @@ BtnSave control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default6.ValidationSummary1">
+</member><member name="F:betatesting._Default38.ValidationSummary1">
 	<summary>
 ValidationSummary1 control.
 </summary>
@@ -10540,11 +13824,15 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:betatesting.avana.ControlPanelIPStatsDataTable">
+</member><member name="T:betatesting.avana.ColoursDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:betatesting.avana.OtherAdminLoginsDataTable">
+</member><member name="T:betatesting.avana.avanacatlogDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:betatesting.avana.avanacatlogimagesDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -10556,11 +13844,15 @@ Represents strongly named DataRow class.
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:betatesting.avana.ControlPanelIPStatsRow">
+</member><member name="T:betatesting.avana.ColoursRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:betatesting.avana.OtherAdminLoginsRow">
+</member><member name="T:betatesting.avana.avanacatlogRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:betatesting.avana.avanacatlogimagesRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -10572,11 +13864,15 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:betatesting.avana.ControlPanelIPStatsRowChangeEvent">
+</member><member name="T:betatesting.avana.ColoursRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
-</member><member name="T:betatesting.avana.OtherAdminLoginsRowChangeEvent">
+</member><member name="T:betatesting.avana.avanacatlogRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:betatesting.avana.avanacatlogimagesRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -10592,11 +13888,15 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:betatesting.avanaTableAdapters.ControlPanelIPStatsTableAdapter">
+</member><member name="T:betatesting.avanaTableAdapters.ColoursTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="T:betatesting.avanaTableAdapters.OtherAdminLoginsTableAdapter">
+</member><member name="T:betatesting.avanaTableAdapters.avanacatlogTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:betatesting.avanaTableAdapters.avanacatlogimagesTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
@@ -11308,6 +14608,166 @@ OpenAuthLogin control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.manage_colour.txtcolours">
+	<summary>
+txtcolours control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.RFVCountry2">
+	<summary>
+RFVCountry2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.GVCountries">
+	<summary>
+GVCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_colour.ObjDSCountries">
+	<summary>
+ObjDSCountries control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.Manage_indian_states.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.TxtOldPassword">
+	<summary>
+TxtOldPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.RFVOldPwd">
+	<summary>
+RFVOldPwd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.TxtNewPassword">
+	<summary>
+TxtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.RFVNewPassword">
+	<summary>
+RFVNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.lblmsg">
+	<summary>
+lblmsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.TxtConfirmPassword">
+	<summary>
+TxtConfirmPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.RFVConfPassword">
+	<summary>
+RFVConfPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.CVPassword">
+	<summary>
+CVPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default8.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.InnerBasePage_a.form1">
 	<summary>
 form1 control.
@@ -11816,9 +15276,25 @@ ValidationSummary1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.admin_login.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.admin_login.TxtLoginID">
 	<summary>
 TxtLoginID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_login.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -11832,9 +15308,25 @@ TxtPwd control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.admin_login.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.admin_login.Button1">
 	<summary>
 Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.admin_login.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -11872,6 +15364,382 @@ Button1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:betatesting.adminbasepage2.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.lblname">
+	<summary>
+lblname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.button1">
+	<summary>
+button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.btnchangepassword">
+	<summary>
+btnchangepassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.btnlogout">
+	<summary>
+btnlogout control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.LblAdminHeader">
+	<summary>
+LblAdminHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.LblRights">
+	<summary>
+LblRights control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.menuPanel">
+	<summary>
+menuPanel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.UpdatePanel2">
+	<summary>
+UpdatePanel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.adminbasepage2.TreeView1">
+	<summary>
+TreeView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.TxtHproductslistdescriptionDESC">
+	<summary>
+TxtHproductslistdescriptionDESC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdquantityperpack">
+	<summary>
+txthpdquantityperpack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdquantityperstrip">
+	<summary>
+txthpdquantityperstrip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdratevalidform">
+	<summary>
+txthpdratevalidform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.CalendarExtender1">
+	<summary>
+CalendarExtender1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdpricetoretailer">
+	<summary>
+txthpdpricetoretailer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdmrp">
+	<summary>
+txthpdmrp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator7">
+	<summary>
+RequiredFieldValidator7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdstandardrate">
+	<summary>
+txthpdstandardrate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator8">
+	<summary>
+RequiredFieldValidator8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdpricetostockist">
+	<summary>
+txthpdpricetostockist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator9">
+	<summary>
+RequiredFieldValidator9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthpdbrandname">
+	<summary>
+txthpdbrandname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator10">
+	<summary>
+RequiredFieldValidator10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.ddlhdpcategoryname">
+	<summary>
+ddlhdpcategoryname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator11">
+	<summary>
+RequiredFieldValidator11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.lbBranch">
+	<summary>
+lbBranch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator6">
+	<summary>
+RequiredFieldValidator6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.txthdpmanfacturename">
+	<summary>
+txthdpmanfacturename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.RequiredFieldValidator12">
+	<summary>
+RequiredFieldValidator12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.btnSearch">
+	<summary>
+btnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.btnCancel">
+	<summary>
+btnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.GVAddVideo">
+	<summary>
+GVAddVideo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.filename">
+	<summary>
+filename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.fileId">
+	<summary>
+fileId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.LblSearchStr">
+	<summary>
+LblSearchStr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.manage_product_description.LblGridDataSource">
+	<summary>
+LblGridDataSource control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:betatesting.innebasepage.form1">
 	<summary>
 form1 control.
@@ -11888,9 +15756,33 @@ ScriptManager1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting.innebasepage.NavigationPlaceHolder">
+</member><member name="F:betatesting.innebasepage.lblname">
 	<summary>
-NavigationPlaceHolder control.
+lblname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.innebasepage.button1">
+	<summary>
+button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.innebasepage.btnchangepassword">
+	<summary>
+btnchangepassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting.innebasepage.btnlogout">
+	<summary>
+btnlogout control.
 </summary>
 	<remarks>
 Auto-generated field.
@@ -11904,7 +15796,15 @@ ContentPlaceHolder control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.txtfirstname">
+</member><member name="F:betatesting.innebasepage.NavigationPlaceHolder">
+	<summary>
+NavigationPlaceHolder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default37.txtfirstname">
 	<summary>
 txtfirstname control.
 </summary>
@@ -11912,7 +15812,7 @@ txtfirstname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.RFVName">
+</member><member name="F:betatesting._Default37.RFVName">
 	<summary>
 RFVName control.
 </summary>
@@ -11920,7 +15820,7 @@ RFVName control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.txtlastname">
+</member><member name="F:betatesting._Default37.txtlastname">
 	<summary>
 txtlastname control.
 </summary>
@@ -11928,7 +15828,7 @@ txtlastname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.Rfvlastname">
+</member><member name="F:betatesting._Default37.Rfvlastname">
 	<summary>
 Rfvlastname control.
 </summary>
@@ -11936,7 +15836,7 @@ Rfvlastname control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.txtEmailId">
+</member><member name="F:betatesting._Default37.txtEmailId">
 	<summary>
 txtEmailId control.
 </summary>
@@ -11944,7 +15844,7 @@ txtEmailId control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.RFVEmailId">
+</member><member name="F:betatesting._Default37.RFVEmailId">
 	<summary>
 RFVEmailId control.
 </summary>
@@ -11952,7 +15852,7 @@ RFVEmailId control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.REVEmailId">
+</member><member name="F:betatesting._Default37.REVEmailId">
 	<summary>
 REVEmailId control.
 </summary>
@@ -11960,7 +15860,7 @@ REVEmailId control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.txtmobilenumber">
+</member><member name="F:betatesting._Default37.txtmobilenumber">
 	<summary>
 txtmobilenumber control.
 </summary>
@@ -11968,7 +15868,7 @@ txtmobilenumber control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.RFVTelephone">
+</member><member name="F:betatesting._Default37.RFVTelephone">
 	<summary>
 RFVTelephone control.
 </summary>
@@ -11976,7 +15876,7 @@ RFVTelephone control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.btnSubmit">
+</member><member name="F:betatesting._Default37.btnSubmit">
 	<summary>
 btnSubmit control.
 </summary>
@@ -11984,7 +15884,7 @@ btnSubmit control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.BtnCancel">
+</member><member name="F:betatesting._Default37.BtnCancel">
 	<summary>
 BtnCancel control.
 </summary>
@@ -11992,7 +15892,7 @@ BtnCancel control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.ValidationSummary1">
+</member><member name="F:betatesting._Default37.ValidationSummary1">
 	<summary>
 ValidationSummary1 control.
 </summary>
@@ -12000,9 +15900,89 @@ ValidationSummary1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:betatesting._default4.ValidationSummary2">
+</member><member name="F:betatesting._Default37.ValidationSummary2">
 	<summary>
 ValidationSummary2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._Default37.lblmsg">
+	<summary>
+lblmsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.LblMsg">
+	<summary>
+LblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.TxtEmailId">
+	<summary>
+TxtEmailId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.txtpassword">
+	<summary>
+txtpassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:betatesting._default6.ValidationSummary1">
+	<summary>
+ValidationSummary1 control.
 </summary>
 	<remarks>
 Auto-generated field.

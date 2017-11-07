@@ -1,16 +1,8 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="default.aspx.vb" Inherits="betatesting._default9" %>
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
-          <div align="center">
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/admin-stockist/innebasepage.master" CodeBehind="default.aspx.vb" Inherits="betatesting._default34" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="NavigationPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" runat="server">
+       <div align="center">
         <asp:Label ID="Label1" runat="server" Font-Bold="True" ForeColor="#6D7192" Text="We have emailed your password to the email id you provided.
 " Visible="False"></asp:Label>
     </div> 
@@ -51,6 +43,4 @@ you may click on create a new futurebazaar.com account link below.   </p>
                   
         </asp:Panel>
 </div>
-    </form>
-</body>
-</html>
+</asp:Content>

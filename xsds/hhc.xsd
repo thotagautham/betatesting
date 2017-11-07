@@ -64,7 +64,7 @@ FROM            hhcAdminLogins</CommandText>
               <Mapping SourceColumn="ActiveStatus" DataSetColumn="ActiveStatus" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CheckOtherAdminIdPassword" Modifier="Public" Name="CheckOtherAdminIdPassword" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="CheckOtherAdminIdPassword">
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CheckOtherAdminIdPassword" Modifier="Public" Name="CheckOtherAdminIdPassword" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="CheckOtherAdminIdPassword">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM hhcAdminLogins   where hhcadminloginsid=@hhcadminloginsid and UserPwd=@UserPwd
@@ -77,7 +77,7 @@ FROM            hhcAdminLogins</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CheckPrimary" Modifier="Public" Name="CheckPrimary" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="CheckPrimary">
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="CheckPrimary" Modifier="Public" Name="CheckPrimary" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="CheckPrimary">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM hhcAdminLogins where UserName=@UserName </CommandText>
@@ -111,7 +111,7 @@ FROM            hhcAdminLogins where  hhcAdminLoginsId=@hhcAdminLoginsId</Comman
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.hhcAdminLogins" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetIdByUserNamePwd" Modifier="Public" Name="GetIdByUserNamePwd" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetIdByUserNamePwd">
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.hhcAdminLogins" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetIdByUserNamePwd" Modifier="Public" Name="GetIdByUserNamePwd" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="GetIdByUserNamePwd">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        hhcAdminLoginsId
@@ -134,10 +134,10 @@ WHERE        (UserName = @UserName) AND (UserPwd = @UserPwd)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetOtherCount" Modifier="Public" Name="GetOtherCount" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="GetOtherCount">
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="GetOtherCount" Modifier="Public" Name="GetOtherCount" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="GetOtherCount">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT COUNT(*) FROM hhcAdminLogins where UserName=@UserName and hhcAdminLoginsId=@hhcAdminLoginsId</CommandText>
+                    <CommandText>SELECT COUNT(*) FROM hhcAdminLogins where UserName=@UserName and hhcAdminLoginsId&lt;&gt;@hhcAdminLoginsId</CommandText>
                     <Parameters>
                       <Parameter AllowDbNull="true" AutogeneratedName="UserName" ColumnName="UserName" DataSourceName="mokshadb.dbo.hhcAdminLogins" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@UserName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="hhcAdminLoginsId" ColumnName="hhcAdminLoginsId" DataSourceName="mokshadb.dbo.hhcAdminLogins" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@hhcAdminLoginsId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="hhcAdminLoginsId" SourceColumnNullMapping="false" SourceVersion="Current" />
@@ -429,6 +429,898 @@ FROM         OtherAdminLogins</CommandText>
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HproductslistTableAdapter" GeneratorDataComponentClassName="HproductslistTableAdapter" Name="Hproductslist" UserDataComponentName="HproductslistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hproductslist" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Hproductslist] WHERE (([HproductslistID] = @Original_HproductslistID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Hproductslist] ([HproductslistNAME], [HproductslistDESC], [Hproductslistcompanyid]) VALUES (@HproductslistNAME, @HproductslistDESC, @Hproductslistcompanyid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HproductslistID, HproductslistNAME, HproductslistDESC, Hproductslistcompanyid
+FROM            Hproductslist</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hproductslist] SET [HproductslistNAME] = @HproductslistNAME, [HproductslistDESC] = @HproductslistDESC, [Hproductslistcompanyid] = @Hproductslistcompanyid WHERE (([HproductslistID] = @Original_HproductslistID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HproductslistID" DataSetColumn="HproductslistID" />
+              <Mapping SourceColumn="HproductslistNAME" DataSetColumn="HproductslistNAME" />
+              <Mapping SourceColumn="HproductslistDESC" DataSetColumn="HproductslistDESC" />
+              <Mapping SourceColumn="Hproductslistcompanyid" DataSetColumn="Hproductslistcompanyid" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getotherprimary" Modifier="Public" Name="getotherprimary" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getotherprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Hproductslist
+
+
+where   HproductslistID &lt;&gt;@HproductslistID and HproductslistNAME =@HproductslistNAME and Hproductslistcompanyid = @Hproductslistcompanyid
+
+
+</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HproductslistID" ColumnName="HproductslistID" DataSourceName="mokshadb.dbo.Hproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HproductslistID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="HproductslistNAME" ColumnName="HproductslistNAME" DataSourceName="mokshadb.dbo.Hproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@HproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hproductslistcompanyid" ColumnName="Hproductslistcompanyid" DataSourceName="mokshadb.dbo.Hproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getproductnamecount" Modifier="Public" Name="getproductnamecount" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getproductnamecount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        COUNT(*) AS Expr1
+FROM            Hproductslist
+WHERE        (HproductslistNAME = @hproductslistname)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hproductslistname" ColumnName="HproductslistNAME" DataSourceName="mokshadb.dbo.Hproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@hproductslistname" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getsapidcount" Modifier="Public" Name="getsapidcount" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getsapidcount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        COUNT(*) AS Expr1
+FROM            Hproductslist
+WHERE        (Hproductslistcompanyid = @hproductslistcompanyid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hproductslistcompanyid" ColumnName="Hproductslistcompanyid" DataSourceName="mokshadb.dbo.Hproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HdivisionTableAdapter" GeneratorDataComponentClassName="HdivisionTableAdapter" Name="Hdivision" UserDataComponentName="HdivisionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hdivision" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Hdivision] WHERE (([HdivisionID] = @Original_HdivisionID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HdivisionID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HdivisionID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Hdivision] ([HdivisionDESC], [heterodivisoncode], [hdname], [Active]) VALUES (@HdivisionDESC, @heterodivisoncode, @hdname, @Active)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HdivisionDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HdivisionDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@heterodivisoncode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="heterodivisoncode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Active" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HdivisionID, HdivisionDESC, heterodivisoncode, hdname, Active
+FROM            Hdivision</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hdivision] SET [HdivisionDESC] = @HdivisionDESC, [heterodivisoncode] = @heterodivisoncode, [hdname] = @hdname, [Active] = @Active WHERE (([HdivisionID] = @Original_HdivisionID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HdivisionDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HdivisionDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@heterodivisoncode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="heterodivisoncode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Active" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Active" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HdivisionID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HdivisionID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HdivisionID" DataSetColumn="HdivisionID" />
+              <Mapping SourceColumn="HdivisionDESC" DataSetColumn="HdivisionDESC" />
+              <Mapping SourceColumn="heterodivisoncode" DataSetColumn="heterodivisoncode" />
+              <Mapping SourceColumn="hdname" DataSetColumn="hdname" />
+              <Mapping SourceColumn="Active" DataSetColumn="Active" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="checkotheprimary" Modifier="Public" Name="checkotheprimary" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="checkotheprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Hdivision  where  heterodivisoncode = @heterodivisoncode and hdname =@hdname
+
+and HdivisionID&lt;&gt;@HdivisionID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="heterodivisoncode" ColumnName="heterodivisoncode" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@heterodivisoncode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="heterodivisoncode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hdname" ColumnName="hdname" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hdname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hdname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="HdivisionID" ColumnName="HdivisionID" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HdivisionID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HdivisionID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="checkprimary" Modifier="Public" Name="checkprimary" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="checkprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Hdivision  where  heterodivisoncode = @heterodivisoncode and hdname =@hdname</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="heterodivisoncode" ColumnName="heterodivisoncode" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@heterodivisoncode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="heterodivisoncode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hdname" ColumnName="hdname" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hdname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hdname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hdivision" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByid" GetMethodModifier="Public" GetMethodName="GetDataByid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByid" UserSourceName="GetDataByid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HdivisionID, HdivisionDESC, heterodivisoncode, hdname, Active
+FROM            Hdivision  where HdivisionID =@HdivisionID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HdivisionID" ColumnName="HdivisionID" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HdivisionID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HdivisionID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQUERY" Modifier="Public" Name="UpdateQUERY" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQUERY">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [Hdivision] SET [HdivisionDESC] = @HdivisionDESC, [heterodivisoncode] = @heterodivisoncode, [hdname] = @hdname WHERE (([HdivisionID] = @Original_HdivisionID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="HdivisionDESC" ColumnName="HdivisionDESC" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@HdivisionDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="HdivisionDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="heterodivisoncode" ColumnName="heterodivisoncode" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@heterodivisoncode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="heterodivisoncode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hdname" ColumnName="hdname" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hdname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hdname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HdivisionID" ColumnName="HdivisionID" DataSourceName="mokshadb.dbo.Hdivision" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HdivisionID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HdivisionID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HtherapaticTableAdapter" GeneratorDataComponentClassName="HtherapaticTableAdapter" Name="Htherapatic" UserDataComponentName="HtherapaticTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Htherapatic" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Htherapatic] WHERE (([HtherapaticID] = @Original_HtherapaticID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HtherapaticID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HtherapaticID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Htherapatic] ([HtherapaticDESC], [HtherapaticSTATUS], [htheterocode], [hthetroname], [htdivisionid]) VALUES (@HtherapaticDESC, @HtherapaticSTATUS, @htheterocode, @hthetroname, @htdivisionid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HtherapaticDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HtherapaticDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HtherapaticSTATUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HtherapaticSTATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@htheterocode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="htheterocode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hthetroname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hthetroname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@htdivisionid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="htdivisionid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HtherapaticID, HtherapaticDESC, HtherapaticSTATUS, htheterocode, hthetroname, htdivisionid
+FROM            Htherapatic</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Htherapatic] SET [HtherapaticDESC] = @HtherapaticDESC, [HtherapaticSTATUS] = @HtherapaticSTATUS, [htheterocode] = @htheterocode, [hthetroname] = @hthetroname, [htdivisionid] = @htdivisionid WHERE (([HtherapaticID] = @Original_HtherapaticID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HtherapaticDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HtherapaticDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HtherapaticSTATUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HtherapaticSTATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@htheterocode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="htheterocode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hthetroname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hthetroname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@htdivisionid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="htdivisionid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HtherapaticID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HtherapaticID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HtherapaticID" DataSetColumn="HtherapaticID" />
+              <Mapping SourceColumn="HtherapaticDESC" DataSetColumn="HtherapaticDESC" />
+              <Mapping SourceColumn="HtherapaticSTATUS" DataSetColumn="HtherapaticSTATUS" />
+              <Mapping SourceColumn="htheterocode" DataSetColumn="htheterocode" />
+              <Mapping SourceColumn="hthetroname" DataSetColumn="hthetroname" />
+              <Mapping SourceColumn="htdivisionid" DataSetColumn="htdivisionid" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="checkotherprimary" Modifier="Public" Name="checkotherprimary" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="checkotherprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Htherapatic  where htheterocode =@htheterocode and  hthetroname =@hthetroname and  HtherapaticID &lt;&gt;@HtherapaticID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="htheterocode" ColumnName="htheterocode" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@htheterocode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="htheterocode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hthetroname" ColumnName="hthetroname" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hthetroname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hthetroname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="HtherapaticID" ColumnName="HtherapaticID" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HtherapaticID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HtherapaticID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="checkprimary" Modifier="Public" Name="checkprimary" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="checkprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Htherapatic  where htheterocode =@htheterocode and  hthetroname =@hthetroname</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="htheterocode" ColumnName="htheterocode" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@htheterocode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="htheterocode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hthetroname" ColumnName="hthetroname" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hthetroname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hthetroname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Htherapatic" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByid" GetMethodModifier="Public" GetMethodName="GetDataByid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByid" UserSourceName="GetDataByid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HtherapaticID, HtherapaticDESC, HtherapaticSTATUS, htheterocode, hthetroname, htdivisionid
+FROM            Htherapatic
+where  HtherapaticID = @HtherapaticID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HtherapaticID" ColumnName="HtherapaticID" DataSourceName="mokshadb.dbo.Htherapatic" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HtherapaticID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HtherapaticID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HproductslistdescriptionTableAdapter" GeneratorDataComponentClassName="HproductslistdescriptionTableAdapter" Name="Hproductslistdescription" UserDataComponentName="HproductslistdescriptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hproductslistdescription" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Hproductslistdescription] WHERE (([HproductslistdescriptionID] = @Original_HproductslistdescriptionID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HproductslistdescriptionID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HproductslistdescriptionID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Hproductslistdescription] ([HproductslistdescriptionDESC], [STATUS], [Hproductslistcompanyid], [hpdquantityperpack], [hpdquantityperstrip], [hpdratevalidform], [hpdpricetoretailer], [hpdmrp], [hpdstandardrate], [hpdpricetostockist], [hpdbrandname], [hdpcategoryname], [hpddivisionname], [hdpmanfacturename]) VALUES (@HproductslistdescriptionDESC, @STATUS, @Hproductslistcompanyid, @hpdquantityperpack, @hpdquantityperstrip, @hpdratevalidform, @hpdpricetoretailer, @hpdmrp, @hpdstandardrate, @hpdpricetostockist, @hpdbrandname, @hdpcategoryname, @hpddivisionname, @hdpmanfacturename)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistdescriptionDESC" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="HproductslistdescriptionDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STATUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdquantityperpack" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdquantityperpack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdquantityperstrip" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdquantityperstrip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@hpdratevalidform" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="hpdratevalidform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdpricetoretailer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdpricetoretailer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdmrp" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdmrp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdstandardrate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdstandardrate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdpricetostockist" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdpricetostockist" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdbrandname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdbrandname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdpcategoryname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdpcategoryname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpddivisionname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpddivisionname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdpmanfacturename" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdpmanfacturename" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HproductslistdescriptionID, HproductslistdescriptionDESC, STATUS, Hproductslistcompanyid, hpdquantityperpack, hpdquantityperstrip, hpdratevalidform, hpdpricetoretailer, hpdmrp, hpdstandardrate, 
+                         hpdpricetostockist, hpdbrandname, hdpcategoryname, hpddivisionname, hdpmanfacturename
+FROM            Hproductslistdescription</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hproductslistdescription] SET [HproductslistdescriptionDESC] = @HproductslistdescriptionDESC, [STATUS] = @STATUS, [Hproductslistcompanyid] = @Hproductslistcompanyid, [hpdquantityperpack] = @hpdquantityperpack, [hpdquantityperstrip] = @hpdquantityperstrip, [hpdratevalidform] = @hpdratevalidform, [hpdpricetoretailer] = @hpdpricetoretailer, [hpdmrp] = @hpdmrp, [hpdstandardrate] = @hpdstandardrate, [hpdpricetostockist] = @hpdpricetostockist, [hpdbrandname] = @hpdbrandname, [hdpcategoryname] = @hdpcategoryname, [hpddivisionname] = @hpddivisionname, [hdpmanfacturename] = @hdpmanfacturename WHERE (([HproductslistdescriptionID] = @Original_HproductslistdescriptionID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HproductslistdescriptionDESC" Precision="0" ProviderType="NText" Scale="0" Size="0" SourceColumn="HproductslistdescriptionDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@STATUS" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="STATUS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdquantityperpack" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdquantityperpack" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdquantityperstrip" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdquantityperstrip" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@hpdratevalidform" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="hpdratevalidform" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdpricetoretailer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdpricetoretailer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdmrp" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdmrp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdstandardrate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdstandardrate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdpricetostockist" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdpricetostockist" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpdbrandname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpdbrandname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdpcategoryname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdpcategoryname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hpddivisionname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hpddivisionname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hdpmanfacturename" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hdpmanfacturename" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HproductslistdescriptionID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HproductslistdescriptionID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HproductslistdescriptionID" DataSetColumn="HproductslistdescriptionID" />
+              <Mapping SourceColumn="HproductslistdescriptionDESC" DataSetColumn="HproductslistdescriptionDESC" />
+              <Mapping SourceColumn="STATUS" DataSetColumn="STATUS" />
+              <Mapping SourceColumn="Hproductslistcompanyid" DataSetColumn="Hproductslistcompanyid" />
+              <Mapping SourceColumn="hpdquantityperpack" DataSetColumn="hpdquantityperpack" />
+              <Mapping SourceColumn="hpdquantityperstrip" DataSetColumn="hpdquantityperstrip" />
+              <Mapping SourceColumn="hpdratevalidform" DataSetColumn="hpdratevalidform" />
+              <Mapping SourceColumn="hpdpricetoretailer" DataSetColumn="hpdpricetoretailer" />
+              <Mapping SourceColumn="hpdmrp" DataSetColumn="hpdmrp" />
+              <Mapping SourceColumn="hpdstandardrate" DataSetColumn="hpdstandardrate" />
+              <Mapping SourceColumn="hpdpricetostockist" DataSetColumn="hpdpricetostockist" />
+              <Mapping SourceColumn="hpdbrandname" DataSetColumn="hpdbrandname" />
+              <Mapping SourceColumn="hdpcategoryname" DataSetColumn="hdpcategoryname" />
+              <Mapping SourceColumn="hpddivisionname" DataSetColumn="hpddivisionname" />
+              <Mapping SourceColumn="hdpmanfacturename" DataSetColumn="hdpmanfacturename" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hproductslistdescription" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByid" GetMethodModifier="Public" GetMethodName="GetDataByid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByid" UserSourceName="GetDataByid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HproductslistdescriptionID, HproductslistdescriptionDESC, STATUS, Hproductslistcompanyid, hpdquantityperpack, hpdquantityperstrip, hpdratevalidform, hpdpricetoretailer, hpdmrp, hpdstandardrate, 
+                         hpdpricetostockist, hpdbrandname, hdpcategoryname, hpddivisionname, hdpmanfacturename
+FROM            Hproductslistdescription
+where   HproductslistdescriptionID = @HproductslistdescriptionID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HproductslistdescriptionID" ColumnName="HproductslistdescriptionID" DataSourceName="mokshadb.dbo.Hproductslistdescription" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HproductslistdescriptionID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HproductslistdescriptionID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hproductslistdescription" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByproductid" GetMethodModifier="Public" GetMethodName="GetDataByproductid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByproductid" UserSourceName="GetDataByproductid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HproductslistdescriptionID, HproductslistdescriptionDESC, STATUS, Hproductslistcompanyid, hpdquantityperpack, hpdquantityperstrip, hpdratevalidform, hpdpricetoretailer, hpdmrp, hpdstandardrate, 
+                         hpdpricetostockist, hpdbrandname, hdpcategoryname, hpddivisionname, hdpmanfacturename
+FROM            Hproductslistdescription
+
+where  Hproductslistcompanyid = @Hproductslistcompanyid  order by  hpdratevalidform desc</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hproductslistcompanyid" ColumnName="Hproductslistcompanyid" DataSourceName="mokshadb.dbo.Hproductslistdescription" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HstockistdetailsnewTableAdapter" GeneratorDataComponentClassName="HstockistdetailsnewTableAdapter" Name="Hstockistdetailsnew" UserDataComponentName="HstockistdetailsnewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Hstockistdetails] WHERE (([HstockistdetailsID] = @Original_HstockistdetailsID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Hstockistdetails] ([hsfullname], [hslastname], [hsemailid], [hsmobile], [hspwd], [hssapcustomerid], [hsplotno], [hsadressone], [hsadresstwo], [hscountry], [hsstate], [hsheadquater], [hssubarea], [hsdivision], [hscnf], [hstherapatic], [hspincode], [hstelephone], [hsfax], [hsgstprovisionalid], [hspan], [hsspocname], [hsspocmobile], [hsssistatus], [hsdruglicenceno]) VALUES (@hsfullname, @hslastname, @hsemailid, @hsmobile, @hspwd, @hssapcustomerid, @hsplotno, @hsadressone, @hsadresstwo, @hscountry, @hsstate, @hsheadquater, @hssubarea, @hsdivision, @hscnf, @hstherapatic, @hspincode, @hstelephone, @hsfax, @hsgstprovisionalid, @hspan, @hsspocname, @hsspocmobile, @hsssistatus, @hsdruglicenceno)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsfullname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsfullname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hslastname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hslastname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsplotno" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsplotno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsadressone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsadressone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsadresstwo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsadresstwo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hscountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hscountry" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsstate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsstate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsheadquater" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsheadquater" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hssubarea" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hssubarea" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsdivision" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsdivision" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hscnf" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hscnf" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hstherapatic" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hstherapatic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspincode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspincode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hstelephone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hstelephone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsfax" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsfax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsgstprovisionalid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsgstprovisionalid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspan" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsspocname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsspocname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsspocmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsspocmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsssistatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsssistatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsdruglicenceno" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsdruglicenceno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        HstockistdetailsID, hsfullname, hslastname, hsemailid, hsmobile, hspwd, hssapcustomerid, hsplotno, hsadressone, hsadresstwo, hscountry, hsstate, hsheadquater, hssubarea, hsdivision, hscnf, hstherapatic, 
+                         hspincode, hstelephone, hsfax, hsgstprovisionalid, hspan, hsspocname, hsspocmobile, hsssistatus, hsdruglicenceno
+FROM            Hstockistdetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hstockistdetails] SET [hsfullname] = @hsfullname, [hslastname] = @hslastname, [hsemailid] = @hsemailid, [hsmobile] = @hsmobile, [hspwd] = @hspwd, [hssapcustomerid] = @hssapcustomerid, [hsplotno] = @hsplotno, [hsadressone] = @hsadressone, [hsadresstwo] = @hsadresstwo, [hscountry] = @hscountry, [hsstate] = @hsstate, [hsheadquater] = @hsheadquater, [hssubarea] = @hssubarea, [hsdivision] = @hsdivision, [hscnf] = @hscnf, [hstherapatic] = @hstherapatic, [hspincode] = @hspincode, [hstelephone] = @hstelephone, [hsfax] = @hsfax, [hsgstprovisionalid] = @hsgstprovisionalid, [hspan] = @hspan, [hsspocname] = @hsspocname, [hsspocmobile] = @hsspocmobile, [hsssistatus] = @hsssistatus, [hsdruglicenceno] = @hsdruglicenceno WHERE (([HstockistdetailsID] = @Original_HstockistdetailsID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsfullname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsfullname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hslastname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hslastname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsplotno" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsplotno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsadressone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsadressone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsadresstwo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsadresstwo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hscountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hscountry" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsstate" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsstate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsheadquater" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsheadquater" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hssubarea" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hssubarea" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsdivision" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsdivision" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hscnf" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hscnf" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hstherapatic" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hstherapatic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspincode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspincode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hstelephone" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hstelephone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsfax" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsfax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsgstprovisionalid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsgstprovisionalid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hspan" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hspan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsspocname" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsspocname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsspocmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsspocmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsssistatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsssistatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hsdruglicenceno" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hsdruglicenceno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HstockistdetailsID" DataSetColumn="HstockistdetailsID" />
+              <Mapping SourceColumn="hsfullname" DataSetColumn="hsfullname" />
+              <Mapping SourceColumn="hslastname" DataSetColumn="hslastname" />
+              <Mapping SourceColumn="hsemailid" DataSetColumn="hsemailid" />
+              <Mapping SourceColumn="hsmobile" DataSetColumn="hsmobile" />
+              <Mapping SourceColumn="hspwd" DataSetColumn="hspwd" />
+              <Mapping SourceColumn="hssapcustomerid" DataSetColumn="hssapcustomerid" />
+              <Mapping SourceColumn="hsplotno" DataSetColumn="hsplotno" />
+              <Mapping SourceColumn="hsadressone" DataSetColumn="hsadressone" />
+              <Mapping SourceColumn="hsadresstwo" DataSetColumn="hsadresstwo" />
+              <Mapping SourceColumn="hscountry" DataSetColumn="hscountry" />
+              <Mapping SourceColumn="hsstate" DataSetColumn="hsstate" />
+              <Mapping SourceColumn="hsheadquater" DataSetColumn="hsheadquater" />
+              <Mapping SourceColumn="hssubarea" DataSetColumn="hssubarea" />
+              <Mapping SourceColumn="hsdivision" DataSetColumn="hsdivision" />
+              <Mapping SourceColumn="hscnf" DataSetColumn="hscnf" />
+              <Mapping SourceColumn="hstherapatic" DataSetColumn="hstherapatic" />
+              <Mapping SourceColumn="hspincode" DataSetColumn="hspincode" />
+              <Mapping SourceColumn="hstelephone" DataSetColumn="hstelephone" />
+              <Mapping SourceColumn="hsfax" DataSetColumn="hsfax" />
+              <Mapping SourceColumn="hsgstprovisionalid" DataSetColumn="hsgstprovisionalid" />
+              <Mapping SourceColumn="hspan" DataSetColumn="hspan" />
+              <Mapping SourceColumn="hsspocname" DataSetColumn="hsspocname" />
+              <Mapping SourceColumn="hsspocmobile" DataSetColumn="hsspocmobile" />
+              <Mapping SourceColumn="hsssistatus" DataSetColumn="hsssistatus" />
+              <Mapping SourceColumn="hsdruglicenceno" DataSetColumn="hsdruglicenceno" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountbyemailid" Modifier="Public" Name="getcountbyemailid" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="getcountbyemailid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT COUNT(*) FROM Hstockistdetails
+ 
+where hsemailid =@hsemailid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountbyidpwd" Modifier="Public" Name="getcountbyidpwd" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="getcountbyidpwd">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        COUNT(*) AS Expr1
+FROM            Hstockistdetails
+WHERE        (HstockistdetailsID = @HstockistdetailsID) AND (hspwd = @hspwd)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HstockistdetailsID" ColumnName="HstockistdetailsID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspwd" ColumnName="hspwd" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountbylogindetails" Modifier="Public" Name="getcountbylogindetails" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="getcountbylogindetails">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT COUNT(*) FROM Hstockistdetails
+
+
+
+
+where (( hsemailid = @hsemailid ) and (hspwd = @hspwd))
+or
+(( hsmobile = @hsmobile ) and (hspwd = @hspwd))
+or
+(( hssapcustomerid = @hssapcustomerid ) and (hspwd = @hspwd))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspwd" ColumnName="hspwd" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountbymobile" Modifier="Public" Name="getcountbymobile" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getcountbymobile">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT COUNT(*) FROM Hstockistdetails
+ 
+where hsmobile =@hsmobile</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountbysapcusid" Modifier="Public" Name="getcountbysapcusid" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getcountbysapcusid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT COUNT(*) FROM Hstockistdetails
+ 
+where hssapcustomerid=@hssapcustomerid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getcountforpassword" Modifier="Public" Name="getcountforpassword" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="getcountforpassword">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        COUNT(*) AS Expr1
+FROM            Hstockistdetails
+WHERE        (hsemailid = @hsemailid) OR
+                         (hsmobile = @hsmobile) OR
+                         (hssapcustomerid = @hssapcustomerid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByHstockistdetailsID" GetMethodModifier="Public" GetMethodName="GetDataByHstockistdetailsID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByHstockistdetailsID" UserSourceName="GetDataByHstockistdetailsID">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HstockistdetailsID, hsfullname, hslastname, hsemailid, hsmobile, hspwd, hssapcustomerid, hsplotno, hsadressone, hsadresstwo, hscountry, hsstate, hsheadquater, hssubarea, hsdivision, hscnf, hstherapatic, 
+                         hspincode, hstelephone, hsfax, hsgstprovisionalid, hspan, hsspocname, hsspocmobile, hsssistatus, hsdruglicenceno
+FROM            Hstockistdetails
+WHERE        (HstockistdetailsID = @HstockistdetailsID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HstockistdetailsID" ColumnName="HstockistdetailsID" DataSourceName="mokshadb.dbo.Hstockistdetails" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBylogindetails" GetMethodModifier="Public" GetMethodName="GetDataBylogindetails" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBylogindetails" UserSourceName="GetDataBylogindetails">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT HstockistdetailsID, hsadressone, hsadresstwo, hscnf, hscountry, hsdivision, hsdruglicenceno, hsemailid, hsfax, hsfullname, hsgstprovisionalid, hsheadquater, hslastname, hsmobile, hspan, hspincode, hsplotno, hspwd, hssapcustomerid, hsspocmobile, hsspocname, hsssistatus, hsstate, hssubarea, hstelephone, hstherapatic FROM Hstockistdetails WHERE (hsemailid = @hsemailid) AND (hspwd = @hspwd) OR (hspwd = @hspwd) AND (hsmobile = @hsmobile) OR (hspwd = @hspwd) AND (hssapcustomerid = @hssapcustomerid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspwd" ColumnName="hspwd" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getemailidforgotpwd" Modifier="Public" Name="getemailidforgotpwd" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="getemailidforgotpwd">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT hsemailid   FROM Hstockistdetails where hsemailid =@hsemailid or hsmobile =@hsmobile or  hssapcustomerid =@hssapcustomerid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getfirstnamebyemailid" Modifier="Public" Name="getfirstnamebyemailid" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="getfirstnamebyemailid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        hsfullname
+FROM            Hstockistdetails
+WHERE        (hsemailid = @hsemailid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getlastnamebyemailid" Modifier="Public" Name="getlastnamebyemailid" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="getlastnamebyemailid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        hslastname
+FROM            Hstockistdetails
+WHERE        (hsemailid = @hsemailid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getmobilenumbyemailid" Modifier="Public" Name="getmobilenumbyemailid" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="getmobilenumbyemailid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT hsmobile  FROM Hstockistdetails where hsemailid  = @hsemailid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getpassword" Modifier="Public" Name="getpassword" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="getpassword">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT hspwd  FROM hstockistdetails WHERE        (hsemailid = @hsemailid) OR
+                         (hsmobile = @hsmobile) OR
+                         (hssapcustomerid = @hssapcustomerid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssapcustomerid" ColumnName="hssapcustomerid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssapcustomerid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssapcustomerid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hstockistdetails" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="getsapidbyemailid" Modifier="Public" Name="getsapidbyemailid" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="getsapidbyemailid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        hssapcustomerid
+FROM            Hstockistdetails
+WHERE        (hsemailid = @hsemailid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updatedetails" Modifier="Public" Name="updatedetails" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="updatedetails">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hstockistdetails] SET [hsfullname] = @hsfullname, [hslastname] = @hslastname, [hsemailid] = @hsemailid, [hsmobile] = @hsmobile, [hsplotno] = @hsplotno, [hsadressone] = @hsadressone, [hsadresstwo] = @hsadresstwo, [hscountry] = @hscountry, [hsstate] = @hsstate, [hsheadquater] = @hsheadquater, [hssubarea] = @hssubarea, [hsdivision] = @hsdivision, [hscnf] = @hscnf, [hstherapatic] = @hstherapatic, [hspincode] = @hspincode, [hstelephone] = @hstelephone, [hsfax] = @hsfax, [hsgstprovisionalid] = @hsgstprovisionalid, [hspan] = @hspan, [hsspocname] = @hsspocname, [hsspocmobile] = @hsspocmobile, [hsssistatus] = @hsssistatus, [hsdruglicenceno] = @hsdruglicenceno WHERE (([HstockistdetailsID] = @Original_HstockistdetailsID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsfullname" ColumnName="hsfullname" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsfullname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsfullname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hslastname" ColumnName="hslastname" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hslastname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hslastname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsemailid" ColumnName="hsemailid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsemailid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsemailid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsmobile" ColumnName="hsmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsplotno" ColumnName="hsplotno" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsplotno" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsplotno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsadressone" ColumnName="hsadressone" DataSourceName="" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@hsadressone" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="hsadressone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsadresstwo" ColumnName="hsadresstwo" DataSourceName="" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@hsadresstwo" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="hsadresstwo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hscountry" ColumnName="hscountry" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hscountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hscountry" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsstate" ColumnName="hsstate" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsstate" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsstate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsheadquater" ColumnName="hsheadquater" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsheadquater" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsheadquater" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hssubarea" ColumnName="hssubarea" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hssubarea" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hssubarea" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsdivision" ColumnName="hsdivision" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsdivision" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsdivision" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hscnf" ColumnName="hscnf" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hscnf" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hscnf" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hstherapatic" ColumnName="hstherapatic" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hstherapatic" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hstherapatic" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspincode" ColumnName="hspincode" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspincode" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspincode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hstelephone" ColumnName="hstelephone" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hstelephone" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hstelephone" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsfax" ColumnName="hsfax" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsfax" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsfax" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsgstprovisionalid" ColumnName="hsgstprovisionalid" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsgstprovisionalid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsgstprovisionalid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspan" ColumnName="hspan" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspan" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspan" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsspocname" ColumnName="hsspocname" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsspocname" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsspocname" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsspocmobile" ColumnName="hsspocmobile" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsspocmobile" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsspocmobile" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsssistatus" ColumnName="hsssistatus" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsssistatus" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsssistatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hsdruglicenceno" ColumnName="hsdruglicenceno" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hsdruglicenceno" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hsdruglicenceno" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HstockistdetailsID" ColumnName="HstockistdetailsID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updatepassword" Modifier="Public" Name="updatepassword" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="updatepassword">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE       Hstockistdetails
+SET                hspwd = @hspwd
+WHERE        (HstockistdetailsID = @Original_HstockistdetailsID) </CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hspwd" ColumnName="hspwd" DataSourceName="" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hspwd" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hspwd" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HstockistdetailsID" ColumnName="HstockistdetailsID" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HstockistdetailsID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HstockistdetailsID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="HvproductslistTableAdapter" GeneratorDataComponentClassName="HvproductslistTableAdapter" Name="Hvproductslist" UserDataComponentName="HvproductslistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hvproductslist" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Hvproductslist] WHERE (([HvproductslistID] = @Original_HvproductslistID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Hvproductslist] ([HvproductslistNAME], [HvproductslistDESC], [Hvproductslistcompanyid], [Hproductslistcompanyid], [hvstockistid]) VALUES (@HvproductslistNAME, @HvproductslistDESC, @Hvproductslistcompanyid, @Hproductslistcompanyid, @hvstockistid)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HvproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HvproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hvstockistid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hvstockistid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HvproductslistID, HvproductslistNAME, HvproductslistDESC, Hvproductslistcompanyid, Hproductslistcompanyid, hvstockistid
+FROM            Hvproductslist</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Hvproductslist] SET [HvproductslistNAME] = @HvproductslistNAME, [HvproductslistDESC] = @HvproductslistDESC, [Hvproductslistcompanyid] = @Hvproductslistcompanyid, [Hproductslistcompanyid] = @Hproductslistcompanyid, [hvstockistid] = @hvstockistid WHERE (([HvproductslistID] = @Original_HvproductslistID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HvproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HvproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@hvstockistid" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="hvstockistid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="HvproductslistID" DataSetColumn="HvproductslistID" />
+              <Mapping SourceColumn="HvproductslistNAME" DataSetColumn="HvproductslistNAME" />
+              <Mapping SourceColumn="HvproductslistDESC" DataSetColumn="HvproductslistDESC" />
+              <Mapping SourceColumn="Hvproductslistcompanyid" DataSetColumn="Hvproductslistcompanyid" />
+              <Mapping SourceColumn="Hproductslistcompanyid" DataSetColumn="Hproductslistcompanyid" />
+              <Mapping SourceColumn="hvstockistid" DataSetColumn="hvstockistid" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hvproductslist" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByhvstockistid" GetMethodModifier="Public" GetMethodName="GetDataByhvstockistid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByhvstockistid" UserSourceName="GetDataByhvstockistid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HvproductslistID, HvproductslistNAME, HvproductslistDESC, Hvproductslistcompanyid, Hproductslistcompanyid, hvstockistid
+FROM            Hvproductslist
+where  hvstockistid = @hvstockistid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="hvstockistid" ColumnName="hvstockistid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hvstockistid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hvstockistid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="mokshadb.dbo.Hvproductslist" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByid" GetMethodModifier="Public" GetMethodName="GetDataByid" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByid" UserSourceName="GetDataByid">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        HvproductslistID, HvproductslistNAME, HvproductslistDESC, Hvproductslistcompanyid, Hproductslistcompanyid, hvstockistid
+FROM            Hvproductslist
+
+where   HvproductslistID =@HvproductslistID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="HvproductslistID" ColumnName="HvproductslistID" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getotherprimary" Modifier="Public" Name="getotherprimary" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="getotherprimary">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Hvproductslist where  HvproductslistNAME =@HvproductslistNAME  and  Hvproductslistcompanyid =@Hvproductslistcompanyid  and  hvstockistid =@hvstockistid and HvproductslistID = @HvproductslistID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistNAME" ColumnName="HvproductslistNAME" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hvproductslistcompanyid" ColumnName="Hvproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hvstockistid" ColumnName="hvstockistid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hvstockistid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hvstockistid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="HvproductslistID" ColumnName="HvproductslistID" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="getprimarycount" Modifier="Public" Name="getprimarycount" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="getprimarycount">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT COUNT(*) FROM Hvproductslist where  HvproductslistNAME =@HvproductslistNAME  and  Hvproductslistcompanyid =@Hvproductslistcompanyid  and  hvstockistid =@hvstockistid</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistNAME" ColumnName="HvproductslistNAME" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hvproductslistcompanyid" ColumnName="Hvproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="hvstockistid" ColumnName="hvstockistid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@hvstockistid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="hvstockistid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Updateadmin" Modifier="Public" Name="Updateadmin" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="Updateadmin">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE [Hvproductslist] SET [HvproductslistNAME] = @HvproductslistNAME, [HvproductslistDESC] = @HvproductslistDESC, [Hvproductslistcompanyid] = @Hvproductslistcompanyid, [Hproductslistcompanyid] = @Hproductslistcompanyid WHERE (([HvproductslistID] = @Original_HvproductslistID))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistNAME" ColumnName="HvproductslistNAME" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistDESC" ColumnName="HvproductslistDESC" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@HvproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="HvproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hvproductslistcompanyid" ColumnName="Hvproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hproductslistcompanyid" ColumnName="Hproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HvproductslistID" ColumnName="HvproductslistID" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updateheteroproductid" Modifier="Public" Name="updateheteroproductid" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="updateheteroproductid">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Hvproductslist
+SET                Hproductslistcompanyid = @Hproductslistcompanyid
+WHERE        (HvproductslistID = @Original_HvproductslistID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hproductslistcompanyid" ColumnName="Hproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HvproductslistID" ColumnName="HvproductslistID" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+              <DbSource ConnectionRef="MSSQLConnString (Web.config)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="updatestockistproductdata" Modifier="Public" Name="updatestockistproductdata" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="updatestockistproductdata">
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>UPDATE       Hvproductslist
+SET                HvproductslistNAME = @HvproductslistNAME, HvproductslistDESC = @HvproductslistDESC, Hvproductslistcompanyid = @Hvproductslistcompanyid
+WHERE        (HvproductslistID = @Original_HvproductslistID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistNAME" ColumnName="HvproductslistNAME" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(255)" DbType="String" Direction="Input" ParameterName="@HvproductslistNAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="255" SourceColumn="HvproductslistNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="HvproductslistDESC" ColumnName="HvproductslistDESC" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(MAX)" DbType="String" Direction="Input" ParameterName="@HvproductslistDESC" Precision="0" ProviderType="NVarChar" Scale="0" Size="2147483647" SourceColumn="HvproductslistDESC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="Hvproductslistcompanyid" ColumnName="Hvproductslistcompanyid" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Hvproductslistcompanyid" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="Hvproductslistcompanyid" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Original_HvproductslistID" ColumnName="HvproductslistID" DataSourceName="mokshadb.dbo.Hvproductslist" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Original_HvproductslistID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="HvproductslistID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -437,7 +1329,7 @@ FROM         OtherAdminLogins</CommandText>
   <xs:element name="hhc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="hhc" msprop:Generator_UserDSName="hhc">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="hhcAdminLogins" msprop:Generator_TableClassName="hhcAdminLoginsDataTable" msprop:Generator_TableVarName="tablehhcAdminLogins" msprop:Generator_RowChangedName="hhcAdminLoginsRowChanged" msprop:Generator_TablePropName="hhcAdminLogins" msprop:Generator_RowDeletingName="hhcAdminLoginsRowDeleting" msprop:Generator_RowChangingName="hhcAdminLoginsRowChanging" msprop:Generator_RowEvHandlerName="hhcAdminLoginsRowChangeEventHandler" msprop:Generator_RowDeletedName="hhcAdminLoginsRowDeleted" msprop:Generator_RowClassName="hhcAdminLoginsRow" msprop:Generator_UserTableName="hhcAdminLogins" msprop:Generator_RowEvArgName="hhcAdminLoginsRowChangeEvent">
+        <xs:element name="hhcAdminLogins" msprop:Generator_TableClassName="hhcAdminLoginsDataTable" msprop:Generator_TableVarName="tablehhcAdminLogins" msprop:Generator_TablePropName="hhcAdminLogins" msprop:Generator_RowDeletingName="hhcAdminLoginsRowDeleting" msprop:Generator_RowChangingName="hhcAdminLoginsRowChanging" msprop:Generator_RowEvHandlerName="hhcAdminLoginsRowChangeEventHandler" msprop:Generator_RowDeletedName="hhcAdminLoginsRowDeleted" msprop:Generator_UserTableName="hhcAdminLogins" msprop:Generator_RowChangedName="hhcAdminLoginsRowChanged" msprop:Generator_RowEvArgName="hhcAdminLoginsRowChangeEvent" msprop:Generator_RowClassName="hhcAdminLoginsRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="hhcAdminLoginsId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnhhcAdminLoginsId" msprop:Generator_ColumnPropNameInRow="hhcAdminLoginsId" msprop:Generator_ColumnPropNameInTable="hhcAdminLoginsIdColumn" msprop:Generator_UserColumnName="hhcAdminLoginsId" type="xs:int" />
@@ -486,7 +1378,7 @@ FROM         OtherAdminLogins</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="hhcControlPanelIPStats" msprop:Generator_TableClassName="hhcControlPanelIPStatsDataTable" msprop:Generator_TableVarName="tablehhcControlPanelIPStats" msprop:Generator_TablePropName="hhcControlPanelIPStats" msprop:Generator_RowDeletingName="hhcControlPanelIPStatsRowDeleting" msprop:Generator_RowChangingName="hhcControlPanelIPStatsRowChanging" msprop:Generator_RowEvHandlerName="hhcControlPanelIPStatsRowChangeEventHandler" msprop:Generator_RowDeletedName="hhcControlPanelIPStatsRowDeleted" msprop:Generator_UserTableName="hhcControlPanelIPStats" msprop:Generator_RowChangedName="hhcControlPanelIPStatsRowChanged" msprop:Generator_RowEvArgName="hhcControlPanelIPStatsRowChangeEvent" msprop:Generator_RowClassName="hhcControlPanelIPStatsRow">
+        <xs:element name="hhcControlPanelIPStats" msprop:Generator_TableClassName="hhcControlPanelIPStatsDataTable" msprop:Generator_TableVarName="tablehhcControlPanelIPStats" msprop:Generator_RowChangedName="hhcControlPanelIPStatsRowChanged" msprop:Generator_TablePropName="hhcControlPanelIPStats" msprop:Generator_RowDeletingName="hhcControlPanelIPStatsRowDeleting" msprop:Generator_RowChangingName="hhcControlPanelIPStatsRowChanging" msprop:Generator_RowEvHandlerName="hhcControlPanelIPStatsRowChangeEventHandler" msprop:Generator_RowDeletedName="hhcControlPanelIPStatsRowDeleted" msprop:Generator_RowClassName="hhcControlPanelIPStatsRow" msprop:Generator_UserTableName="hhcControlPanelIPStats" msprop:Generator_RowEvArgName="hhcControlPanelIPStatsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CPIPID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCPIPID" msprop:Generator_ColumnPropNameInRow="CPIPID" msprop:Generator_ColumnPropNameInTable="CPIPIDColumn" msprop:Generator_UserColumnName="CPIPID" type="xs:int" />
@@ -509,7 +1401,7 @@ FROM         OtherAdminLogins</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="OtherAdminLogins" msprop:Generator_TableClassName="OtherAdminLoginsDataTable" msprop:Generator_TableVarName="tableOtherAdminLogins" msprop:Generator_TablePropName="OtherAdminLogins" msprop:Generator_RowDeletingName="OtherAdminLoginsRowDeleting" msprop:Generator_RowChangingName="OtherAdminLoginsRowChanging" msprop:Generator_RowEvHandlerName="OtherAdminLoginsRowChangeEventHandler" msprop:Generator_RowDeletedName="OtherAdminLoginsRowDeleted" msprop:Generator_UserTableName="OtherAdminLogins" msprop:Generator_RowChangedName="OtherAdminLoginsRowChanged" msprop:Generator_RowEvArgName="OtherAdminLoginsRowChangeEvent" msprop:Generator_RowClassName="OtherAdminLoginsRow">
+        <xs:element name="OtherAdminLogins" msprop:Generator_TableClassName="OtherAdminLoginsDataTable" msprop:Generator_TableVarName="tableOtherAdminLogins" msprop:Generator_RowChangedName="OtherAdminLoginsRowChanged" msprop:Generator_TablePropName="OtherAdminLogins" msprop:Generator_RowDeletingName="OtherAdminLoginsRowDeleting" msprop:Generator_RowChangingName="OtherAdminLoginsRowChanging" msprop:Generator_RowEvHandlerName="OtherAdminLoginsRowChangeEventHandler" msprop:Generator_RowDeletedName="OtherAdminLoginsRowDeleted" msprop:Generator_RowClassName="OtherAdminLoginsRow" msprop:Generator_UserTableName="OtherAdminLogins" msprop:Generator_RowEvArgName="OtherAdminLoginsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="OtherAdminId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOtherAdminId" msprop:Generator_ColumnPropNameInRow="OtherAdminId" msprop:Generator_ColumnPropNameInTable="OtherAdminIdColumn" msprop:Generator_UserColumnName="OtherAdminId" type="xs:int" />
@@ -565,6 +1457,434 @@ FROM         OtherAdminLogins</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Hproductslist" msprop:Generator_TableClassName="HproductslistDataTable" msprop:Generator_TableVarName="tableHproductslist" msprop:Generator_RowChangedName="HproductslistRowChanged" msprop:Generator_TablePropName="Hproductslist" msprop:Generator_RowDeletingName="HproductslistRowDeleting" msprop:Generator_RowChangingName="HproductslistRowChanging" msprop:Generator_RowEvHandlerName="HproductslistRowChangeEventHandler" msprop:Generator_RowDeletedName="HproductslistRowDeleted" msprop:Generator_RowClassName="HproductslistRow" msprop:Generator_UserTableName="Hproductslist" msprop:Generator_RowEvArgName="HproductslistRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HproductslistID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHproductslistID" msprop:Generator_ColumnPropNameInRow="HproductslistID" msprop:Generator_ColumnPropNameInTable="HproductslistIDColumn" msprop:Generator_UserColumnName="HproductslistID" type="xs:int" />
+              <xs:element name="HproductslistNAME" msprop:Generator_ColumnVarNameInTable="columnHproductslistNAME" msprop:Generator_ColumnPropNameInRow="HproductslistNAME" msprop:Generator_ColumnPropNameInTable="HproductslistNAMEColumn" msprop:Generator_UserColumnName="HproductslistNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HproductslistDESC" msprop:Generator_ColumnVarNameInTable="columnHproductslistDESC" msprop:Generator_ColumnPropNameInRow="HproductslistDESC" msprop:Generator_ColumnPropNameInTable="HproductslistDESCColumn" msprop:Generator_UserColumnName="HproductslistDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hproductslistcompanyid" msprop:Generator_ColumnVarNameInTable="columnHproductslistcompanyid" msprop:Generator_ColumnPropNameInRow="Hproductslistcompanyid" msprop:Generator_ColumnPropNameInTable="HproductslistcompanyidColumn" msprop:Generator_UserColumnName="Hproductslistcompanyid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hdivision" msprop:Generator_TableClassName="HdivisionDataTable" msprop:Generator_TableVarName="tableHdivision" msprop:Generator_RowChangedName="HdivisionRowChanged" msprop:Generator_TablePropName="Hdivision" msprop:Generator_RowDeletingName="HdivisionRowDeleting" msprop:Generator_RowChangingName="HdivisionRowChanging" msprop:Generator_RowEvHandlerName="HdivisionRowChangeEventHandler" msprop:Generator_RowDeletedName="HdivisionRowDeleted" msprop:Generator_RowClassName="HdivisionRow" msprop:Generator_UserTableName="Hdivision" msprop:Generator_RowEvArgName="HdivisionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HdivisionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHdivisionID" msprop:Generator_ColumnPropNameInRow="HdivisionID" msprop:Generator_ColumnPropNameInTable="HdivisionIDColumn" msprop:Generator_UserColumnName="HdivisionID" type="xs:int" />
+              <xs:element name="HdivisionDESC" msprop:Generator_ColumnVarNameInTable="columnHdivisionDESC" msprop:Generator_ColumnPropNameInRow="HdivisionDESC" msprop:Generator_ColumnPropNameInTable="HdivisionDESCColumn" msprop:Generator_UserColumnName="HdivisionDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="heterodivisoncode" msprop:Generator_ColumnVarNameInTable="columnheterodivisoncode" msprop:Generator_ColumnPropNameInRow="heterodivisoncode" msprop:Generator_ColumnPropNameInTable="heterodivisoncodeColumn" msprop:Generator_UserColumnName="heterodivisoncode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hdname" msprop:Generator_ColumnVarNameInTable="columnhdname" msprop:Generator_ColumnPropNameInRow="hdname" msprop:Generator_ColumnPropNameInTable="hdnameColumn" msprop:Generator_UserColumnName="hdname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Active" msprop:Generator_ColumnVarNameInTable="columnActive" msprop:Generator_ColumnPropNameInRow="Active" msprop:Generator_ColumnPropNameInTable="ActiveColumn" msprop:Generator_UserColumnName="Active" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Htherapatic" msprop:Generator_TableClassName="HtherapaticDataTable" msprop:Generator_TableVarName="tableHtherapatic" msprop:Generator_RowChangedName="HtherapaticRowChanged" msprop:Generator_TablePropName="Htherapatic" msprop:Generator_RowDeletingName="HtherapaticRowDeleting" msprop:Generator_RowChangingName="HtherapaticRowChanging" msprop:Generator_RowEvHandlerName="HtherapaticRowChangeEventHandler" msprop:Generator_RowDeletedName="HtherapaticRowDeleted" msprop:Generator_RowClassName="HtherapaticRow" msprop:Generator_UserTableName="Htherapatic" msprop:Generator_RowEvArgName="HtherapaticRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HtherapaticID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHtherapaticID" msprop:Generator_ColumnPropNameInRow="HtherapaticID" msprop:Generator_ColumnPropNameInTable="HtherapaticIDColumn" msprop:Generator_UserColumnName="HtherapaticID" type="xs:int" />
+              <xs:element name="HtherapaticDESC" msprop:Generator_ColumnVarNameInTable="columnHtherapaticDESC" msprop:Generator_ColumnPropNameInRow="HtherapaticDESC" msprop:Generator_ColumnPropNameInTable="HtherapaticDESCColumn" msprop:Generator_UserColumnName="HtherapaticDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HtherapaticSTATUS" msprop:Generator_ColumnVarNameInTable="columnHtherapaticSTATUS" msprop:Generator_ColumnPropNameInRow="HtherapaticSTATUS" msprop:Generator_ColumnPropNameInTable="HtherapaticSTATUSColumn" msprop:Generator_UserColumnName="HtherapaticSTATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="htheterocode" msprop:Generator_ColumnVarNameInTable="columnhtheterocode" msprop:Generator_ColumnPropNameInRow="htheterocode" msprop:Generator_ColumnPropNameInTable="htheterocodeColumn" msprop:Generator_UserColumnName="htheterocode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hthetroname" msprop:Generator_ColumnVarNameInTable="columnhthetroname" msprop:Generator_ColumnPropNameInRow="hthetroname" msprop:Generator_ColumnPropNameInTable="hthetronameColumn" msprop:Generator_UserColumnName="hthetroname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="htdivisionid" msprop:Generator_ColumnVarNameInTable="columnhtdivisionid" msprop:Generator_ColumnPropNameInRow="htdivisionid" msprop:Generator_ColumnPropNameInTable="htdivisionidColumn" msprop:Generator_UserColumnName="htdivisionid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hproductslistdescription" msprop:Generator_TableClassName="HproductslistdescriptionDataTable" msprop:Generator_TableVarName="tableHproductslistdescription" msprop:Generator_RowChangedName="HproductslistdescriptionRowChanged" msprop:Generator_TablePropName="Hproductslistdescription" msprop:Generator_RowDeletingName="HproductslistdescriptionRowDeleting" msprop:Generator_RowChangingName="HproductslistdescriptionRowChanging" msprop:Generator_RowEvHandlerName="HproductslistdescriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="HproductslistdescriptionRowDeleted" msprop:Generator_RowClassName="HproductslistdescriptionRow" msprop:Generator_UserTableName="Hproductslistdescription" msprop:Generator_RowEvArgName="HproductslistdescriptionRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HproductslistdescriptionID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHproductslistdescriptionID" msprop:Generator_ColumnPropNameInRow="HproductslistdescriptionID" msprop:Generator_ColumnPropNameInTable="HproductslistdescriptionIDColumn" msprop:Generator_UserColumnName="HproductslistdescriptionID" type="xs:int" />
+              <xs:element name="HproductslistdescriptionDESC" msprop:Generator_ColumnVarNameInTable="columnHproductslistdescriptionDESC" msprop:Generator_ColumnPropNameInRow="HproductslistdescriptionDESC" msprop:Generator_ColumnPropNameInTable="HproductslistdescriptionDESCColumn" msprop:Generator_UserColumnName="HproductslistdescriptionDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hproductslistcompanyid" msprop:Generator_ColumnVarNameInTable="columnHproductslistcompanyid" msprop:Generator_ColumnPropNameInRow="Hproductslistcompanyid" msprop:Generator_ColumnPropNameInTable="HproductslistcompanyidColumn" msprop:Generator_UserColumnName="Hproductslistcompanyid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdquantityperpack" msprop:Generator_ColumnVarNameInTable="columnhpdquantityperpack" msprop:Generator_ColumnPropNameInRow="hpdquantityperpack" msprop:Generator_ColumnPropNameInTable="hpdquantityperpackColumn" msprop:Generator_UserColumnName="hpdquantityperpack" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdquantityperstrip" msprop:Generator_ColumnVarNameInTable="columnhpdquantityperstrip" msprop:Generator_ColumnPropNameInRow="hpdquantityperstrip" msprop:Generator_ColumnPropNameInTable="hpdquantityperstripColumn" msprop:Generator_UserColumnName="hpdquantityperstrip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdratevalidform" msprop:Generator_ColumnVarNameInTable="columnhpdratevalidform" msprop:Generator_ColumnPropNameInRow="hpdratevalidform" msprop:Generator_ColumnPropNameInTable="hpdratevalidformColumn" msprop:Generator_UserColumnName="hpdratevalidform" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="hpdpricetoretailer" msprop:Generator_ColumnVarNameInTable="columnhpdpricetoretailer" msprop:Generator_ColumnPropNameInRow="hpdpricetoretailer" msprop:Generator_ColumnPropNameInTable="hpdpricetoretailerColumn" msprop:Generator_UserColumnName="hpdpricetoretailer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdmrp" msprop:Generator_ColumnVarNameInTable="columnhpdmrp" msprop:Generator_ColumnPropNameInRow="hpdmrp" msprop:Generator_ColumnPropNameInTable="hpdmrpColumn" msprop:Generator_UserColumnName="hpdmrp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdstandardrate" msprop:Generator_ColumnVarNameInTable="columnhpdstandardrate" msprop:Generator_ColumnPropNameInRow="hpdstandardrate" msprop:Generator_ColumnPropNameInTable="hpdstandardrateColumn" msprop:Generator_UserColumnName="hpdstandardrate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdpricetostockist" msprop:Generator_ColumnVarNameInTable="columnhpdpricetostockist" msprop:Generator_ColumnPropNameInRow="hpdpricetostockist" msprop:Generator_ColumnPropNameInTable="hpdpricetostockistColumn" msprop:Generator_UserColumnName="hpdpricetostockist" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpdbrandname" msprop:Generator_ColumnVarNameInTable="columnhpdbrandname" msprop:Generator_ColumnPropNameInRow="hpdbrandname" msprop:Generator_ColumnPropNameInTable="hpdbrandnameColumn" msprop:Generator_UserColumnName="hpdbrandname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hdpcategoryname" msprop:Generator_ColumnVarNameInTable="columnhdpcategoryname" msprop:Generator_ColumnPropNameInRow="hdpcategoryname" msprop:Generator_ColumnPropNameInTable="hdpcategorynameColumn" msprop:Generator_UserColumnName="hdpcategoryname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hpddivisionname" msprop:Generator_ColumnVarNameInTable="columnhpddivisionname" msprop:Generator_ColumnPropNameInRow="hpddivisionname" msprop:Generator_ColumnPropNameInTable="hpddivisionnameColumn" msprop:Generator_UserColumnName="hpddivisionname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hdpmanfacturename" msprop:Generator_ColumnVarNameInTable="columnhdpmanfacturename" msprop:Generator_ColumnPropNameInRow="hdpmanfacturename" msprop:Generator_ColumnPropNameInTable="hdpmanfacturenameColumn" msprop:Generator_UserColumnName="hdpmanfacturename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hstockistdetailsnew" msprop:Generator_TableClassName="HstockistdetailsnewDataTable" msprop:Generator_TableVarName="tableHstockistdetailsnew" msprop:Generator_TablePropName="Hstockistdetailsnew" msprop:Generator_RowDeletingName="HstockistdetailsnewRowDeleting" msprop:Generator_RowChangingName="HstockistdetailsnewRowChanging" msprop:Generator_RowEvHandlerName="HstockistdetailsnewRowChangeEventHandler" msprop:Generator_RowDeletedName="HstockistdetailsnewRowDeleted" msprop:Generator_UserTableName="Hstockistdetailsnew" msprop:Generator_RowChangedName="HstockistdetailsnewRowChanged" msprop:Generator_RowEvArgName="HstockistdetailsnewRowChangeEvent" msprop:Generator_RowClassName="HstockistdetailsnewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HstockistdetailsID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHstockistdetailsID" msprop:Generator_ColumnPropNameInRow="HstockistdetailsID" msprop:Generator_ColumnPropNameInTable="HstockistdetailsIDColumn" msprop:Generator_UserColumnName="HstockistdetailsID" type="xs:int" />
+              <xs:element name="hsfullname" msprop:Generator_ColumnVarNameInTable="columnhsfullname" msprop:Generator_ColumnPropNameInRow="hsfullname" msprop:Generator_ColumnPropNameInTable="hsfullnameColumn" msprop:Generator_UserColumnName="hsfullname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hslastname" msprop:Generator_ColumnVarNameInTable="columnhslastname" msprop:Generator_ColumnPropNameInRow="hslastname" msprop:Generator_ColumnPropNameInTable="hslastnameColumn" msprop:Generator_UserColumnName="hslastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsemailid" msprop:Generator_ColumnVarNameInTable="columnhsemailid" msprop:Generator_ColumnPropNameInRow="hsemailid" msprop:Generator_ColumnPropNameInTable="hsemailidColumn" msprop:Generator_UserColumnName="hsemailid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsmobile" msprop:Generator_ColumnVarNameInTable="columnhsmobile" msprop:Generator_ColumnPropNameInRow="hsmobile" msprop:Generator_ColumnPropNameInTable="hsmobileColumn" msprop:Generator_UserColumnName="hsmobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hspwd" msprop:Generator_ColumnVarNameInTable="columnhspwd" msprop:Generator_ColumnPropNameInRow="hspwd" msprop:Generator_ColumnPropNameInTable="hspwdColumn" msprop:Generator_UserColumnName="hspwd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hssapcustomerid" msprop:Generator_ColumnVarNameInTable="columnhssapcustomerid" msprop:Generator_ColumnPropNameInRow="hssapcustomerid" msprop:Generator_ColumnPropNameInTable="hssapcustomeridColumn" msprop:Generator_UserColumnName="hssapcustomerid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsplotno" msprop:Generator_ColumnVarNameInTable="columnhsplotno" msprop:Generator_ColumnPropNameInRow="hsplotno" msprop:Generator_ColumnPropNameInTable="hsplotnoColumn" msprop:Generator_UserColumnName="hsplotno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsadressone" msprop:Generator_ColumnVarNameInTable="columnhsadressone" msprop:Generator_ColumnPropNameInRow="hsadressone" msprop:Generator_ColumnPropNameInTable="hsadressoneColumn" msprop:Generator_UserColumnName="hsadressone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsadresstwo" msprop:Generator_ColumnVarNameInTable="columnhsadresstwo" msprop:Generator_ColumnPropNameInRow="hsadresstwo" msprop:Generator_ColumnPropNameInTable="hsadresstwoColumn" msprop:Generator_UserColumnName="hsadresstwo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hscountry" msprop:Generator_ColumnVarNameInTable="columnhscountry" msprop:Generator_ColumnPropNameInRow="hscountry" msprop:Generator_ColumnPropNameInTable="hscountryColumn" msprop:Generator_UserColumnName="hscountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsstate" msprop:Generator_ColumnVarNameInTable="columnhsstate" msprop:Generator_ColumnPropNameInRow="hsstate" msprop:Generator_ColumnPropNameInTable="hsstateColumn" msprop:Generator_UserColumnName="hsstate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsheadquater" msprop:Generator_ColumnVarNameInTable="columnhsheadquater" msprop:Generator_ColumnPropNameInRow="hsheadquater" msprop:Generator_ColumnPropNameInTable="hsheadquaterColumn" msprop:Generator_UserColumnName="hsheadquater" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hssubarea" msprop:Generator_ColumnVarNameInTable="columnhssubarea" msprop:Generator_ColumnPropNameInRow="hssubarea" msprop:Generator_ColumnPropNameInTable="hssubareaColumn" msprop:Generator_UserColumnName="hssubarea" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsdivision" msprop:Generator_ColumnVarNameInTable="columnhsdivision" msprop:Generator_ColumnPropNameInRow="hsdivision" msprop:Generator_ColumnPropNameInTable="hsdivisionColumn" msprop:Generator_UserColumnName="hsdivision" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hscnf" msprop:Generator_ColumnVarNameInTable="columnhscnf" msprop:Generator_ColumnPropNameInRow="hscnf" msprop:Generator_ColumnPropNameInTable="hscnfColumn" msprop:Generator_UserColumnName="hscnf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hstherapatic" msprop:Generator_ColumnVarNameInTable="columnhstherapatic" msprop:Generator_ColumnPropNameInRow="hstherapatic" msprop:Generator_ColumnPropNameInTable="hstherapaticColumn" msprop:Generator_UserColumnName="hstherapatic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hspincode" msprop:Generator_ColumnVarNameInTable="columnhspincode" msprop:Generator_ColumnPropNameInRow="hspincode" msprop:Generator_ColumnPropNameInTable="hspincodeColumn" msprop:Generator_UserColumnName="hspincode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hstelephone" msprop:Generator_ColumnVarNameInTable="columnhstelephone" msprop:Generator_ColumnPropNameInRow="hstelephone" msprop:Generator_ColumnPropNameInTable="hstelephoneColumn" msprop:Generator_UserColumnName="hstelephone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsfax" msprop:Generator_ColumnVarNameInTable="columnhsfax" msprop:Generator_ColumnPropNameInRow="hsfax" msprop:Generator_ColumnPropNameInTable="hsfaxColumn" msprop:Generator_UserColumnName="hsfax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsgstprovisionalid" msprop:Generator_ColumnVarNameInTable="columnhsgstprovisionalid" msprop:Generator_ColumnPropNameInRow="hsgstprovisionalid" msprop:Generator_ColumnPropNameInTable="hsgstprovisionalidColumn" msprop:Generator_UserColumnName="hsgstprovisionalid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hspan" msprop:Generator_ColumnVarNameInTable="columnhspan" msprop:Generator_ColumnPropNameInRow="hspan" msprop:Generator_ColumnPropNameInTable="hspanColumn" msprop:Generator_UserColumnName="hspan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsspocname" msprop:Generator_ColumnVarNameInTable="columnhsspocname" msprop:Generator_ColumnPropNameInRow="hsspocname" msprop:Generator_ColumnPropNameInTable="hsspocnameColumn" msprop:Generator_UserColumnName="hsspocname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsspocmobile" msprop:Generator_ColumnVarNameInTable="columnhsspocmobile" msprop:Generator_ColumnPropNameInRow="hsspocmobile" msprop:Generator_ColumnPropNameInTable="hsspocmobileColumn" msprop:Generator_UserColumnName="hsspocmobile" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsssistatus" msprop:Generator_ColumnVarNameInTable="columnhsssistatus" msprop:Generator_ColumnPropNameInRow="hsssistatus" msprop:Generator_ColumnPropNameInTable="hsssistatusColumn" msprop:Generator_UserColumnName="hsssistatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hsdruglicenceno" msprop:Generator_ColumnVarNameInTable="columnhsdruglicenceno" msprop:Generator_ColumnPropNameInRow="hsdruglicenceno" msprop:Generator_ColumnPropNameInTable="hsdruglicencenoColumn" msprop:Generator_UserColumnName="hsdruglicenceno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hvproductslist" msprop:Generator_TableClassName="HvproductslistDataTable" msprop:Generator_TableVarName="tableHvproductslist" msprop:Generator_RowChangedName="HvproductslistRowChanged" msprop:Generator_TablePropName="Hvproductslist" msprop:Generator_RowDeletingName="HvproductslistRowDeleting" msprop:Generator_RowChangingName="HvproductslistRowChanging" msprop:Generator_RowEvHandlerName="HvproductslistRowChangeEventHandler" msprop:Generator_RowDeletedName="HvproductslistRowDeleted" msprop:Generator_RowClassName="HvproductslistRow" msprop:Generator_UserTableName="Hvproductslist" msprop:Generator_RowEvArgName="HvproductslistRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="HvproductslistID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnHvproductslistID" msprop:Generator_ColumnPropNameInRow="HvproductslistID" msprop:Generator_ColumnPropNameInTable="HvproductslistIDColumn" msprop:Generator_UserColumnName="HvproductslistID" type="xs:int" />
+              <xs:element name="HvproductslistNAME" msprop:Generator_ColumnVarNameInTable="columnHvproductslistNAME" msprop:Generator_ColumnPropNameInRow="HvproductslistNAME" msprop:Generator_ColumnPropNameInTable="HvproductslistNAMEColumn" msprop:Generator_UserColumnName="HvproductslistNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HvproductslistDESC" msprop:Generator_ColumnVarNameInTable="columnHvproductslistDESC" msprop:Generator_ColumnPropNameInRow="HvproductslistDESC" msprop:Generator_ColumnPropNameInTable="HvproductslistDESCColumn" msprop:Generator_UserColumnName="HvproductslistDESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hvproductslistcompanyid" msprop:Generator_ColumnVarNameInTable="columnHvproductslistcompanyid" msprop:Generator_ColumnPropNameInRow="Hvproductslistcompanyid" msprop:Generator_ColumnPropNameInTable="HvproductslistcompanyidColumn" msprop:Generator_UserColumnName="Hvproductslistcompanyid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hproductslistcompanyid" msprop:Generator_ColumnVarNameInTable="columnHproductslistcompanyid" msprop:Generator_ColumnPropNameInRow="Hproductslistcompanyid" msprop:Generator_ColumnPropNameInTable="HproductslistcompanyidColumn" msprop:Generator_UserColumnName="Hproductslistcompanyid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hvstockistid" msprop:Generator_ColumnVarNameInTable="columnhvstockistid" msprop:Generator_ColumnPropNameInRow="hvstockistid" msprop:Generator_ColumnPropNameInTable="hvstockistidColumn" msprop:Generator_UserColumnName="hvstockistid" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -578,6 +1898,30 @@ FROM         OtherAdminLogins</CommandText>
     <xs:unique name="OtherAdminLogins_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:OtherAdminLogins" />
       <xs:field xpath="mstns:OtherAdminId" />
+    </xs:unique>
+    <xs:unique name="Hproductslist_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Hproductslist" />
+      <xs:field xpath="mstns:HproductslistID" />
+    </xs:unique>
+    <xs:unique name="Hdivision_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Hdivision" />
+      <xs:field xpath="mstns:HdivisionID" />
+    </xs:unique>
+    <xs:unique name="Htherapatic_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Htherapatic" />
+      <xs:field xpath="mstns:HtherapaticID" />
+    </xs:unique>
+    <xs:unique name="Hproductslistdescription_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Hproductslistdescription" />
+      <xs:field xpath="mstns:HproductslistdescriptionID" />
+    </xs:unique>
+    <xs:unique name="Hstockistdetailsnew_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Hstockistdetailsnew" />
+      <xs:field xpath="mstns:HstockistdetailsID" />
+    </xs:unique>
+    <xs:unique name="Hvproductslist_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Hvproductslist" />
+      <xs:field xpath="mstns:HvproductslistID" />
     </xs:unique>
   </xs:element>
 </xs:schema>

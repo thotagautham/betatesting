@@ -226,14 +226,42 @@
     <Content Include="add-customer\Account\RegisterExternalLogin.aspx" />
     <Content Include="admin-avana\default.aspx" />
     <Content Include="admin-avana\nadmin\admins\manage-admins.aspx" />
+    <Content Include="admin-avana\nadmin\change-password.aspx" />
+    <Content Include="admin-avana\nadmin\cms\manage-catlog-images.aspx" />
     <Content Include="admin-avana\nadmin\cms\manage-catlog.aspx" />
+    <Content Include="admin-avana\nadmin\cms\manage-colour.aspx" />
+    <Content Include="admin-hhc\change-password.aspx" />
+    <Content Include="admin-hhc\default.aspx" />
+    <Content Include="admin-hhc\nadmin\admins\addadmins.aspx" />
+    <Content Include="admin-hhc\nadmin\admins\manage-admins.aspx" />
+    <Content Include="admin-hhc\nadmin\change-password.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-city.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-country.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-division.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\Manage-indian-states.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-product-description.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-product-description2.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-products.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-state.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-sub-area.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-therapatic.aspx" />
+    <Content Include="admin-hhc\nadmin\cms\manage-vendor-products.aspx" />
+    <Content Include="admin-hhc\nadmin\default.aspx" />
     <Content Include="admin-stockist\change-password\default.aspx" />
+    <Content Include="admin-stockist\change-password\default2.aspx" />
     <Content Include="admin-stockist\default.aspx" />
     <Content Include="admin-stockist\forgot-password\default.aspx" />
-    <Content Include="admin-stockist\products\default.aspx" />
+    <Content Include="admin-stockist\forgot-password\default2.aspx" />
+    <Content Include="admin-stockist\products\Default.aspx" />
+    <Content Include="admin-stockist\products\default2.aspx" />
     <Content Include="admin-stockist\profile\default.aspx" />
-    <Content Include="admin-stockist\register\default.aspx" />
-    <Content Include="admin-stockist\sign-in\default.aspx" />
+    <Content Include="admin-stockist\profile\default2.aspx" />
+    <Content Include="admin-stockist\register\Default.aspx" />
+    <Content Include="admin-stockist\register\default2.aspx" />
+    <Content Include="admin-stockist\sign-in\Default.aspx" />
+    <Content Include="admin-stockist\sign-in\default2.aspx" />
+    <Content Include="admin-stockist\upload-file.aspx" />
+    <Content Include="admin-stockist\upload-file\default.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\NAdmin\Admins\AddAdmin.aspx" />
     <Content Include="Admin\NAdmin\ChangePassword.aspx" />
@@ -266,9 +294,6 @@
     <Content Include="Admin\NAdmin\cms\enquiry-wcw.aspx" />
     <Content Include="Admin\NAdmin\cms\enquiry-EPISTEMO-GLOBAL.aspx" />
     <Content Include="Admin\NAdmin\cms\enquiry-wgcbiogenesis.aspx" />
-    <Content Include="Admin\NAdmin\cms\HETERO-VENDOR-PRODUCTS.ASPX" />
-    <Content Include="Admin\NAdmin\cms\hetero-vendor-sales.aspx" />
-    <Content Include="Admin\NAdmin\cms\hetro-products.aspx" />
     <Content Include="Admin\NAdmin\cms\manage-board-memebers.aspx" />
     <Content Include="Admin\NAdmin\cms\manage-city.aspx" />
     <Content Include="Admin\NAdmin\cms\manage-country.aspx" />
@@ -284,6 +309,7 @@
     <Content Include="Admin\NAdmin\cms\wgcbiogenesi.aspx" />
     <Content Include="Admin\NAdmin\default.aspx" />
     <Content Include="appointment.aspx" />
+    <Content Include="ascx-hhc\admins\login.ascx" />
     <Content Include="avana-ascx\admin-login.ascx" />
     <Content Include="admin-avana\nadmin\default.aspx" />
     <Content Include="bin\AjaxControlToolkit.dll" />
@@ -948,7 +974,6 @@
     <Content Include="propertyfile\log\Exception_28-08-2015.txt" />
     <Content Include="propertyfile\TPSLAESSecurityCipher.dll" />
     <Content Include="rememberpassword\default.aspx" />
-    <Content Include="bin\AjaxControlToolkit.dll.refresh" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
@@ -1108,6 +1133,10 @@
     <Content Include="admin-stockist\innebasepage.master" />
     <Content Include="admin-avana\innerbasepage.master" />
     <Content Include="admin-avana\adminbasepage.master" />
+    <Content Include="admin-hhc\adminbasepage.master" />
+    <Content Include="admin-hhc\admininner.master" />
+    <Content Include="bin\AjaxControlToolkit.dll.refresh" />
+    <Content Include="admin-stockist\stockistprofile.master" />
     <None Include="My Project\PublishProfiles\vmoksha.pubxml" />
     <Content Include="resources\css\bootstrap-theme.css.map" />
     <Content Include="resources\css\bootstrap.css.map" />
@@ -1227,6 +1256,7 @@
     <Content Include="social\default.aspx" />
     <Content Include="srihamsa-inner.aspx" />
     <Content Include="srihamsa.aspx" />
+    <Content Include="states.aspx" />
     <Content Include="test.aspx" />
     <Content Include="Thankyou.aspx" />
     <Content Include="upload.aspx" />
@@ -1483,6 +1513,20 @@
       <DependentUpon>manage-admins.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="admin-avana\nadmin\change-password.aspx.designer.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-avana\nadmin\change-password.aspx.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-avana\nadmin\cms\manage-catlog-images.aspx.designer.vb">
+      <DependentUpon>manage-catlog-images.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-avana\nadmin\cms\manage-catlog-images.aspx.vb">
+      <DependentUpon>manage-catlog-images.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin-avana\nadmin\cms\manage-catlog.aspx.designer.vb">
       <DependentUpon>manage-catlog.aspx</DependentUpon>
     </Compile>
@@ -1490,11 +1534,158 @@
       <DependentUpon>manage-catlog.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="admin-avana\nadmin\cms\manage-colour.aspx.designer.vb">
+      <DependentUpon>manage-colour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-avana\nadmin\cms\manage-colour.aspx.vb">
+      <DependentUpon>manage-colour.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\adminbasepage.master.designer.vb">
+      <DependentUpon>adminbasepage.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\adminbasepage.master.vb">
+      <DependentUpon>adminbasepage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\admininner.master.designer.vb">
+      <DependentUpon>admininner.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\admininner.master.vb">
+      <DependentUpon>admininner.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\change-password.aspx.designer.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\change-password.aspx.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\admins\addadmins.aspx.designer.vb">
+      <DependentUpon>addadmins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\admins\addadmins.aspx.vb">
+      <DependentUpon>addadmins.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\admins\manage-admins.aspx.designer.vb">
+      <DependentUpon>manage-admins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\admins\manage-admins.aspx.vb">
+      <DependentUpon>manage-admins.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\change-password.aspx.designer.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\change-password.aspx.vb">
+      <DependentUpon>change-password.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-city.aspx.designer.vb">
+      <DependentUpon>manage-city.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-city.aspx.vb">
+      <DependentUpon>manage-city.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-country.aspx.designer.vb">
+      <DependentUpon>manage-country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-country.aspx.vb">
+      <DependentUpon>manage-country.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-division.aspx.designer.vb">
+      <DependentUpon>manage-division.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-division.aspx.vb">
+      <DependentUpon>manage-division.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\Manage-indian-states.aspx.designer.vb">
+      <DependentUpon>Manage-indian-states.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\Manage-indian-states.aspx.vb">
+      <DependentUpon>Manage-indian-states.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-product-description.aspx.designer.vb">
+      <DependentUpon>manage-product-description.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-product-description.aspx.vb">
+      <DependentUpon>manage-product-description.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-product-description2.aspx.designer.vb">
+      <DependentUpon>manage-product-description2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-product-description2.aspx.vb">
+      <DependentUpon>manage-product-description2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-products.aspx.designer.vb">
+      <DependentUpon>manage-products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-products.aspx.vb">
+      <DependentUpon>manage-products.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-state.aspx.designer.vb">
+      <DependentUpon>manage-state.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-state.aspx.vb">
+      <DependentUpon>manage-state.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-sub-area.aspx.designer.vb">
+      <DependentUpon>manage-sub-area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-sub-area.aspx.vb">
+      <DependentUpon>manage-sub-area.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-therapatic.aspx.designer.vb">
+      <DependentUpon>manage-therapatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-therapatic.aspx.vb">
+      <DependentUpon>manage-therapatic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-vendor-products.aspx.designer.vb">
+      <DependentUpon>manage-vendor-products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\cms\manage-vendor-products.aspx.vb">
+      <DependentUpon>manage-vendor-products.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-hhc\nadmin\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin-stockist\change-password\default.aspx.designer.vb">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin-stockist\change-password\default.aspx.vb">
       <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\change-password\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\change-password\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin-stockist\default.aspx.designer.vb">
@@ -1511,6 +1702,13 @@
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="admin-stockist\forgot-password\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\forgot-password\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin-stockist\innebasepage.master.designer.vb">
       <DependentUpon>innebasepage.master</DependentUpon>
     </Compile>
@@ -1518,11 +1716,18 @@
       <DependentUpon>innebasepage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin-stockist\products\default.aspx.designer.vb">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="admin-stockist\products\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin-stockist\products\default.aspx.vb">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="admin-stockist\products\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\products\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\products\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin-stockist\profile\default.aspx.designer.vb">
@@ -1532,17 +1737,59 @@
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="admin-stockist\register\default.aspx.designer.vb">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="admin-stockist\profile\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin-stockist\register\default.aspx.vb">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="admin-stockist\profile\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="admin-stockist\sign-in\default.aspx.designer.vb">
+    <Compile Include="admin-stockist\register\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\register\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\register\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\register\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\sign-in\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\sign-in\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\sign-in\default2.aspx.designer.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\sign-in\default2.aspx.vb">
+      <DependentUpon>default2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\stockistprofile.master.designer.vb">
+      <DependentUpon>stockistprofile.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\stockistprofile.master.vb">
+      <DependentUpon>stockistprofile.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\upload-file.aspx.designer.vb">
+      <DependentUpon>upload-file.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin-stockist\upload-file.aspx.vb">
+      <DependentUpon>upload-file.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin-stockist\upload-file\default.aspx.designer.vb">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin-stockist\sign-in\default.aspx.vb">
+    <Compile Include="admin-stockist\upload-file\default.aspx.vb">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
@@ -1798,27 +2045,6 @@
       <DependentUpon>enquiry-wgcbiogenesis.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin\NAdmin\cms\HETERO-VENDOR-PRODUCTS.ASPX.designer.vb">
-      <DependentUpon>HETERO-VENDOR-PRODUCTS.ASPX</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\NAdmin\cms\HETERO-VENDOR-PRODUCTS.ASPX.vb">
-      <DependentUpon>HETERO-VENDOR-PRODUCTS.ASPX</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Admin\NAdmin\cms\hetero-vendor-sales.aspx.designer.vb">
-      <DependentUpon>hetero-vendor-sales.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\NAdmin\cms\hetero-vendor-sales.aspx.vb">
-      <DependentUpon>hetero-vendor-sales.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Admin\NAdmin\cms\hetro-products.aspx.designer.vb">
-      <DependentUpon>hetro-products.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\NAdmin\cms\hetro-products.aspx.vb">
-      <DependentUpon>hetro-products.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="Admin\NAdmin\cms\manage-board-memebers.aspx.designer.vb">
       <DependentUpon>manage-board-memebers.aspx</DependentUpon>
     </Compile>
@@ -1927,6 +2153,13 @@
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="ascx-hhc\admins\login.ascx.designer.vb">
+      <DependentUpon>login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ascx-hhc\admins\login.ascx.vb">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="avana-ascx\admin-login.ascx.designer.vb">
       <DependentUpon>admin-login.ascx</DependentUpon>
     </Compile>
@@ -2227,6 +2460,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Startup.vb" />
+    <Compile Include="states.aspx.designer.vb">
+      <DependentUpon>states.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="states.aspx.vb">
+      <DependentUpon>states.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="test.aspx.designer.vb">
       <DependentUpon>test.aspx</DependentUpon>
     </Compile>
@@ -2379,8 +2619,8 @@
     <Content Include="ViewSwitcher.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="admin-hhc\" />
     <Folder Include="App_Data\" />
+    <Folder Include="ascx-hhc\stockist\" />
     <Folder Include="dandia\" />
     <Folder Include="Expertphotos\" />
   </ItemGroup>

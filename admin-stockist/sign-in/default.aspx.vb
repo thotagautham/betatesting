@@ -5,7 +5,7 @@ Imports System.Data
 Imports System.Configuration
 Imports System.Web.UI.WebControls
 Imports betatesting.CorporatesTableAdapters
-Public Class _default6
+Public Class _Default38
     Inherits System.Web.UI.Page
     Dim dscardiac As New HstockistdetailsTableAdapter
 
@@ -43,7 +43,7 @@ Public Class _default6
             Dim hash As String = FormsAuthentication.Encrypt(ticket)
             Dim cookie As New HttpCookie(FormsAuthentication.FormsCookieName, hash)
             Response.Cookies.Add(cookie)
-          
+
             'dscardio.Updateunpaiddatasigninpage("N", "0", "Appointment cancelled", Now(), "1", "0", "0")
 
 

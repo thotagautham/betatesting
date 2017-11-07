@@ -29,9 +29,11 @@ Partial Public Class avana
 
     Private tableavanaControlPanelIPStats As avanaControlPanelIPStatsDataTable
 
-    Private tableControlPanelIPStats As ControlPanelIPStatsDataTable
+    Private tableColours As ColoursDataTable
 
-    Private tableOtherAdminLogins As OtherAdminLoginsDataTable
+    Private tableavanacatlog As avanacatlogDataTable
+
+    Private tableavanacatlogimages As avanacatlogimagesDataTable
 
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
 
@@ -68,11 +70,14 @@ Partial Public Class avana
             If (Not (ds.Tables("avanaControlPanelIPStats")) Is Nothing) Then
                 MyBase.Tables.Add(New avanaControlPanelIPStatsDataTable(ds.Tables("avanaControlPanelIPStats")))
             End If
-            If (Not (ds.Tables("ControlPanelIPStats")) Is Nothing) Then
-                MyBase.Tables.Add(New ControlPanelIPStatsDataTable(ds.Tables("ControlPanelIPStats")))
+            If (Not (ds.Tables("Colours")) Is Nothing) Then
+                MyBase.Tables.Add(New ColoursDataTable(ds.Tables("Colours")))
             End If
-            If (Not (ds.Tables("OtherAdminLogins")) Is Nothing) Then
-                MyBase.Tables.Add(New OtherAdminLoginsDataTable(ds.Tables("OtherAdminLogins")))
+            If (Not (ds.Tables("avanacatlog")) Is Nothing) Then
+                MyBase.Tables.Add(New avanacatlogDataTable(ds.Tables("avanacatlog")))
+            End If
+            If (Not (ds.Tables("avanacatlogimages")) Is Nothing) Then
+                MyBase.Tables.Add(New avanacatlogimagesDataTable(ds.Tables("avanacatlogimages")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -115,9 +120,9 @@ Partial Public Class avana
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
      Global.System.ComponentModel.Browsable(False), _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)> _
-    Public ReadOnly Property ControlPanelIPStats() As ControlPanelIPStatsDataTable
+    Public ReadOnly Property Colours() As ColoursDataTable
         Get
-            Return Me.tableControlPanelIPStats
+            Return Me.tableColours
         End Get
     End Property
 
@@ -125,9 +130,19 @@ Partial Public Class avana
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
      Global.System.ComponentModel.Browsable(False), _
      Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)> _
-    Public ReadOnly Property OtherAdminLogins() As OtherAdminLoginsDataTable
+    Public ReadOnly Property avanacatlog() As avanacatlogDataTable
         Get
-            Return Me.tableOtherAdminLogins
+            Return Me.tableavanacatlog
+        End Get
+    End Property
+
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+     Global.System.ComponentModel.Browsable(False), _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)> _
+    Public ReadOnly Property avanacatlogimages() As avanacatlogimagesDataTable
+        Get
+            Return Me.tableavanacatlogimages
         End Get
     End Property
 
@@ -204,11 +219,14 @@ Partial Public Class avana
             If (Not (ds.Tables("avanaControlPanelIPStats")) Is Nothing) Then
                 MyBase.Tables.Add(New avanaControlPanelIPStatsDataTable(ds.Tables("avanaControlPanelIPStats")))
             End If
-            If (Not (ds.Tables("ControlPanelIPStats")) Is Nothing) Then
-                MyBase.Tables.Add(New ControlPanelIPStatsDataTable(ds.Tables("ControlPanelIPStats")))
+            If (Not (ds.Tables("Colours")) Is Nothing) Then
+                MyBase.Tables.Add(New ColoursDataTable(ds.Tables("Colours")))
             End If
-            If (Not (ds.Tables("OtherAdminLogins")) Is Nothing) Then
-                MyBase.Tables.Add(New OtherAdminLoginsDataTable(ds.Tables("OtherAdminLogins")))
+            If (Not (ds.Tables("avanacatlog")) Is Nothing) Then
+                MyBase.Tables.Add(New avanacatlogDataTable(ds.Tables("avanacatlog")))
+            End If
+            If (Not (ds.Tables("avanacatlogimages")) Is Nothing) Then
+                MyBase.Tables.Add(New avanacatlogimagesDataTable(ds.Tables("avanacatlogimages")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -254,16 +272,22 @@ Partial Public Class avana
                 Me.tableavanaControlPanelIPStats.InitVars()
             End If
         End If
-        Me.tableControlPanelIPStats = CType(MyBase.Tables("ControlPanelIPStats"), ControlPanelIPStatsDataTable)
+        Me.tableColours = CType(MyBase.Tables("Colours"), ColoursDataTable)
         If (initTable = True) Then
-            If (Not (Me.tableControlPanelIPStats) Is Nothing) Then
-                Me.tableControlPanelIPStats.InitVars()
+            If (Not (Me.tableColours) Is Nothing) Then
+                Me.tableColours.InitVars()
             End If
         End If
-        Me.tableOtherAdminLogins = CType(MyBase.Tables("OtherAdminLogins"), OtherAdminLoginsDataTable)
+        Me.tableavanacatlog = CType(MyBase.Tables("avanacatlog"), avanacatlogDataTable)
         If (initTable = True) Then
-            If (Not (Me.tableOtherAdminLogins) Is Nothing) Then
-                Me.tableOtherAdminLogins.InitVars()
+            If (Not (Me.tableavanacatlog) Is Nothing) Then
+                Me.tableavanacatlog.InitVars()
+            End If
+        End If
+        Me.tableavanacatlogimages = CType(MyBase.Tables("avanacatlogimages"), avanacatlogimagesDataTable)
+        If (initTable = True) Then
+            If (Not (Me.tableavanacatlogimages) Is Nothing) Then
+                Me.tableavanacatlogimages.InitVars()
             End If
         End If
     End Sub
@@ -280,10 +304,12 @@ Partial Public Class avana
         MyBase.Tables.Add(Me.tableavanaAdminLogins)
         Me.tableavanaControlPanelIPStats = New avanaControlPanelIPStatsDataTable()
         MyBase.Tables.Add(Me.tableavanaControlPanelIPStats)
-        Me.tableControlPanelIPStats = New ControlPanelIPStatsDataTable()
-        MyBase.Tables.Add(Me.tableControlPanelIPStats)
-        Me.tableOtherAdminLogins = New OtherAdminLoginsDataTable()
-        MyBase.Tables.Add(Me.tableOtherAdminLogins)
+        Me.tableColours = New ColoursDataTable()
+        MyBase.Tables.Add(Me.tableColours)
+        Me.tableavanacatlog = New avanacatlogDataTable()
+        MyBase.Tables.Add(Me.tableavanacatlog)
+        Me.tableavanacatlogimages = New avanacatlogimagesDataTable()
+        MyBase.Tables.Add(Me.tableavanacatlogimages)
     End Sub
 
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -300,13 +326,19 @@ Partial Public Class avana
 
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Private Function ShouldSerializeControlPanelIPStats() As Boolean
+    Private Function ShouldSerializeColours() As Boolean
         Return False
     End Function
 
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Private Function ShouldSerializeOtherAdminLogins() As Boolean
+    Private Function ShouldSerializeavanacatlog() As Boolean
+        Return False
+    End Function
+
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+    Private Function ShouldSerializeavanacatlogimages() As Boolean
         Return False
     End Function
 
@@ -375,10 +407,13 @@ Partial Public Class avana
     Public Delegate Sub avanaControlPanelIPStatsRowChangeEventHandler(ByVal sender As Object, ByVal e As avanaControlPanelIPStatsRowChangeEvent)
 
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Public Delegate Sub ControlPanelIPStatsRowChangeEventHandler(ByVal sender As Object, ByVal e As ControlPanelIPStatsRowChangeEvent)
+    Public Delegate Sub ColoursRowChangeEventHandler(ByVal sender As Object, ByVal e As ColoursRowChangeEvent)
 
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Public Delegate Sub OtherAdminLoginsRowChangeEventHandler(ByVal sender As Object, ByVal e As OtherAdminLoginsRowChangeEvent)
+    Public Delegate Sub avanacatlogRowChangeEventHandler(ByVal sender As Object, ByVal e As avanacatlogRowChangeEvent)
+
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+    Public Delegate Sub avanacatlogimagesRowChangeEventHandler(ByVal sender As Object, ByVal e As avanacatlogimagesRowChangeEvent)
 
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -1053,24 +1088,18 @@ Partial Public Class avana
     '''</summary>
     <Global.System.Serializable(), _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")> _
-    Partial Public Class ControlPanelIPStatsDataTable
-        Inherits Global.System.Data.TypedTableBase(Of ControlPanelIPStatsRow)
+    Partial Public Class ColoursDataTable
+        Inherits Global.System.Data.TypedTableBase(Of ColoursRow)
 
-        Private columnCPIPID As Global.System.Data.DataColumn
+        Private columnColourID As Global.System.Data.DataColumn
 
-        Private columnCPIP As Global.System.Data.DataColumn
-
-        Private columnCPLoginTime As Global.System.Data.DataColumn
-
-        Private columnCPLogoutTime As Global.System.Data.DataColumn
-
-        Private columnCPLoginID As Global.System.Data.DataColumn
+        Private columncolourname As Global.System.Data.DataColumn
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
             MyBase.New()
-            Me.TableName = "ControlPanelIPStats"
+            Me.TableName = "Colours"
             Me.BeginInit()
             Me.InitClass()
             Me.EndInit()
@@ -1103,41 +1132,17 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property CPIPIDColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property ColourIDColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnCPIPID
+                Return Me.columnColourID
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property CPIPColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property colournameColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnCPIP
-            End Get
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property CPLoginTimeColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCPLoginTime
-            End Get
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property CPLogoutTimeColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCPLogoutTime
-            End Get
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property CPLoginIDColumn() As Global.System.Data.DataColumn
-            Get
-                Return Me.columnCPLoginID
+                Return Me.columncolourname
             End Get
         End Property
 
@@ -1152,50 +1157,50 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Default Public ReadOnly Property Item(ByVal index As Integer) As ControlPanelIPStatsRow
+        Default Public ReadOnly Property Item(ByVal index As Integer) As ColoursRow
             Get
-                Return CType(Me.Rows(index), ControlPanelIPStatsRow)
+                Return CType(Me.Rows(index), ColoursRow)
             End Get
         End Property
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event ControlPanelIPStatsRowChanging As ControlPanelIPStatsRowChangeEventHandler
+        Public Event ColoursRowChanging As ColoursRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event ControlPanelIPStatsRowChanged As ControlPanelIPStatsRowChangeEventHandler
+        Public Event ColoursRowChanged As ColoursRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event ControlPanelIPStatsRowDeleting As ControlPanelIPStatsRowChangeEventHandler
+        Public Event ColoursRowDeleting As ColoursRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event ControlPanelIPStatsRowDeleted As ControlPanelIPStatsRowChangeEventHandler
+        Public Event ColoursRowDeleted As ColoursRowChangeEventHandler
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Overloads Sub AddControlPanelIPStatsRow(ByVal row As ControlPanelIPStatsRow)
+        Public Overloads Sub AddColoursRow(ByVal row As ColoursRow)
             Me.Rows.Add(row)
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Overloads Function AddControlPanelIPStatsRow(ByVal CPIP As String, ByVal CPLoginTime As Date, ByVal CPLogoutTime As Date, ByVal CPLoginID As String) As ControlPanelIPStatsRow
-            Dim rowControlPanelIPStatsRow As ControlPanelIPStatsRow = CType(Me.NewRow, ControlPanelIPStatsRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, CPIP, CPLoginTime, CPLogoutTime, CPLoginID}
-            rowControlPanelIPStatsRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowControlPanelIPStatsRow)
-            Return rowControlPanelIPStatsRow
+        Public Overloads Function AddColoursRow(ByVal colourname As String) As ColoursRow
+            Dim rowColoursRow As ColoursRow = CType(Me.NewRow, ColoursRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, colourname}
+            rowColoursRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowColoursRow)
+            Return rowColoursRow
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function FindByCPIPID(ByVal CPIPID As Integer) As ControlPanelIPStatsRow
-            Return CType(Me.Rows.Find(New Object() {CPIPID}), ControlPanelIPStatsRow)
+        Public Function FindByColourID(ByVal ColourID As Integer) As ColoursRow
+            Return CType(Me.Rows.Find(New Object() {ColourID}), ColoursRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As ControlPanelIPStatsDataTable = CType(MyBase.Clone, ControlPanelIPStatsDataTable)
+            Dim cln As ColoursDataTable = CType(MyBase.Clone, ColoursDataTable)
             cln.InitVars()
             Return cln
         End Function
@@ -1203,65 +1208,57 @@ Partial Public Class avana
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New ControlPanelIPStatsDataTable()
+            Return New ColoursDataTable()
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Sub InitVars()
-            Me.columnCPIPID = MyBase.Columns("CPIPID")
-            Me.columnCPIP = MyBase.Columns("CPIP")
-            Me.columnCPLoginTime = MyBase.Columns("CPLoginTime")
-            Me.columnCPLogoutTime = MyBase.Columns("CPLogoutTime")
-            Me.columnCPLoginID = MyBase.Columns("CPLoginID")
+            Me.columnColourID = MyBase.Columns("ColourID")
+            Me.columncolourname = MyBase.Columns("colourname")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitClass()
-            Me.columnCPIPID = New Global.System.Data.DataColumn("CPIPID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCPIPID)
-            Me.columnCPIP = New Global.System.Data.DataColumn("CPIP", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCPIP)
-            Me.columnCPLoginTime = New Global.System.Data.DataColumn("CPLoginTime", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCPLoginTime)
-            Me.columnCPLogoutTime = New Global.System.Data.DataColumn("CPLogoutTime", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCPLogoutTime)
-            Me.columnCPLoginID = New Global.System.Data.DataColumn("CPLoginID", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnCPLoginID)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCPIPID}, True))
-            Me.columnCPIPID.AutoIncrement = True
-            Me.columnCPIPID.AllowDBNull = False
-            Me.columnCPIPID.ReadOnly = True
-            Me.columnCPIPID.Unique = True
-            Me.columnCPIP.MaxLength = 50
-            Me.columnCPLoginID.MaxLength = 100
+            Me.columnColourID = New Global.System.Data.DataColumn("ColourID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnColourID)
+            Me.columncolourname = New Global.System.Data.DataColumn("colourname", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncolourname)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnColourID}, True))
+            Me.columnColourID.AutoIncrement = True
+            Me.columnColourID.AutoIncrementSeed = -1
+            Me.columnColourID.AutoIncrementStep = -1
+            Me.columnColourID.AllowDBNull = False
+            Me.columnColourID.ReadOnly = True
+            Me.columnColourID.Unique = True
+            Me.columncolourname.MaxLength = 100
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function NewControlPanelIPStatsRow() As ControlPanelIPStatsRow
-            Return CType(Me.NewRow, ControlPanelIPStatsRow)
+        Public Function NewColoursRow() As ColoursRow
+            Return CType(Me.NewRow, ColoursRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New ControlPanelIPStatsRow(builder)
+            Return New ColoursRow(builder)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(ControlPanelIPStatsRow)
+            Return GetType(ColoursRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanged(e)
-            If (Not (Me.ControlPanelIPStatsRowChangedEvent) Is Nothing) Then
-                RaiseEvent ControlPanelIPStatsRowChanged(Me, New ControlPanelIPStatsRowChangeEvent(CType(e.Row, ControlPanelIPStatsRow), e.Action))
+            If (Not (Me.ColoursRowChangedEvent) Is Nothing) Then
+                RaiseEvent ColoursRowChanged(Me, New ColoursRowChangeEvent(CType(e.Row, ColoursRow), e.Action))
             End If
         End Sub
 
@@ -1269,8 +1266,8 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
-            If (Not (Me.ControlPanelIPStatsRowChangingEvent) Is Nothing) Then
-                RaiseEvent ControlPanelIPStatsRowChanging(Me, New ControlPanelIPStatsRowChangeEvent(CType(e.Row, ControlPanelIPStatsRow), e.Action))
+            If (Not (Me.ColoursRowChangingEvent) Is Nothing) Then
+                RaiseEvent ColoursRowChanging(Me, New ColoursRowChangeEvent(CType(e.Row, ColoursRow), e.Action))
             End If
         End Sub
 
@@ -1278,8 +1275,8 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleted(e)
-            If (Not (Me.ControlPanelIPStatsRowDeletedEvent) Is Nothing) Then
-                RaiseEvent ControlPanelIPStatsRowDeleted(Me, New ControlPanelIPStatsRowChangeEvent(CType(e.Row, ControlPanelIPStatsRow), e.Action))
+            If (Not (Me.ColoursRowDeletedEvent) Is Nothing) Then
+                RaiseEvent ColoursRowDeleted(Me, New ColoursRowChangeEvent(CType(e.Row, ColoursRow), e.Action))
             End If
         End Sub
 
@@ -1287,14 +1284,14 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
-            If (Not (Me.ControlPanelIPStatsRowDeletingEvent) Is Nothing) Then
-                RaiseEvent ControlPanelIPStatsRowDeleting(Me, New ControlPanelIPStatsRowChangeEvent(CType(e.Row, ControlPanelIPStatsRow), e.Action))
+            If (Not (Me.ColoursRowDeletingEvent) Is Nothing) Then
+                RaiseEvent ColoursRowDeleting(Me, New ColoursRowChangeEvent(CType(e.Row, ColoursRow), e.Action))
             End If
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub RemoveControlPanelIPStatsRow(ByVal row As ControlPanelIPStatsRow)
+        Public Sub RemoveColoursRow(ByVal row As ColoursRow)
             Me.Rows.Remove(row)
         End Sub
 
@@ -1321,7 +1318,7 @@ Partial Public Class avana
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "ControlPanelIPStatsDataTable"
+            attribute2.FixedValue = "ColoursDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -1370,30 +1367,50 @@ Partial Public Class avana
     '''</summary>
     <Global.System.Serializable(), _
      Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")> _
-    Partial Public Class OtherAdminLoginsDataTable
-        Inherits Global.System.Data.TypedTableBase(Of OtherAdminLoginsRow)
+    Partial Public Class avanacatlogDataTable
+        Inherits Global.System.Data.TypedTableBase(Of avanacatlogRow)
 
-        Private columnOtherAdminId As Global.System.Data.DataColumn
+        Private columnavanacatlogID As Global.System.Data.DataColumn
 
-        Private columnUserName As Global.System.Data.DataColumn
+        Private columnname As Global.System.Data.DataColumn
 
-        Private columnUserPwd As Global.System.Data.DataColumn
+        Private columnlongdescription As Global.System.Data.DataColumn
 
-        Private columnName As Global.System.Data.DataColumn
+        Private columnshortdescription As Global.System.Data.DataColumn
 
-        Private columnBranch As Global.System.Data.DataColumn
+        Private columnsku As Global.System.Data.DataColumn
 
-        Private columnPermissions As Global.System.Data.DataColumn
+        Private columncolour As Global.System.Data.DataColumn
 
-        Private columnEmailID As Global.System.Data.DataColumn
+        Private columnweight As Global.System.Data.DataColumn
 
-        Private columnActiveStatus As Global.System.Data.DataColumn
+        Private columnmaterial As Global.System.Data.DataColumn
+
+        Private columnmeasurments As Global.System.Data.DataColumn
+
+        Private columncare As Global.System.Data.DataColumn
+
+        Private columnshippinginfo As Global.System.Data.DataColumn
+
+        Private columnprice As Global.System.Data.DataColumn
+
+        Private columnnotes As Global.System.Data.DataColumn
+
+        Private columnimage1 As Global.System.Data.DataColumn
+
+        Private columnimage2 As Global.System.Data.DataColumn
+
+        Private columnimage3 As Global.System.Data.DataColumn
+
+        Private columnimage4 As Global.System.Data.DataColumn
+
+        Private columnimage5 As Global.System.Data.DataColumn
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Sub New()
             MyBase.New()
-            Me.TableName = "OtherAdminLogins"
+            Me.TableName = "avanacatlog"
             Me.BeginInit()
             Me.InitClass()
             Me.EndInit()
@@ -1426,65 +1443,145 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property OtherAdminIdColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property avanacatlogIDColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnOtherAdminId
+                Return Me.columnavanacatlogID
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property UserNameColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property nameColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnUserName
+                Return Me.columnname
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property UserPwdColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property longdescriptionColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnUserPwd
+                Return Me.columnlongdescription
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property NameColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property shortdescriptionColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnName
+                Return Me.columnshortdescription
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property BranchColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property skuColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnBranch
+                Return Me.columnsku
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property PermissionsColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property colourColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnPermissions
+                Return Me.columncolour
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property EmailIDColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property weightColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnEmailID
+                Return Me.columnweight
             End Get
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property ActiveStatusColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property materialColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnActiveStatus
+                Return Me.columnmaterial
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property measurmentsColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnmeasurments
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property careColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columncare
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property shippinginfoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnshippinginfo
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property priceColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnprice
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property notesColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnnotes
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property image1Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimage1
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property image2Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimage2
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property image3Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimage3
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property image4Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimage4
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property image5Column() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimage5
             End Get
         End Property
 
@@ -1499,50 +1596,67 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Default Public ReadOnly Property Item(ByVal index As Integer) As OtherAdminLoginsRow
+        Default Public ReadOnly Property Item(ByVal index As Integer) As avanacatlogRow
             Get
-                Return CType(Me.Rows(index), OtherAdminLoginsRow)
+                Return CType(Me.Rows(index), avanacatlogRow)
             End Get
         End Property
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event OtherAdminLoginsRowChanging As OtherAdminLoginsRowChangeEventHandler
+        Public Event avanacatlogRowChanging As avanacatlogRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event OtherAdminLoginsRowChanged As OtherAdminLoginsRowChangeEventHandler
+        Public Event avanacatlogRowChanged As avanacatlogRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event OtherAdminLoginsRowDeleting As OtherAdminLoginsRowChangeEventHandler
+        Public Event avanacatlogRowDeleting As avanacatlogRowChangeEventHandler
 
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Event OtherAdminLoginsRowDeleted As OtherAdminLoginsRowChangeEventHandler
+        Public Event avanacatlogRowDeleted As avanacatlogRowChangeEventHandler
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Overloads Sub AddOtherAdminLoginsRow(ByVal row As OtherAdminLoginsRow)
+        Public Overloads Sub AddavanacatlogRow(ByVal row As avanacatlogRow)
             Me.Rows.Add(row)
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Overloads Function AddOtherAdminLoginsRow(ByVal UserName As String, ByVal UserPwd As String, ByVal Name As String, ByVal Branch As String, ByVal Permissions As String, ByVal EmailID As String, ByVal ActiveStatus As String) As OtherAdminLoginsRow
-            Dim rowOtherAdminLoginsRow As OtherAdminLoginsRow = CType(Me.NewRow, OtherAdminLoginsRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, UserName, UserPwd, Name, Branch, Permissions, EmailID, ActiveStatus}
-            rowOtherAdminLoginsRow.ItemArray = columnValuesArray
-            Me.Rows.Add(rowOtherAdminLoginsRow)
-            Return rowOtherAdminLoginsRow
+        Public Overloads Function AddavanacatlogRow( _
+                    ByVal name As String, _
+                    ByVal longdescription As String, _
+                    ByVal shortdescription As String, _
+                    ByVal sku As String, _
+                    ByVal colour As String, _
+                    ByVal weight As String, _
+                    ByVal material As String, _
+                    ByVal measurments As String, _
+                    ByVal care As String, _
+                    ByVal shippinginfo As String, _
+                    ByVal price As String, _
+                    ByVal notes As String, _
+                    ByVal image1 As String, _
+                    ByVal image2 As String, _
+                    ByVal image3 As String, _
+                    ByVal image4 As String, _
+                    ByVal image5 As String) As avanacatlogRow
+            Dim rowavanacatlogRow As avanacatlogRow = CType(Me.NewRow, avanacatlogRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, name, longdescription, shortdescription, sku, colour, weight, material, measurments, care, shippinginfo, price, notes, image1, image2, image3, image4, image5}
+            rowavanacatlogRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowavanacatlogRow)
+            Return rowavanacatlogRow
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function FindByOtherAdminId(ByVal OtherAdminId As Integer) As OtherAdminLoginsRow
-            Return CType(Me.Rows.Find(New Object() {OtherAdminId}), OtherAdminLoginsRow)
+        Public Function FindByavanacatlogID(ByVal avanacatlogID As Integer) As avanacatlogRow
+            Return CType(Me.Rows.Find(New Object() {avanacatlogID}), avanacatlogRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Public Overrides Function Clone() As Global.System.Data.DataTable
-            Dim cln As OtherAdminLoginsDataTable = CType(MyBase.Clone, OtherAdminLoginsDataTable)
+            Dim cln As avanacatlogDataTable = CType(MyBase.Clone, avanacatlogDataTable)
             cln.InitVars()
             Return cln
         End Function
@@ -1550,81 +1664,121 @@ Partial Public Class avana
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
-            Return New OtherAdminLoginsDataTable()
+            Return New avanacatlogDataTable()
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Sub InitVars()
-            Me.columnOtherAdminId = MyBase.Columns("OtherAdminId")
-            Me.columnUserName = MyBase.Columns("UserName")
-            Me.columnUserPwd = MyBase.Columns("UserPwd")
-            Me.columnName = MyBase.Columns("Name")
-            Me.columnBranch = MyBase.Columns("Branch")
-            Me.columnPermissions = MyBase.Columns("Permissions")
-            Me.columnEmailID = MyBase.Columns("EmailID")
-            Me.columnActiveStatus = MyBase.Columns("ActiveStatus")
+            Me.columnavanacatlogID = MyBase.Columns("avanacatlogID")
+            Me.columnname = MyBase.Columns("name")
+            Me.columnlongdescription = MyBase.Columns("longdescription")
+            Me.columnshortdescription = MyBase.Columns("shortdescription")
+            Me.columnsku = MyBase.Columns("sku")
+            Me.columncolour = MyBase.Columns("colour")
+            Me.columnweight = MyBase.Columns("weight")
+            Me.columnmaterial = MyBase.Columns("material")
+            Me.columnmeasurments = MyBase.Columns("measurments")
+            Me.columncare = MyBase.Columns("care")
+            Me.columnshippinginfo = MyBase.Columns("shippinginfo")
+            Me.columnprice = MyBase.Columns("price")
+            Me.columnnotes = MyBase.Columns("notes")
+            Me.columnimage1 = MyBase.Columns("image1")
+            Me.columnimage2 = MyBase.Columns("image2")
+            Me.columnimage3 = MyBase.Columns("image3")
+            Me.columnimage4 = MyBase.Columns("image4")
+            Me.columnimage5 = MyBase.Columns("image5")
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Sub InitClass()
-            Me.columnOtherAdminId = New Global.System.Data.DataColumn("OtherAdminId", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnOtherAdminId)
-            Me.columnUserName = New Global.System.Data.DataColumn("UserName", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnUserName)
-            Me.columnUserPwd = New Global.System.Data.DataColumn("UserPwd", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnUserPwd)
-            Me.columnName = New Global.System.Data.DataColumn("Name", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnName)
-            Me.columnBranch = New Global.System.Data.DataColumn("Branch", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnBranch)
-            Me.columnPermissions = New Global.System.Data.DataColumn("Permissions", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnPermissions)
-            Me.columnEmailID = New Global.System.Data.DataColumn("EmailID", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnEmailID)
-            Me.columnActiveStatus = New Global.System.Data.DataColumn("ActiveStatus", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnActiveStatus)
-            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnOtherAdminId}, True))
-            Me.columnOtherAdminId.AutoIncrement = True
-            Me.columnOtherAdminId.AutoIncrementSeed = -1
-            Me.columnOtherAdminId.AutoIncrementStep = -1
-            Me.columnOtherAdminId.AllowDBNull = False
-            Me.columnOtherAdminId.ReadOnly = True
-            Me.columnOtherAdminId.Unique = True
-            Me.columnUserName.MaxLength = 50
-            Me.columnUserPwd.MaxLength = 50
-            Me.columnName.MaxLength = 50
-            Me.columnBranch.MaxLength = 10
-            Me.columnPermissions.MaxLength = 1073741823
-            Me.columnEmailID.MaxLength = 50
-            Me.columnActiveStatus.MaxLength = 1
+            Me.columnavanacatlogID = New Global.System.Data.DataColumn("avanacatlogID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnavanacatlogID)
+            Me.columnname = New Global.System.Data.DataColumn("name", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnname)
+            Me.columnlongdescription = New Global.System.Data.DataColumn("longdescription", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnlongdescription)
+            Me.columnshortdescription = New Global.System.Data.DataColumn("shortdescription", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnshortdescription)
+            Me.columnsku = New Global.System.Data.DataColumn("sku", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnsku)
+            Me.columncolour = New Global.System.Data.DataColumn("colour", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncolour)
+            Me.columnweight = New Global.System.Data.DataColumn("weight", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnweight)
+            Me.columnmaterial = New Global.System.Data.DataColumn("material", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnmaterial)
+            Me.columnmeasurments = New Global.System.Data.DataColumn("measurments", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnmeasurments)
+            Me.columncare = New Global.System.Data.DataColumn("care", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncare)
+            Me.columnshippinginfo = New Global.System.Data.DataColumn("shippinginfo", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnshippinginfo)
+            Me.columnprice = New Global.System.Data.DataColumn("price", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnprice)
+            Me.columnnotes = New Global.System.Data.DataColumn("notes", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnnotes)
+            Me.columnimage1 = New Global.System.Data.DataColumn("image1", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimage1)
+            Me.columnimage2 = New Global.System.Data.DataColumn("image2", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimage2)
+            Me.columnimage3 = New Global.System.Data.DataColumn("image3", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimage3)
+            Me.columnimage4 = New Global.System.Data.DataColumn("image4", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimage4)
+            Me.columnimage5 = New Global.System.Data.DataColumn("image5", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimage5)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnavanacatlogID}, True))
+            Me.columnavanacatlogID.AutoIncrement = True
+            Me.columnavanacatlogID.AutoIncrementSeed = -1
+            Me.columnavanacatlogID.AutoIncrementStep = -1
+            Me.columnavanacatlogID.AllowDBNull = False
+            Me.columnavanacatlogID.ReadOnly = True
+            Me.columnavanacatlogID.Unique = True
+            Me.columnname.MaxLength = 500
+            Me.columnlongdescription.MaxLength = 2147483647
+            Me.columnshortdescription.MaxLength = 2147483647
+            Me.columnsku.MaxLength = 500
+            Me.columncolour.MaxLength = 50
+            Me.columnweight.MaxLength = 50
+            Me.columnmaterial.MaxLength = 2147483647
+            Me.columnmeasurments.MaxLength = 2147483647
+            Me.columncare.MaxLength = 2147483647
+            Me.columnshippinginfo.MaxLength = 500
+            Me.columnprice.MaxLength = 500
+            Me.columnnotes.MaxLength = 2147483647
+            Me.columnimage1.MaxLength = 50
+            Me.columnimage2.MaxLength = 50
+            Me.columnimage3.MaxLength = 50
+            Me.columnimage4.MaxLength = 50
+            Me.columnimage5.MaxLength = 50
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function NewOtherAdminLoginsRow() As OtherAdminLoginsRow
-            Return CType(Me.NewRow, OtherAdminLoginsRow)
+        Public Function NewavanacatlogRow() As avanacatlogRow
+            Return CType(Me.NewRow, avanacatlogRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
-            Return New OtherAdminLoginsRow(builder)
+            Return New avanacatlogRow(builder)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Function GetRowType() As Global.System.Type
-            Return GetType(OtherAdminLoginsRow)
+            Return GetType(avanacatlogRow)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanged(e)
-            If (Not (Me.OtherAdminLoginsRowChangedEvent) Is Nothing) Then
-                RaiseEvent OtherAdminLoginsRowChanged(Me, New OtherAdminLoginsRowChangeEvent(CType(e.Row, OtherAdminLoginsRow), e.Action))
+            If (Not (Me.avanacatlogRowChangedEvent) Is Nothing) Then
+                RaiseEvent avanacatlogRowChanged(Me, New avanacatlogRowChangeEvent(CType(e.Row, avanacatlogRow), e.Action))
             End If
         End Sub
 
@@ -1632,8 +1786,8 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowChanging(e)
-            If (Not (Me.OtherAdminLoginsRowChangingEvent) Is Nothing) Then
-                RaiseEvent OtherAdminLoginsRowChanging(Me, New OtherAdminLoginsRowChangeEvent(CType(e.Row, OtherAdminLoginsRow), e.Action))
+            If (Not (Me.avanacatlogRowChangingEvent) Is Nothing) Then
+                RaiseEvent avanacatlogRowChanging(Me, New avanacatlogRowChangeEvent(CType(e.Row, avanacatlogRow), e.Action))
             End If
         End Sub
 
@@ -1641,8 +1795,8 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleted(e)
-            If (Not (Me.OtherAdminLoginsRowDeletedEvent) Is Nothing) Then
-                RaiseEvent OtherAdminLoginsRowDeleted(Me, New OtherAdminLoginsRowChangeEvent(CType(e.Row, OtherAdminLoginsRow), e.Action))
+            If (Not (Me.avanacatlogRowDeletedEvent) Is Nothing) Then
+                RaiseEvent avanacatlogRowDeleted(Me, New avanacatlogRowChangeEvent(CType(e.Row, avanacatlogRow), e.Action))
             End If
         End Sub
 
@@ -1650,14 +1804,14 @@ Partial Public Class avana
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
             MyBase.OnRowDeleting(e)
-            If (Not (Me.OtherAdminLoginsRowDeletingEvent) Is Nothing) Then
-                RaiseEvent OtherAdminLoginsRowDeleting(Me, New OtherAdminLoginsRowChangeEvent(CType(e.Row, OtherAdminLoginsRow), e.Action))
+            If (Not (Me.avanacatlogRowDeletingEvent) Is Nothing) Then
+                RaiseEvent avanacatlogRowDeleting(Me, New avanacatlogRowChangeEvent(CType(e.Row, avanacatlogRow), e.Action))
             End If
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub RemoveOtherAdminLoginsRow(ByVal row As OtherAdminLoginsRow)
+        Public Sub RemoveavanacatlogRow(ByVal row As avanacatlogRow)
             Me.Rows.Remove(row)
         End Sub
 
@@ -1684,7 +1838,341 @@ Partial Public Class avana
             type.Attributes.Add(attribute1)
             Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
             attribute2.Name = "tableTypeName"
-            attribute2.FixedValue = "OtherAdminLoginsDataTable"
+            attribute2.FixedValue = "avanacatlogDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current, Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+
+                            Do While ((s1.Position <> s1.Length) _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+
+
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close()
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close()
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(), _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")> _
+    Partial Public Class avanacatlogimagesDataTable
+        Inherits Global.System.Data.TypedTableBase(Of avanacatlogimagesRow)
+
+        Private columnavanacatlogimagesID As Global.System.Data.DataColumn
+
+        Private columncatlogid As Global.System.Data.DataColumn
+
+        Private columnTitle As Global.System.Data.DataColumn
+
+        Private columndescription As Global.System.Data.DataColumn
+
+        Private columnsortorder As Global.System.Data.DataColumn
+
+        Private columnimageurl As Global.System.Data.DataColumn
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub New()
+            MyBase.New()
+            Me.TableName = "avanacatlogimages"
+            Me.BeginInit()
+            Me.InitClass()
+            Me.EndInit()
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New()
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars()
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property avanacatlogimagesIDColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnavanacatlogimagesID
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property catlogidColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columncatlogid
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property TitleColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTitle
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property descriptionColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columndescription
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property sortorderColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnsortorder
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property imageurlColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnimageurl
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Browsable(False)> _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Default Public ReadOnly Property Item(ByVal index As Integer) As avanacatlogimagesRow
+            Get
+                Return CType(Me.Rows(index), avanacatlogimagesRow)
+            End Get
+        End Property
+
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Event avanacatlogimagesRowChanging As avanacatlogimagesRowChangeEventHandler
+
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Event avanacatlogimagesRowChanged As avanacatlogimagesRowChangeEventHandler
+
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Event avanacatlogimagesRowDeleting As avanacatlogimagesRowChangeEventHandler
+
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Event avanacatlogimagesRowDeleted As avanacatlogimagesRowChangeEventHandler
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Overloads Sub AddavanacatlogimagesRow(ByVal row As avanacatlogimagesRow)
+            Me.Rows.Add(row)
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Overloads Function AddavanacatlogimagesRow(ByVal catlogid As String, ByVal Title As String, ByVal description As String, ByVal sortorder As Integer, ByVal imageurl As String) As avanacatlogimagesRow
+            Dim rowavanacatlogimagesRow As avanacatlogimagesRow = CType(Me.NewRow, avanacatlogimagesRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, catlogid, Title, description, sortorder, imageurl}
+            rowavanacatlogimagesRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowavanacatlogimagesRow)
+            Return rowavanacatlogimagesRow
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function FindByavanacatlogimagesID(ByVal avanacatlogimagesID As Integer) As avanacatlogimagesRow
+            Return CType(Me.Rows.Find(New Object() {avanacatlogimagesID}), avanacatlogimagesRow)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As avanacatlogimagesDataTable = CType(MyBase.Clone, avanacatlogimagesDataTable)
+            cln.InitVars()
+            Return cln
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New avanacatlogimagesDataTable()
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Sub InitVars()
+            Me.columnavanacatlogimagesID = MyBase.Columns("avanacatlogimagesID")
+            Me.columncatlogid = MyBase.Columns("catlogid")
+            Me.columnTitle = MyBase.Columns("Title")
+            Me.columndescription = MyBase.Columns("description")
+            Me.columnsortorder = MyBase.Columns("sortorder")
+            Me.columnimageurl = MyBase.Columns("imageurl")
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitClass()
+            Me.columnavanacatlogimagesID = New Global.System.Data.DataColumn("avanacatlogimagesID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnavanacatlogimagesID)
+            Me.columncatlogid = New Global.System.Data.DataColumn("catlogid", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columncatlogid)
+            Me.columnTitle = New Global.System.Data.DataColumn("Title", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTitle)
+            Me.columndescription = New Global.System.Data.DataColumn("description", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columndescription)
+            Me.columnsortorder = New Global.System.Data.DataColumn("sortorder", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnsortorder)
+            Me.columnimageurl = New Global.System.Data.DataColumn("imageurl", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnimageurl)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnavanacatlogimagesID}, True))
+            Me.columnavanacatlogimagesID.AutoIncrement = True
+            Me.columnavanacatlogimagesID.AutoIncrementSeed = -1
+            Me.columnavanacatlogimagesID.AutoIncrementStep = -1
+            Me.columnavanacatlogimagesID.AllowDBNull = False
+            Me.columnavanacatlogimagesID.ReadOnly = True
+            Me.columnavanacatlogimagesID.Unique = True
+            Me.columncatlogid.MaxLength = 50
+            Me.columnTitle.MaxLength = 50
+            Me.columndescription.MaxLength = 2147483647
+            Me.columnimageurl.MaxLength = 2147483647
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function NewavanacatlogimagesRow() As avanacatlogimagesRow
+            Return CType(Me.NewRow, avanacatlogimagesRow)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New avanacatlogimagesRow(builder)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(avanacatlogimagesRow)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.avanacatlogimagesRowChangedEvent) Is Nothing) Then
+                RaiseEvent avanacatlogimagesRowChanged(Me, New avanacatlogimagesRowChangeEvent(CType(e.Row, avanacatlogimagesRow), e.Action))
+            End If
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.avanacatlogimagesRowChangingEvent) Is Nothing) Then
+                RaiseEvent avanacatlogimagesRowChanging(Me, New avanacatlogimagesRowChangeEvent(CType(e.Row, avanacatlogimagesRow), e.Action))
+            End If
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.avanacatlogimagesRowDeletedEvent) Is Nothing) Then
+                RaiseEvent avanacatlogimagesRowDeleted(Me, New avanacatlogimagesRowChangeEvent(CType(e.Row, avanacatlogimagesRow), e.Action))
+            End If
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.avanacatlogimagesRowDeletingEvent) Is Nothing) Then
+                RaiseEvent avanacatlogimagesRowDeleting(Me, New avanacatlogimagesRowChangeEvent(CType(e.Row, avanacatlogimagesRow), e.Action))
+            End If
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub RemoveavanacatlogimagesRow(ByVal row As avanacatlogimagesRow)
+            Me.Rows.Remove(row)
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As avana = New avana()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "avanacatlogimagesDataTable"
             type.Attributes.Add(attribute2)
             type.Particle = sequence
             Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
@@ -2057,351 +2545,702 @@ Partial Public Class avana
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class ControlPanelIPStatsRow
+    Partial Public Class ColoursRow
         Inherits Global.System.Data.DataRow
 
-        Private tableControlPanelIPStats As ControlPanelIPStatsDataTable
+        Private tableColours As ColoursDataTable
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
-            Me.tableControlPanelIPStats = CType(Me.Table, ControlPanelIPStatsDataTable)
+            Me.tableColours = CType(Me.Table, ColoursDataTable)
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property CPIPID() As Integer
+        Public Property ColourID() As Integer
             Get
-                Return CType(Me(Me.tableControlPanelIPStats.CPIPIDColumn), Integer)
+                Return CType(Me(Me.tableColours.ColourIDColumn), Integer)
             End Get
             Set(value As Integer)
-                Me(Me.tableControlPanelIPStats.CPIPIDColumn) = value
+                Me(Me.tableColours.ColourIDColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property CPIP() As String
+        Public Property colourname() As String
             Get
                 Try
-                    Return CType(Me(Me.tableControlPanelIPStats.CPIPColumn), String)
+                    Return CType(Me(Me.tableColours.colournameColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'CPIP' in table 'ControlPanelIPStats' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'colourname' in table 'Colours' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableControlPanelIPStats.CPIPColumn) = value
+                Me(Me.tableColours.colournameColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property CPLoginTime() As Date
-            Get
-                Try
-                    Return CType(Me(Me.tableControlPanelIPStats.CPLoginTimeColumn), Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'CPLoginTime' in table 'ControlPanelIPStats' is DBNull.", e)
-                End Try
-            End Get
-            Set(value As Date)
-                Me(Me.tableControlPanelIPStats.CPLoginTimeColumn) = value
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property CPLogoutTime() As Date
-            Get
-                Try
-                    Return CType(Me(Me.tableControlPanelIPStats.CPLogoutTimeColumn), Date)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'CPLogoutTime' in table 'ControlPanelIPStats' is DBNull.", e)
-                End Try
-            End Get
-            Set(value As Date)
-                Me(Me.tableControlPanelIPStats.CPLogoutTimeColumn) = value
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property CPLoginID() As String
-            Get
-                Try
-                    Return CType(Me(Me.tableControlPanelIPStats.CPLoginIDColumn), String)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'CPLoginID' in table 'ControlPanelIPStats' is DBNull.", e)
-                End Try
-            End Get
-            Set(value As String)
-                Me(Me.tableControlPanelIPStats.CPLoginIDColumn) = value
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsCPIPNull() As Boolean
-            Return Me.IsNull(Me.tableControlPanelIPStats.CPIPColumn)
+        Public Function IscolournameNull() As Boolean
+            Return Me.IsNull(Me.tableColours.colournameColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetCPIPNull()
-            Me(Me.tableControlPanelIPStats.CPIPColumn) = Global.System.Convert.DBNull
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsCPLoginTimeNull() As Boolean
-            Return Me.IsNull(Me.tableControlPanelIPStats.CPLoginTimeColumn)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetCPLoginTimeNull()
-            Me(Me.tableControlPanelIPStats.CPLoginTimeColumn) = Global.System.Convert.DBNull
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsCPLogoutTimeNull() As Boolean
-            Return Me.IsNull(Me.tableControlPanelIPStats.CPLogoutTimeColumn)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetCPLogoutTimeNull()
-            Me(Me.tableControlPanelIPStats.CPLogoutTimeColumn) = Global.System.Convert.DBNull
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsCPLoginIDNull() As Boolean
-            Return Me.IsNull(Me.tableControlPanelIPStats.CPLoginIDColumn)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetCPLoginIDNull()
-            Me(Me.tableControlPanelIPStats.CPLoginIDColumn) = Global.System.Convert.DBNull
+        Public Sub SetcolournameNull()
+            Me(Me.tableColours.colournameColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
 
     '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
-    Partial Public Class OtherAdminLoginsRow
+    Partial Public Class avanacatlogRow
         Inherits Global.System.Data.DataRow
 
-        Private tableOtherAdminLogins As OtherAdminLoginsDataTable
+        Private tableavanacatlog As avanacatlogDataTable
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
             MyBase.New(rb)
-            Me.tableOtherAdminLogins = CType(Me.Table, OtherAdminLoginsDataTable)
+            Me.tableavanacatlog = CType(Me.Table, avanacatlogDataTable)
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property OtherAdminId() As Integer
+        Public Property avanacatlogID() As Integer
             Get
-                Return CType(Me(Me.tableOtherAdminLogins.OtherAdminIdColumn), Integer)
+                Return CType(Me(Me.tableavanacatlog.avanacatlogIDColumn), Integer)
             End Get
             Set(value As Integer)
-                Me(Me.tableOtherAdminLogins.OtherAdminIdColumn) = value
+                Me(Me.tableavanacatlog.avanacatlogIDColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property UserName() As String
+        Public Property name() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.UserNameColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.nameColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'UserName' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'name' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.UserNameColumn) = value
+                Me(Me.tableavanacatlog.nameColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property UserPwd() As String
+        Public Property longdescription() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.UserPwdColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.longdescriptionColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'UserPwd' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'longdescription' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.UserPwdColumn) = value
+                Me(Me.tableavanacatlog.longdescriptionColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property Name() As String
+        Public Property shortdescription() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.NameColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.shortdescriptionColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Name' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'shortdescription' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.NameColumn) = value
+                Me(Me.tableavanacatlog.shortdescriptionColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property Branch() As String
+        Public Property sku() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.BranchColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.skuColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Branch' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'sku' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.BranchColumn) = value
+                Me(Me.tableavanacatlog.skuColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property Permissions() As String
+        Public Property colour() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.PermissionsColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.colourColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'Permissions' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'colour' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.PermissionsColumn) = value
+                Me(Me.tableavanacatlog.colourColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property EmailID() As String
+        Public Property weight() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.EmailIDColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.weightColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'EmailID' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'weight' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.EmailIDColumn) = value
+                Me(Me.tableavanacatlog.weightColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property ActiveStatus() As String
+        Public Property material() As String
             Get
                 Try
-                    Return CType(Me(Me.tableOtherAdminLogins.ActiveStatusColumn), String)
+                    Return CType(Me(Me.tableavanacatlog.materialColumn), String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'ActiveStatus' in table 'OtherAdminLogins' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'material' in table 'avanacatlog' is DBNull.", e)
                 End Try
             End Get
             Set(value As String)
-                Me(Me.tableOtherAdminLogins.ActiveStatusColumn) = value
+                Me(Me.tableavanacatlog.materialColumn) = value
             End Set
         End Property
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsUserNameNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.UserNameColumn)
+        Public Property measurments() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.measurmentsColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'measurments' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.measurmentsColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property care() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.careColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'care' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.careColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property shippinginfo() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.shippinginfoColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'shippinginfo' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.shippinginfoColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property price() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.priceColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'price' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.priceColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property notes() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.notesColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'notes' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.notesColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property image1() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.image1Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'image1' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.image1Column) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property image2() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.image2Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'image2' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.image2Column) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property image3() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.image3Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'image3' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.image3Column) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property image4() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.image4Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'image4' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.image4Column) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property image5() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlog.image5Column), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'image5' in table 'avanacatlog' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlog.image5Column) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsnameNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.nameColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetUserNameNull()
-            Me(Me.tableOtherAdminLogins.UserNameColumn) = Global.System.Convert.DBNull
+        Public Sub SetnameNull()
+            Me(Me.tableavanacatlog.nameColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsUserPwdNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.UserPwdColumn)
+        Public Function IslongdescriptionNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.longdescriptionColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetUserPwdNull()
-            Me(Me.tableOtherAdminLogins.UserPwdColumn) = Global.System.Convert.DBNull
+        Public Sub SetlongdescriptionNull()
+            Me(Me.tableavanacatlog.longdescriptionColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsNameNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.NameColumn)
+        Public Function IsshortdescriptionNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.shortdescriptionColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetNameNull()
-            Me(Me.tableOtherAdminLogins.NameColumn) = Global.System.Convert.DBNull
+        Public Sub SetshortdescriptionNull()
+            Me(Me.tableavanacatlog.shortdescriptionColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsBranchNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.BranchColumn)
+        Public Function IsskuNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.skuColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetBranchNull()
-            Me(Me.tableOtherAdminLogins.BranchColumn) = Global.System.Convert.DBNull
+        Public Sub SetskuNull()
+            Me(Me.tableavanacatlog.skuColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsPermissionsNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.PermissionsColumn)
+        Public Function IscolourNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.colourColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetPermissionsNull()
-            Me(Me.tableOtherAdminLogins.PermissionsColumn) = Global.System.Convert.DBNull
+        Public Sub SetcolourNull()
+            Me(Me.tableavanacatlog.colourColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsEmailIDNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.EmailIDColumn)
+        Public Function IsweightNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.weightColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetEmailIDNull()
-            Me(Me.tableOtherAdminLogins.EmailIDColumn) = Global.System.Convert.DBNull
+        Public Sub SetweightNull()
+            Me(Me.tableavanacatlog.weightColumn) = Global.System.Convert.DBNull
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Function IsActiveStatusNull() As Boolean
-            Return Me.IsNull(Me.tableOtherAdminLogins.ActiveStatusColumn)
+        Public Function IsmaterialNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.materialColumn)
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub SetActiveStatusNull()
-            Me(Me.tableOtherAdminLogins.ActiveStatusColumn) = Global.System.Convert.DBNull
+        Public Sub SetmaterialNull()
+            Me(Me.tableavanacatlog.materialColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsmeasurmentsNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.measurmentsColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetmeasurmentsNull()
+            Me(Me.tableavanacatlog.measurmentsColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IscareNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.careColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetcareNull()
+            Me(Me.tableavanacatlog.careColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsshippinginfoNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.shippinginfoColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetshippinginfoNull()
+            Me(Me.tableavanacatlog.shippinginfoColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IspriceNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.priceColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetpriceNull()
+            Me(Me.tableavanacatlog.priceColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsnotesNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.notesColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetnotesNull()
+            Me(Me.tableavanacatlog.notesColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isimage1Null() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.image1Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setimage1Null()
+            Me(Me.tableavanacatlog.image1Column) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isimage2Null() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.image2Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setimage2Null()
+            Me(Me.tableavanacatlog.image2Column) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isimage3Null() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.image3Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setimage3Null()
+            Me(Me.tableavanacatlog.image3Column) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isimage4Null() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.image4Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setimage4Null()
+            Me(Me.tableavanacatlog.image4Column) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function Isimage5Null() As Boolean
+            Return Me.IsNull(Me.tableavanacatlog.image5Column)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub Setimage5Null()
+            Me(Me.tableavanacatlog.image5Column) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class avanacatlogimagesRow
+        Inherits Global.System.Data.DataRow
+
+        Private tableavanacatlogimages As avanacatlogimagesDataTable
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableavanacatlogimages = CType(Me.Table, avanacatlogimagesDataTable)
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property avanacatlogimagesID() As Integer
+            Get
+                Return CType(Me(Me.tableavanacatlogimages.avanacatlogimagesIDColumn), Integer)
+            End Get
+            Set(value As Integer)
+                Me(Me.tableavanacatlogimages.avanacatlogimagesIDColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property catlogid() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlogimages.catlogidColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'catlogid' in table 'avanacatlogimages' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlogimages.catlogidColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property Title() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlogimages.TitleColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Title' in table 'avanacatlogimages' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlogimages.TitleColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property description() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlogimages.descriptionColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'description' in table 'avanacatlogimages' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlogimages.descriptionColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property sortorder() As Integer
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlogimages.sortorderColumn), Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'sortorder' in table 'avanacatlogimages' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As Integer)
+                Me(Me.tableavanacatlogimages.sortorderColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property imageurl() As String
+            Get
+                Try
+                    Return CType(Me(Me.tableavanacatlogimages.imageurlColumn), String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'imageurl' in table 'avanacatlogimages' is DBNull.", e)
+                End Try
+            End Get
+            Set(value As String)
+                Me(Me.tableavanacatlogimages.imageurlColumn) = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IscatlogidNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlogimages.catlogidColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetcatlogidNull()
+            Me(Me.tableavanacatlogimages.catlogidColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsTitleNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlogimages.TitleColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetTitleNull()
+            Me(Me.tableavanacatlogimages.TitleColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsdescriptionNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlogimages.descriptionColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetdescriptionNull()
+            Me(Me.tableavanacatlogimages.descriptionColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IssortorderNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlogimages.sortorderColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetsortorderNull()
+            Me(Me.tableavanacatlogimages.sortorderColumn) = Global.System.Convert.DBNull
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Function IsimageurlNull() As Boolean
+            Return Me.IsNull(Me.tableavanacatlogimages.imageurlColumn)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub SetimageurlNull()
+            Me(Me.tableavanacatlogimages.imageurlColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
 
@@ -2481,16 +3320,16 @@ Partial Public Class avana
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Public Class ControlPanelIPStatsRowChangeEvent
+    Public Class ColoursRowChangeEvent
         Inherits Global.System.EventArgs
 
-        Private eventRow As ControlPanelIPStatsRow
+        Private eventRow As ColoursRow
 
         Private eventAction As Global.System.Data.DataRowAction
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub New(ByVal row As ControlPanelIPStatsRow, ByVal action As Global.System.Data.DataRowAction)
+        Public Sub New(ByVal row As ColoursRow, ByVal action As Global.System.Data.DataRowAction)
             MyBase.New()
             Me.eventRow = row
             Me.eventAction = action
@@ -2498,7 +3337,7 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property Row() As ControlPanelIPStatsRow
+        Public ReadOnly Property Row() As ColoursRow
             Get
                 Return Me.eventRow
             End Get
@@ -2517,16 +3356,16 @@ Partial Public Class avana
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-    Public Class OtherAdminLoginsRowChangeEvent
+    Public Class avanacatlogRowChangeEvent
         Inherits Global.System.EventArgs
 
-        Private eventRow As OtherAdminLoginsRow
+        Private eventRow As avanacatlogRow
 
         Private eventAction As Global.System.Data.DataRowAction
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub New(ByVal row As OtherAdminLoginsRow, ByVal action As Global.System.Data.DataRowAction)
+        Public Sub New(ByVal row As avanacatlogRow, ByVal action As Global.System.Data.DataRowAction)
             MyBase.New()
             Me.eventRow = row
             Me.eventAction = action
@@ -2534,7 +3373,43 @@ Partial Public Class avana
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public ReadOnly Property Row() As OtherAdminLoginsRow
+        Public ReadOnly Property Row() As avanacatlogRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+    Public Class avanacatlogimagesRowChangeEvent
+        Inherits Global.System.EventArgs
+
+        Private eventRow As avanacatlogimagesRow
+
+        Private eventAction As Global.System.Data.DataRowAction
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub New(ByVal row As avanacatlogimagesRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New()
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public ReadOnly Property Row() As avanacatlogimagesRow
             Get
                 Return Me.eventRow
             End Get
@@ -2770,7 +3645,7 @@ Namespace avanaTableAdapters
             Me._commandCollection(6) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(6).Connection = Me.Connection
             Me._commandCollection(6).CommandText = "SELECT        avanaAdminLoginsId" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            avanaAdminLogins" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE        " & _
-                "(UserName = @UserName) AND (UserPwd = @UserPwd) AND (ActiveStatus = 'Y')"
+                "(UserName = @UserName) AND (UserPwd = @UserPwd) "
             Me._commandCollection(6).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(6).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._commandCollection(6).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
@@ -3065,7 +3940,7 @@ Namespace avanaTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function getidbyusernamepwd(ByVal UserName As String, ByVal UserPwd As String) As Global.System.Nullable(Of Integer)
+        Public Overridable Overloads Function getidbyusernamepwd(ByVal UserName As String, ByVal UserPwd As String) As Object
             Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(6)
             If (UserName Is Nothing) Then
                 command.Parameters(0).Value = Global.System.DBNull.Value
@@ -3092,9 +3967,9 @@ Namespace avanaTableAdapters
             End Try
             If ((returnValue Is Nothing) _
                         OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return New Global.System.Nullable(Of Integer)()
+                Return Nothing
             Else
-                Return New Global.System.Nullable(Of Integer)(CType(returnValue, Integer))
+                Return CType(returnValue, Object)
             End If
         End Function
 
@@ -3630,7 +4505,7 @@ Namespace avanaTableAdapters
      Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
      Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-    Partial Public Class ControlPanelIPStatsTableAdapter
+    Partial Public Class ColoursTableAdapter
         Inherits Global.System.ComponentModel.Component
 
         Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
@@ -3747,38 +4622,871 @@ Namespace avanaTableAdapters
             Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "ControlPanelIPStats"
-            tableMapping.ColumnMappings.Add("CPIPID", "CPIPID")
-            tableMapping.ColumnMappings.Add("CPIP", "CPIP")
-            tableMapping.ColumnMappings.Add("CPLoginTime", "CPLoginTime")
-            tableMapping.ColumnMappings.Add("CPLogoutTime", "CPLogoutTime")
-            tableMapping.ColumnMappings.Add("CPLoginID", "CPLoginID")
+            tableMapping.DataSetTable = "Colours"
+            tableMapping.ColumnMappings.Add("ColourID", "ColourID")
+            tableMapping.ColumnMappings.Add("colourname", "colourname")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [ControlPanelIPStats] WHERE (([CPIPID] = @Original_CPIPID))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Colours] WHERE (([ColourID] = @Original_ColourID))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CPIPID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPIPID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ColourID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ColourID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [ControlPanelIPStats] ([CPIP], [CPLoginTime], [CPLogoutTime], [CPLogi" & _
-                "nID]) VALUES (@CPIP, @CPLoginTime, @CPLogoutTime, @CPLoginID)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [Colours] ([colourname]) VALUES (@colourname)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPIP", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLoginTime", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLoginTime", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLogoutTime", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLogoutTime", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLoginID", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLoginID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@colourname", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "colourname", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [ControlPanelIPStats] SET [CPIP] = @CPIP, [CPLoginTime] = @CPLoginTime, [C" & _
-                "PLogoutTime] = @CPLogoutTime, [CPLoginID] = @CPLoginID WHERE (([CPIPID] = @Origi" & _
-                "nal_CPIPID))"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Colours] SET [colourname] = @colourname WHERE (([ColourID] = @Original_Co" & _
+                "lourID))"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPIP", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPIP", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLoginTime", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLoginTime", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLogoutTime", Global.System.Data.SqlDbType.DateTime, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLogoutTime", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLoginID", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLoginID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CPIPID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CPIPID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@colourname", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "colourname", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ColourID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ColourID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
+            Me._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("MSSQLConnString").ConnectionString
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT        ColourID, colourname" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            Colours"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As avana.ColoursDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As avana.ColoursDataTable = New avana.ColoursDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As avana.ColoursDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As avana) As Integer
+            Return Me.Adapter.Update(dataSet, "Colours")
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_ColourID As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ColourID, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert(ByVal colourname As String) As Integer
+            If (colourname Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(colourname, String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update(ByVal colourname As String, ByVal Original_ColourID As Integer) As Integer
+            If (colourname Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(colourname, String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Original_ColourID, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+    End Class
+
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    Partial Public Class avanacatlogTableAdapter
+        Inherits Global.System.ComponentModel.Component
+
+        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
+
+        Private _connection As Global.System.Data.SqlClient.SqlConnection
+
+        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
+
+        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
+
+        Private _clearBeforeFill As Boolean
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub New()
+            MyBase.New()
+            Me.ClearBeforeFill = True
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter()
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection()
+                End If
+                Return Me._connection
+            End Get
+            Set(value As Global.System.Data.SqlClient.SqlConnection)
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set(value As Global.System.Data.SqlClient.SqlTransaction)
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection()
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set(value As Boolean)
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "avanacatlog"
+            tableMapping.ColumnMappings.Add("avanacatlogID", "avanacatlogID")
+            tableMapping.ColumnMappings.Add("name", "name")
+            tableMapping.ColumnMappings.Add("longdescription", "longdescription")
+            tableMapping.ColumnMappings.Add("shortdescription", "shortdescription")
+            tableMapping.ColumnMappings.Add("sku", "sku")
+            tableMapping.ColumnMappings.Add("colour", "colour")
+            tableMapping.ColumnMappings.Add("weight", "weight")
+            tableMapping.ColumnMappings.Add("material", "material")
+            tableMapping.ColumnMappings.Add("measurments", "measurments")
+            tableMapping.ColumnMappings.Add("care", "care")
+            tableMapping.ColumnMappings.Add("shippinginfo", "shippinginfo")
+            tableMapping.ColumnMappings.Add("price", "price")
+            tableMapping.ColumnMappings.Add("notes", "notes")
+            tableMapping.ColumnMappings.Add("image1", "image1")
+            tableMapping.ColumnMappings.Add("image2", "image2")
+            tableMapping.ColumnMappings.Add("image3", "image3")
+            tableMapping.ColumnMappings.Add("image4", "image4")
+            tableMapping.ColumnMappings.Add("image5", "image5")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [avanacatlog] WHERE (([avanacatlogID] = @Original_avanacatlogID))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_avanacatlogID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [avanacatlog] ([name], [longdescription], [shortdescription], [sku], " & _
+                "[colour], [weight], [material], [measurments], [care], [shippinginfo], [price], " & _
+                "[notes], [image1], [image2], [image3], [image4], [image5]) VALUES (@name, @longd" & _
+                "escription, @shortdescription, @sku, @colour, @weight, @material, @measurments, " & _
+                "@care, @shippinginfo, @price, @notes, @image1, @image2, @image3, @image4, @image" & _
+                "5)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@name", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "name", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@longdescription", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "longdescription", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@shortdescription", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "shortdescription", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sku", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sku", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@colour", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "colour", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@weight", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "weight", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@material", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "material", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@measurments", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "measurments", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@care", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "care", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@shippinginfo", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "shippinginfo", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@price", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "price", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@notes", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "notes", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image1", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image2", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image3", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image4", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image4", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image5", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [avanacatlog] SET [name] = @name, [longdescription] = @longdescription, [s" & _
+                "hortdescription] = @shortdescription, [sku] = @sku, [colour] = @colour, [weight]" & _
+                " = @weight, [material] = @material, [measurments] = @measurments, [care] = @care" & _
+                ", [shippinginfo] = @shippinginfo, [price] = @price, [notes] = @notes, [image1] =" & _
+                " @image1, [image2] = @image2, [image3] = @image3, [image4] = @image4, [image5] =" & _
+                " @image5 WHERE (([avanacatlogID] = @Original_avanacatlogID))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@name", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "name", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@longdescription", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "longdescription", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@shortdescription", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "shortdescription", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sku", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sku", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@colour", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "colour", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@weight", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "weight", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@material", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "material", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@measurments", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "measurments", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@care", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "care", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@shippinginfo", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "shippinginfo", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@price", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "price", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@notes", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "notes", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image1", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image1", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image2", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image2", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image3", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image3", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image4", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image4", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@image5", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "image5", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_avanacatlogID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
+            Me._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("MSSQLConnString").ConnectionString
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(1) {}
+            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT        avanacatlogID, name, longdescription, shortdescription, sku, colour" & _
+                ", weight, material, measurments, care, shippinginfo, price, notes, image1, image" & _
+                "2, image3, image4, image5" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            avanacatlog"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT avanacatlogID, care, colour, image1, image2, image3, image4, image5, longd" & _
+                "escription, material, measurments, name, notes, price, shippinginfo, shortdescri" & _
+                "ption, sku, weight FROM avanacatlog WHERE (avanacatlogID = @avanacatlogid)"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@avanacatlogid", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
+        Public Overridable Overloads Function GetData() As avana.avanacatlogDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As avana.avanacatlogDataTable = New avana.avanacatlogDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByid(ByVal avanacatlogid As Integer) As avana.avanacatlogDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(avanacatlogid, Integer)
+            Dim dataTable As avana.avanacatlogDataTable = New avana.avanacatlogDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataTable As avana.avanacatlogDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataSet As avana) As Integer
+            Return Me.Adapter.Update(dataSet, "avanacatlog")
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
+        Public Overridable Overloads Function Delete(ByVal Original_avanacatlogID As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_avanacatlogID, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
+        Public Overridable Overloads Function Insert( _
+                    ByVal name As String, _
+                    ByVal longdescription As String, _
+                    ByVal shortdescription As String, _
+                    ByVal sku As String, _
+                    ByVal colour As String, _
+                    ByVal weight As String, _
+                    ByVal material As String, _
+                    ByVal measurments As String, _
+                    ByVal care As String, _
+                    ByVal shippinginfo As String, _
+                    ByVal price As String, _
+                    ByVal notes As String, _
+                    ByVal image1 As String, _
+                    ByVal image2 As String, _
+                    ByVal image3 As String, _
+                    ByVal image4 As String, _
+                    ByVal image5 As String) As Integer
+            If (name Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(name, String)
+            End If
+            If (longdescription Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(longdescription, String)
+            End If
+            If (shortdescription Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(shortdescription, String)
+            End If
+            If (sku Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(sku, String)
+            End If
+            If (colour Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(colour, String)
+            End If
+            If (weight Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(5).Value = CType(weight, String)
+            End If
+            If (material Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(material, String)
+            End If
+            If (measurments Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(measurments, String)
+            End If
+            If (care Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(care, String)
+            End If
+            If (shippinginfo Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(9).Value = CType(shippinginfo, String)
+            End If
+            If (price Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(price, String)
+            End If
+            If (notes Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(11).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(notes, String)
+            End If
+            If (image1 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(12).Value = CType(image1, String)
+            End If
+            If (image2 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(13).Value = CType(image2, String)
+            End If
+            If (image3 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(14).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(14).Value = CType(image3, String)
+            End If
+            If (image4 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(15).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(15).Value = CType(image4, String)
+            End If
+            If (image5 Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(16).Value = CType(image5, String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
+        Public Overridable Overloads Function Update( _
+                    ByVal name As String, _
+                    ByVal longdescription As String, _
+                    ByVal shortdescription As String, _
+                    ByVal sku As String, _
+                    ByVal colour As String, _
+                    ByVal weight As String, _
+                    ByVal material As String, _
+                    ByVal measurments As String, _
+                    ByVal care As String, _
+                    ByVal shippinginfo As String, _
+                    ByVal price As String, _
+                    ByVal notes As String, _
+                    ByVal image1 As String, _
+                    ByVal image2 As String, _
+                    ByVal image3 As String, _
+                    ByVal image4 As String, _
+                    ByVal image5 As String, _
+                    ByVal Original_avanacatlogID As Integer) As Integer
+            If (name Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(name, String)
+            End If
+            If (longdescription Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(longdescription, String)
+            End If
+            If (shortdescription Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(shortdescription, String)
+            End If
+            If (sku Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(sku, String)
+            End If
+            If (colour Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(colour, String)
+            End If
+            If (weight Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(weight, String)
+            End If
+            If (material Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(material, String)
+            End If
+            If (measurments Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(measurments, String)
+            End If
+            If (care Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(care, String)
+            End If
+            If (shippinginfo Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(shippinginfo, String)
+            End If
+            If (price Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(10).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(10).Value = CType(price, String)
+            End If
+            If (notes Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(11).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(11).Value = CType(notes, String)
+            End If
+            If (image1 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(12).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(12).Value = CType(image1, String)
+            End If
+            If (image2 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(13).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(13).Value = CType(image2, String)
+            End If
+            If (image3 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(14).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(image3, String)
+            End If
+            If (image4 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(image4, String)
+            End If
+            If (image5 Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(image5, String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_avanacatlogID, Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open()
+            End If
+            Try
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close()
+                End If
+            End Try
+        End Function
+    End Class
+
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
+     Global.System.ComponentModel.ToolboxItem(True), _
+     Global.System.ComponentModel.DataObjectAttribute(True), _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
+    Partial Public Class avanacatlogimagesTableAdapter
+        Inherits Global.System.ComponentModel.Component
+
+        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
+
+        Private _connection As Global.System.Data.SqlClient.SqlConnection
+
+        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
+
+        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
+
+        Private _clearBeforeFill As Boolean
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Sub New()
+            MyBase.New()
+            Me.ClearBeforeFill = True
+        End Sub
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter()
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection()
+                End If
+                Return Me._connection
+            End Get
+            Set(value As Global.System.Data.SqlClient.SqlConnection)
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set(value As Global.System.Data.SqlClient.SqlTransaction)
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing) _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection()
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set(value As Boolean)
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "avanacatlogimages"
+            tableMapping.ColumnMappings.Add("avanacatlogimagesID", "avanacatlogimagesID")
+            tableMapping.ColumnMappings.Add("catlogid", "catlogid")
+            tableMapping.ColumnMappings.Add("Title", "Title")
+            tableMapping.ColumnMappings.Add("description", "description")
+            tableMapping.ColumnMappings.Add("sortorder", "sortorder")
+            tableMapping.ColumnMappings.Add("imageurl", "imageurl")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [avanacatlogimages] WHERE (([avanacatlogimagesID] = @Original_avanaca" & _
+                "tlogimagesID))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_avanacatlogimagesID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogimagesID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO [avanacatlogimages] ([catlogid], [Title], [description], [sortorder]," & _
+                " [imageurl]) VALUES (@catlogid, @Title, @description, @sortorder, @imageurl)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@catlogid", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "catlogid", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Title", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Title", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@description", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "description", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sortorder", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sortorder", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@imageurl", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "imageurl", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [avanacatlogimages] SET [catlogid] = @catlogid, [Title] = @Title, [descrip" & _
+                "tion] = @description, [sortorder] = @sortorder, [imageurl] = @imageurl WHERE (([" & _
+                "avanacatlogimagesID] = @Original_avanacatlogimagesID))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@catlogid", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "catlogid", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Title", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Title", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@description", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "description", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@sortorder", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "sortorder", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@imageurl", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "imageurl", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_avanacatlogimagesID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogimagesID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -3794,476 +5502,32 @@ Namespace avanaTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(2) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT     CPIPID, CPIP, CPLoginTime, CPLogoutTime, CPLoginID" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM         Contr" & _
-                "olPanelIPStats"
+            Me._commandCollection(0).CommandText = "SELECT        avanacatlogimagesID, catlogid, Title, description, sortorder, image" & _
+                "url" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            avanacatlogimages"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
             Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT max(cpipid) FROM ControlPanelIPStats where cploginid=@cploginid"
+            Me._commandCollection(1).CommandText = "SELECT        avanacatlogimagesID, catlogid, Title, description, sortorder, image" & _
+                "url" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            avanacatlogimages   where catlogid = @catlogid  order by so" & _
+                "rtorder asc"
             Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cploginid", Global.System.Data.SqlDbType.NVarChar, 100, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLoginID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
+            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@catlogid", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "catlogid", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
             Me._commandCollection(2) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(2).Connection = Me.Connection
-            Me._commandCollection(2).CommandText = "UPDATE [ControlPanelIPStats] SET  [CPLogoutTime] = @CPLogoutTime WHERE [CPIPID] =" & _
-                " @cpipid"
+            Me._commandCollection(2).CommandText = "SELECT        avanacatlogimagesID, catlogid, Title, description, sortorder, image" & _
+                "url" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM            avanacatlogimages where  avanacatlogimagesID = @avanacatlog" & _
+                "imagesID"
             Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CPLogoutTime", Global.System.Data.SqlDbType.DateTime, 8, Global.System.Data.ParameterDirection.Input, 0, 0, "CPLogoutTime", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@cpipid", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "CPIPID", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
+            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@avanacatlogimagesID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "avanacatlogimagesID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
         End Sub
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
-        Public Overridable Overloads Function GetAllData() As avana.ControlPanelIPStatsDataTable
+        Public Overridable Overloads Function GetData() As avana.avanacatlogimagesDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As avana.ControlPanelIPStatsDataTable = New avana.ControlPanelIPStatsDataTable()
-            Me.Adapter.Fill(dataTable)
-            Return dataTable
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataTable As avana.ControlPanelIPStatsDataTable) As Integer
-            Return Me.Adapter.Update(dataTable)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataSet As avana) As Integer
-            Return Me.Adapter.Update(dataSet, "ControlPanelIPStats")
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
-            Return Me.Adapter.Update(dataRows)
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
-        Public Overridable Overloads Function Delete(ByVal Original_CPIPID As Integer) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_CPIPID, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
-            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.DeleteCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.DeleteCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-        Public Overridable Overloads Function Insert(ByVal CPIP As String, ByVal CPLoginTime As Global.System.Nullable(Of Date), ByVal CPLogoutTime As Global.System.Nullable(Of Date), ByVal CPLoginID As String) As Integer
-            If (CPIP Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(CPIP, String)
-            End If
-            If (CPLoginTime.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(CPLoginTime.Value, Date)
-            Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (CPLogoutTime.HasValue = True) Then
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(CPLogoutTime.Value, Date)
-            Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (CPLoginID Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(CPLoginID, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
-            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.InsertCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.InsertCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal CPIP As String, ByVal CPLoginTime As Global.System.Nullable(Of Date), ByVal CPLogoutTime As Global.System.Nullable(Of Date), ByVal CPLoginID As String, ByVal Original_CPIPID As Integer) As Integer
-            If (CPIP Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(CPIP, String)
-            End If
-            If (CPLoginTime.HasValue = True) Then
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(CPLoginTime.Value, Date)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
-            End If
-            If (CPLogoutTime.HasValue = True) Then
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(CPLogoutTime.Value, Date)
-            Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
-            End If
-            If (CPLoginID Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(CPLoginID, String)
-            End If
-            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_CPIPID, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
-            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open()
-            End If
-            Try
-                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
-                Return returnValue
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    Me.Adapter.UpdateCommand.Connection.Close()
-                End If
-            End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function GetCpIpIdbyLoginid(ByVal cploginid As String) As Object
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(1)
-            If (cploginid Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(cploginid, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return Nothing
-            Else
-                Return CType(returnValue, Object)
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, False)> _
-        Public Overridable Overloads Function UpdateCPLogout(ByVal CPLogoutTime As Global.System.Nullable(Of Date), ByVal cpipid As Integer) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(2)
-            If (CPLogoutTime.HasValue = True) Then
-                command.Parameters(0).Value = CType(CPLogoutTime.Value, Date)
-            Else
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            End If
-            command.Parameters(1).Value = CType(cpipid, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Integer
-            Try
-                returnValue = command.ExecuteNonQuery
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            Return returnValue
-        End Function
-    End Class
-
-    '''<summary>
-    '''Represents the connection and commands used to retrieve and save data.
-    '''</summary>
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"), _
-     Global.System.ComponentModel.ToolboxItem(True), _
-     Global.System.ComponentModel.DataObjectAttribute(True), _
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" & _
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"), _
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-    Partial Public Class OtherAdminLoginsTableAdapter
-        Inherits Global.System.ComponentModel.Component
-
-        Private WithEvents _adapter As Global.System.Data.SqlClient.SqlDataAdapter
-
-        Private _connection As Global.System.Data.SqlClient.SqlConnection
-
-        Private _transaction As Global.System.Data.SqlClient.SqlTransaction
-
-        Private _commandCollection() As Global.System.Data.SqlClient.SqlCommand
-
-        Private _clearBeforeFill As Boolean
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Sub New()
-            MyBase.New()
-            Me.ClearBeforeFill = True
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Protected Friend ReadOnly Property Adapter() As Global.System.Data.SqlClient.SqlDataAdapter
-            Get
-                If (Me._adapter Is Nothing) Then
-                    Me.InitAdapter()
-                End If
-                Return Me._adapter
-            End Get
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Friend Property Connection() As Global.System.Data.SqlClient.SqlConnection
-            Get
-                If (Me._connection Is Nothing) Then
-                    Me.InitConnection()
-                End If
-                Return Me._connection
-            End Get
-            Set(value As Global.System.Data.SqlClient.SqlConnection)
-                Me._connection = value
-                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
-                    Me.Adapter.InsertCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
-                    Me.Adapter.DeleteCommand.Connection = value
-                End If
-                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
-                    Me.Adapter.UpdateCommand.Connection = value
-                End If
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
-                        CType(Me.CommandCollection(i), Global.System.Data.SqlClient.SqlCommand).Connection = value
-                    End If
-                    i = (i + 1)
-                Loop
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Friend Property Transaction() As Global.System.Data.SqlClient.SqlTransaction
-            Get
-                Return Me._transaction
-            End Get
-            Set(value As Global.System.Data.SqlClient.SqlTransaction)
-                Me._transaction = value
-                Dim i As Integer = 0
-                Do While (i < Me.CommandCollection.Length)
-                    Me.CommandCollection(i).Transaction = Me._transaction
-                    i = (i + 1)
-                Loop
-                If ((Not (Me.Adapter) Is Nothing) _
-                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
-                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing) _
-                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
-                    Me.Adapter.InsertCommand.Transaction = Me._transaction
-                End If
-                If ((Not (Me.Adapter) Is Nothing) _
-                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
-                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
-                End If
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Protected ReadOnly Property CommandCollection() As Global.System.Data.SqlClient.SqlCommand()
-            Get
-                If (Me._commandCollection Is Nothing) Then
-                    Me.InitCommandCollection()
-                End If
-                Return Me._commandCollection
-            End Get
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Public Property ClearBeforeFill() As Boolean
-            Get
-                Return Me._clearBeforeFill
-            End Get
-            Set(value As Boolean)
-                Me._clearBeforeFill = value
-            End Set
-        End Property
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Private Sub InitAdapter()
-            Me._adapter = New Global.System.Data.SqlClient.SqlDataAdapter()
-            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
-            tableMapping.SourceTable = "Table"
-            tableMapping.DataSetTable = "OtherAdminLogins"
-            tableMapping.ColumnMappings.Add("OtherAdminId", "OtherAdminId")
-            tableMapping.ColumnMappings.Add("UserName", "UserName")
-            tableMapping.ColumnMappings.Add("UserPwd", "UserPwd")
-            tableMapping.ColumnMappings.Add("Name", "Name")
-            tableMapping.ColumnMappings.Add("Branch", "Branch")
-            tableMapping.ColumnMappings.Add("Permissions", "Permissions")
-            tableMapping.ColumnMappings.Add("EmailID", "EmailID")
-            tableMapping.ColumnMappings.Add("ActiveStatus", "ActiveStatus")
-            Me._adapter.TableMappings.Add(tableMapping)
-            Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [OtherAdminLogins] WHERE (([OtherAdminId] = @Original_OtherAdminId))"
-            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_OtherAdminId", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO [OtherAdminLogins] ([UserName], [UserPwd], [Name], [Branch], [Permiss" & _
-                "ions], [EmailID], [ActiveStatus]) VALUES (@UserName, @UserPwd, @Name, @Branch, @" & _
-                "Permissions, @EmailID, @ActiveStatus)"
-            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Name", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Name", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Branch", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Branch", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Permissions", Global.System.Data.SqlDbType.NText, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Permissions", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@EmailID", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "EmailID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ActiveStatus", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ActiveStatus", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
-            Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [OtherAdminLogins] SET [UserName] = @UserName, [UserPwd] = @UserPwd, [Name" & _
-                "] = @Name, [Branch] = @Branch, [Permissions] = @Permissions, [EmailID] = @EmailI" & _
-                "D, [ActiveStatus] = @ActiveStatus WHERE (([OtherAdminId] = @Original_OtherAdminI" & _
-                "d))"
-            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Name", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Name", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Branch", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Branch", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Permissions", Global.System.Data.SqlDbType.NText, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Permissions", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@EmailID", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "EmailID", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ActiveStatus", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ActiveStatus", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_OtherAdminId", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Private Sub InitConnection()
-            Me._connection = New Global.System.Data.SqlClient.SqlConnection()
-            Me._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("MSSQLConnString").ConnectionString
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
-        Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(9) {}
-            Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT     OtherAdminId, UserName, UserPwd, Name, Branch, Permissions, EmailID, A" & _
-                "ctiveStatus" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM         OtherAdminLogins"
-            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(1).Connection = Me.Connection
-            Me._commandCollection(1).CommandText = "SELECT COUNT(*) FROM OtherAdminLogins where OtherAdminId=@OtherAdminId and UserPw" & _
-                "d=@UserPwd"
-            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OtherAdminId", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(1).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(2) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(2).Connection = Me.Connection
-            Me._commandCollection(2).CommandText = "SELECT COUNT(*) FROM OtherAdminLogins where UserName=@UserName "
-            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(2).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(3) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(3).Connection = Me.Connection
-            Me._commandCollection(3).CommandText = "SELECT ActiveStatus, Branch, EmailID, Name, OtherAdminId, Permissions, UserName, " & _
-                "UserPwd FROM OtherAdminLogins WHERE (OtherAdminId = @OtherAdminID)"
-            Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(3).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OtherAdminID", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(4) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(4).Connection = Me.Connection
-            Me._commandCollection(4).CommandText = "SELECT isnull(OtherAdminId,'0') FROM OtherAdminLogins where UserName=@UserName an" & _
-                "d UserPwd=@UserPwd and ActiveStatus='Y'"
-            Me._commandCollection(4).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(4).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(4).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(5) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(5).Connection = Me.Connection
-            Me._commandCollection(5).CommandText = "SELECT Name FROM OtherAdminLogins where OtherAdminID=@OtherAdminId"
-            Me._commandCollection(5).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(5).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OtherAdminId", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(6) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(6).Connection = Me.Connection
-            Me._commandCollection(6).CommandText = "SELECT COUNT(*) FROM OtherAdminLogins where UserName=@UserName and OtherAdminID<>" & _
-                "@OtherAdminId"
-            Me._commandCollection(6).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(6).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserName", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserName", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(6).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@OtherAdminId", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(7) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(7).Connection = Me.Connection
-            Me._commandCollection(7).CommandText = "SELECT permissions FROM OtherAdminLogins where OtherAdminId=@Id"
-            Me._commandCollection(7).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(7).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Id", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(8) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(8).Connection = Me.Connection
-            Me._commandCollection(8).CommandText = "UPDATE [OtherAdminLogins] SET [ActiveStatus] = @ActiveStatus WHERE (([OtherAdminI" & _
-                "d] = @Original_OtherAdminId))"
-            Me._commandCollection(8).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(8).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ActiveStatus", Global.System.Data.SqlDbType.NChar, 1, Global.System.Data.ParameterDirection.Input, 0, 0, "ActiveStatus", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(8).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_OtherAdminId", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-            Me._commandCollection(9) = New Global.System.Data.SqlClient.SqlCommand()
-            Me._commandCollection(9).Connection = Me.Connection
-            Me._commandCollection(9).CommandText = "UPDATE [OtherAdminLogins] SET  [UserPwd] = @UserPwd WHERE (([OtherAdminId] = @Ori" & _
-                "ginal_OtherAdminId))"
-            Me._commandCollection(9).CommandType = Global.System.Data.CommandType.Text
-            Me._commandCollection(9).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@UserPwd", Global.System.Data.SqlDbType.NVarChar, 50, Global.System.Data.ParameterDirection.Input, 0, 0, "UserPwd", Global.System.Data.DataRowVersion.Current, False, Nothing, "", "", ""))
-            Me._commandCollection(9).Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_OtherAdminId", Global.System.Data.SqlDbType.Int, 4, Global.System.Data.ParameterDirection.Input, 0, 0, "OtherAdminId", Global.System.Data.DataRowVersion.Original, False, Nothing, "", "", ""))
-        End Sub
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], True)> _
-        Public Overridable Overloads Function GetAllData() As avana.OtherAdminLoginsDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As avana.OtherAdminLoginsDataTable = New avana.OtherAdminLoginsDataTable()
+            Dim dataTable As avana.avanacatlogimagesDataTable = New avana.avanacatlogimagesDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -4272,10 +5536,26 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
-        Public Overridable Overloads Function GetAllDataById(ByVal OtherAdminID As Integer) As avana.OtherAdminLoginsDataTable
-            Me.Adapter.SelectCommand = Me.CommandCollection(3)
-            Me.Adapter.SelectCommand.Parameters(0).Value = CType(OtherAdminID, Integer)
-            Dim dataTable As avana.OtherAdminLoginsDataTable = New avana.OtherAdminLoginsDataTable()
+        Public Overridable Overloads Function GetDataBycatlogid(ByVal catlogid As String) As avana.avanacatlogimagesDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (catlogid Is Nothing) Then
+                Me.Adapter.SelectCommand.Parameters(0).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.SelectCommand.Parameters(0).Value = CType(catlogid, String)
+            End If
+            Dim dataTable As avana.avanacatlogimagesDataTable = New avana.avanacatlogimagesDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], False)> _
+        Public Overridable Overloads Function GetDataByid(ByVal avanacatlogimagesID As Integer) As avana.avanacatlogimagesDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
+            Me.Adapter.SelectCommand.Parameters(0).Value = CType(avanacatlogimagesID, Integer)
+            Dim dataTable As avana.avanacatlogimagesDataTable = New avana.avanacatlogimagesDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -4283,7 +5563,7 @@ Namespace avanaTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function Update(ByVal dataTable As avana.OtherAdminLoginsDataTable) As Integer
+        Public Overridable Overloads Function Update(ByVal dataTable As avana.avanacatlogimagesDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
 
@@ -4291,7 +5571,7 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
         Public Overridable Overloads Function Update(ByVal dataSet As avana) As Integer
-            Return Me.Adapter.Update(dataSet, "OtherAdminLogins")
+            Return Me.Adapter.Update(dataSet, "avanacatlogimages")
         End Function
 
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
@@ -4312,8 +5592,8 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, True)> _
-        Public Overridable Overloads Function Delete(ByVal Original_OtherAdminId As Integer) As Integer
-            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_OtherAdminId, Integer)
+        Public Overridable Overloads Function Delete(ByVal Original_avanacatlogimagesID As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_avanacatlogimagesID, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4333,41 +5613,31 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, True)> _
-        Public Overridable Overloads Function Insert(ByVal UserName As String, ByVal UserPwd As String, ByVal Name As String, ByVal Branch As String, ByVal Permissions As String, ByVal EmailID As String, ByVal ActiveStatus As String) As Integer
-            If (UserName Is Nothing) Then
+        Public Overridable Overloads Function Insert(ByVal catlogid As String, ByVal Title As String, ByVal description As String, ByVal sortorder As Global.System.Nullable(Of Integer), ByVal imageurl As String) As Integer
+            If (catlogid Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(UserName, String)
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(catlogid, String)
             End If
-            If (UserPwd Is Nothing) Then
+            If (Title Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(1).Value = CType(UserPwd, String)
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Title, String)
             End If
-            If (Name Is Nothing) Then
+            If (description Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Name, String)
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(description, String)
             End If
-            If (Branch Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
+            If (sortorder.HasValue = True) Then
+                Me.Adapter.InsertCommand.Parameters(3).Value = CType(sortorder.Value, Integer)
             Else
-                Me.Adapter.InsertCommand.Parameters(3).Value = CType(Branch, String)
+                Me.Adapter.InsertCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            If (Permissions Is Nothing) Then
+            If (imageurl Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.InsertCommand.Parameters(4).Value = CType(Permissions, String)
-            End If
-            If (EmailID Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(5).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(5).Value = CType(EmailID, String)
-            End If
-            If (ActiveStatus Is Nothing) Then
-                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.InsertCommand.Parameters(6).Value = CType(ActiveStatus, String)
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(imageurl, String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
@@ -4388,43 +5658,33 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, True)> _
-        Public Overridable Overloads Function Update(ByVal UserName As String, ByVal UserPwd As String, ByVal Name As String, ByVal Branch As String, ByVal Permissions As String, ByVal EmailID As String, ByVal ActiveStatus As String, ByVal Original_OtherAdminId As Integer) As Integer
-            If (UserName Is Nothing) Then
+        Public Overridable Overloads Function Update(ByVal catlogid As String, ByVal Title As String, ByVal description As String, ByVal sortorder As Global.System.Nullable(Of Integer), ByVal imageurl As String, ByVal Original_avanacatlogimagesID As Integer) As Integer
+            If (catlogid Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(UserName, String)
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(catlogid, String)
             End If
-            If (UserPwd Is Nothing) Then
+            If (Title Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(UserPwd, String)
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Title, String)
             End If
-            If (Name Is Nothing) Then
+            If (description Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Name, String)
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(description, String)
             End If
-            If (Branch Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
+            If (sortorder.HasValue = True) Then
+                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(sortorder.Value, Integer)
             Else
-                Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Branch, String)
+                Me.Adapter.UpdateCommand.Parameters(3).Value = Global.System.DBNull.Value
             End If
-            If (Permissions Is Nothing) Then
+            If (imageurl Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Permissions, String)
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(imageurl, String)
             End If
-            If (EmailID Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(EmailID, String)
-            End If
-            If (ActiveStatus Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
-            Else
-                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(ActiveStatus, String)
-            End If
-            Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_OtherAdminId, Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_avanacatlogimagesID, Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -4438,247 +5698,6 @@ Namespace avanaTableAdapters
                     Me.Adapter.UpdateCommand.Connection.Close()
                 End If
             End Try
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function CheckOtherAdminIdPassword(ByVal OtherAdminId As Integer, ByVal UserPwd As String) As Global.System.Nullable(Of Integer)
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(1)
-            command.Parameters(0).Value = CType(OtherAdminId, Integer)
-            If (UserPwd Is Nothing) Then
-                command.Parameters(1).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(1).Value = CType(UserPwd, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return New Global.System.Nullable(Of Integer)()
-            Else
-                Return New Global.System.Nullable(Of Integer)(CType(returnValue, Integer))
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function CheckPrimary(ByVal UserName As String) As Global.System.Nullable(Of Integer)
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(2)
-            If (UserName Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(UserName, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return New Global.System.Nullable(Of Integer)()
-            Else
-                Return New Global.System.Nullable(Of Integer)(CType(returnValue, Integer))
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function GetIdByUserNamePwd(ByVal UserName As String, ByVal UserPwd As String) As Object
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(4)
-            If (UserName Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(UserName, String)
-            End If
-            If (UserPwd Is Nothing) Then
-                command.Parameters(1).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(1).Value = CType(UserPwd, String)
-            End If
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return Nothing
-            Else
-                Return CType(returnValue, Object)
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function GetNameById(ByVal OtherAdminId As Integer) As String
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(5)
-            command.Parameters(0).Value = CType(OtherAdminId, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return Nothing
-            Else
-                Return CType(returnValue, String)
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function GetOtherCount(ByVal UserName As String, ByVal OtherAdminId As Integer) As Global.System.Nullable(Of Integer)
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(6)
-            If (UserName Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(UserName, String)
-            End If
-            command.Parameters(1).Value = CType(OtherAdminId, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return New Global.System.Nullable(Of Integer)()
-            Else
-                Return New Global.System.Nullable(Of Integer)(CType(returnValue, Integer))
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")> _
-        Public Overridable Overloads Function GetPermissionsById(ByVal Id As Integer) As String
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(7)
-            command.Parameters(0).Value = CType(Id, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Object
-            Try
-                returnValue = command.ExecuteScalar
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            If ((returnValue Is Nothing) _
-                        OrElse (returnValue.GetType Is GetType(Global.System.DBNull))) Then
-                Return Nothing
-            Else
-                Return CType(returnValue, String)
-            End If
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, False)> _
-        Public Overridable Overloads Function UpdateActiveStatus(ByVal ActiveStatus As String, ByVal Original_OtherAdminId As Integer) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(8)
-            If (ActiveStatus Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(ActiveStatus, String)
-            End If
-            command.Parameters(1).Value = CType(Original_OtherAdminId, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Integer
-            Try
-                returnValue = command.ExecuteNonQuery
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            Return returnValue
-        End Function
-
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
-         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"), _
-         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, False)> _
-        Public Overridable Overloads Function UpdatePassword(ByVal UserPwd As String, ByVal Original_OtherAdminId As Integer) As Integer
-            Dim command As Global.System.Data.SqlClient.SqlCommand = Me.CommandCollection(9)
-            If (UserPwd Is Nothing) Then
-                command.Parameters(0).Value = Global.System.DBNull.Value
-            Else
-                command.Parameters(0).Value = CType(UserPwd, String)
-            End If
-            command.Parameters(1).Value = CType(Original_OtherAdminId, Integer)
-            Dim previousConnectionState As Global.System.Data.ConnectionState = command.Connection.State
-            If ((command.Connection.State And Global.System.Data.ConnectionState.Open) _
-                        <> Global.System.Data.ConnectionState.Open) Then
-                command.Connection.Open()
-            End If
-            Dim returnValue As Integer
-            Try
-                returnValue = command.ExecuteNonQuery
-            Finally
-                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-                    command.Connection.Close()
-                End If
-            End Try
-            Return returnValue
         End Function
     End Class
 
@@ -4699,9 +5718,11 @@ Namespace avanaTableAdapters
 
         Private _avanaControlPanelIPStatsTableAdapter As avanaControlPanelIPStatsTableAdapter
 
-        Private _controlPanelIPStatsTableAdapter As ControlPanelIPStatsTableAdapter
+        Private _coloursTableAdapter As ColoursTableAdapter
 
-        Private _otherAdminLoginsTableAdapter As OtherAdminLoginsTableAdapter
+        Private _avanacatlogTableAdapter As avanacatlogTableAdapter
+
+        Private _avanacatlogimagesTableAdapter As avanacatlogimagesTableAdapter
 
         Private _backupDataSetBeforeUpdate As Boolean
 
@@ -4751,12 +5772,12 @@ Namespace avanaTableAdapters
          Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" & _
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" & _
             "a", "System.Drawing.Design.UITypeEditor")> _
-        Public Property ControlPanelIPStatsTableAdapter() As ControlPanelIPStatsTableAdapter
+        Public Property ColoursTableAdapter() As ColoursTableAdapter
             Get
-                Return Me._controlPanelIPStatsTableAdapter
+                Return Me._coloursTableAdapter
             End Get
-            Set(value As ControlPanelIPStatsTableAdapter)
-                Me._controlPanelIPStatsTableAdapter = value
+            Set(value As ColoursTableAdapter)
+                Me._coloursTableAdapter = value
             End Set
         End Property
 
@@ -4765,12 +5786,26 @@ Namespace avanaTableAdapters
          Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" & _
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" & _
             "a", "System.Drawing.Design.UITypeEditor")> _
-        Public Property OtherAdminLoginsTableAdapter() As OtherAdminLoginsTableAdapter
+        Public Property avanacatlogTableAdapter() As avanacatlogTableAdapter
             Get
-                Return Me._otherAdminLoginsTableAdapter
+                Return Me._avanacatlogTableAdapter
             End Get
-            Set(value As OtherAdminLoginsTableAdapter)
-                Me._otherAdminLoginsTableAdapter = value
+            Set(value As avanacatlogTableAdapter)
+                Me._avanacatlogTableAdapter = value
+            End Set
+        End Property
+
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"), _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" & _
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" & _
+            "a", "System.Drawing.Design.UITypeEditor")> _
+        Public Property avanacatlogimagesTableAdapter() As avanacatlogimagesTableAdapter
+            Get
+                Return Me._avanacatlogimagesTableAdapter
+            End Get
+            Set(value As avanacatlogimagesTableAdapter)
+                Me._avanacatlogimagesTableAdapter = value
             End Set
         End Property
 
@@ -4801,13 +5836,17 @@ Namespace avanaTableAdapters
                             AndAlso (Not (Me._avanaControlPanelIPStatsTableAdapter.Connection) Is Nothing)) Then
                     Return Me._avanaControlPanelIPStatsTableAdapter.Connection
                 End If
-                If ((Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) _
-                            AndAlso (Not (Me._controlPanelIPStatsTableAdapter.Connection) Is Nothing)) Then
-                    Return Me._controlPanelIPStatsTableAdapter.Connection
+                If ((Not (Me._coloursTableAdapter) Is Nothing) _
+                            AndAlso (Not (Me._coloursTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._coloursTableAdapter.Connection
                 End If
-                If ((Not (Me._otherAdminLoginsTableAdapter) Is Nothing) _
-                            AndAlso (Not (Me._otherAdminLoginsTableAdapter.Connection) Is Nothing)) Then
-                    Return Me._otherAdminLoginsTableAdapter.Connection
+                If ((Not (Me._avanacatlogTableAdapter) Is Nothing) _
+                            AndAlso (Not (Me._avanacatlogTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._avanacatlogTableAdapter.Connection
+                End If
+                If ((Not (Me._avanacatlogimagesTableAdapter) Is Nothing) _
+                            AndAlso (Not (Me._avanacatlogimagesTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._avanacatlogimagesTableAdapter.Connection
                 End If
                 Return Nothing
             End Get
@@ -4828,10 +5867,13 @@ Namespace avanaTableAdapters
                 If (Not (Me._avanaControlPanelIPStatsTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
-                If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
+                If (Not (Me._coloursTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
-                If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
+                If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
                 Return count
@@ -4863,21 +5905,30 @@ Namespace avanaTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.ControlPanelIPStats.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._coloursTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.Colours.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing) _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._controlPanelIPStatsTableAdapter.Update(updatedRows))
+                    result = (result + Me._coloursTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
-            If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
-                Dim updatedRows() As Global.System.Data.DataRow = dataSet.OtherAdminLogins.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+            If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.avanacatlog.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
                 updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
                 If ((Not (updatedRows) Is Nothing) _
                             AndAlso (0 < updatedRows.Length)) Then
-                    result = (result + Me._otherAdminLoginsTableAdapter.Update(updatedRows))
+                    result = (result + Me._avanacatlogTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.avanacatlogimages.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing) _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._avanacatlogimagesTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -4907,19 +5958,27 @@ Namespace avanaTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.ControlPanelIPStats.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._coloursTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.Colours.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing) _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._controlPanelIPStatsTableAdapter.Update(addedRows))
+                    result = (result + Me._coloursTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
-            If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
-                Dim addedRows() As Global.System.Data.DataRow = dataSet.OtherAdminLogins.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+            If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.avanacatlog.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing) _
                             AndAlso (0 < addedRows.Length)) Then
-                    result = (result + Me._otherAdminLoginsTableAdapter.Update(addedRows))
+                    result = (result + Me._avanacatlogTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.avanacatlogimages.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing) _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._avanacatlogimagesTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -4933,19 +5992,27 @@ Namespace avanaTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")> _
         Private Function UpdateDeletedRows(ByVal dataSet As avana, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
-            If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.OtherAdminLogins.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.avanacatlogimages.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing) _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._otherAdminLoginsTableAdapter.Update(deletedRows))
+                    result = (result + Me._avanacatlogimagesTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
-            If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
-                Dim deletedRows() As Global.System.Data.DataRow = dataSet.ControlPanelIPStats.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+            If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.avanacatlog.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing) _
                             AndAlso (0 < deletedRows.Length)) Then
-                    result = (result + Me._controlPanelIPStatsTableAdapter.Update(deletedRows))
+                    result = (result + Me._avanacatlogTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._coloursTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.Colours.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing) _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._coloursTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -5016,13 +6083,18 @@ Namespace avanaTableAdapters
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" & _
                         "tring.")
             End If
-            If ((Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) _
-                        AndAlso (Me.MatchTableAdapterConnection(Me._controlPanelIPStatsTableAdapter.Connection) = False)) Then
+            If ((Not (Me._coloursTableAdapter) Is Nothing) _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._coloursTableAdapter.Connection) = False)) Then
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" & _
                         "tring.")
             End If
-            If ((Not (Me._otherAdminLoginsTableAdapter) Is Nothing) _
-                        AndAlso (Me.MatchTableAdapterConnection(Me._otherAdminLoginsTableAdapter.Connection) = False)) Then
+            If ((Not (Me._avanacatlogTableAdapter) Is Nothing) _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._avanacatlogTableAdapter.Connection) = False)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" & _
+                        "tring.")
+            End If
+            If ((Not (Me._avanacatlogimagesTableAdapter) Is Nothing) _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._avanacatlogimagesTableAdapter.Connection) = False)) Then
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" & _
                         "tring.")
             End If
@@ -5076,22 +6148,31 @@ Namespace avanaTableAdapters
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._avanaControlPanelIPStatsTableAdapter.Adapter)
                     End If
                 End If
-                If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
-                    revertConnections.Add(Me._controlPanelIPStatsTableAdapter, Me._controlPanelIPStatsTableAdapter.Connection)
-                    Me._controlPanelIPStatsTableAdapter.Connection = CType(workConnection, Global.System.Data.SqlClient.SqlConnection)
-                    Me._controlPanelIPStatsTableAdapter.Transaction = CType(workTransaction, Global.System.Data.SqlClient.SqlTransaction)
-                    If Me._controlPanelIPStatsTableAdapter.Adapter.AcceptChangesDuringUpdate Then
-                        Me._controlPanelIPStatsTableAdapter.Adapter.AcceptChangesDuringUpdate = False
-                        adaptersWithAcceptChangesDuringUpdate.Add(Me._controlPanelIPStatsTableAdapter.Adapter)
+                If (Not (Me._coloursTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._coloursTableAdapter, Me._coloursTableAdapter.Connection)
+                    Me._coloursTableAdapter.Connection = CType(workConnection, Global.System.Data.SqlClient.SqlConnection)
+                    Me._coloursTableAdapter.Transaction = CType(workTransaction, Global.System.Data.SqlClient.SqlTransaction)
+                    If Me._coloursTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._coloursTableAdapter.Adapter.AcceptChangesDuringUpdate = False
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._coloursTableAdapter.Adapter)
                     End If
                 End If
-                If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
-                    revertConnections.Add(Me._otherAdminLoginsTableAdapter, Me._otherAdminLoginsTableAdapter.Connection)
-                    Me._otherAdminLoginsTableAdapter.Connection = CType(workConnection, Global.System.Data.SqlClient.SqlConnection)
-                    Me._otherAdminLoginsTableAdapter.Transaction = CType(workTransaction, Global.System.Data.SqlClient.SqlTransaction)
-                    If Me._otherAdminLoginsTableAdapter.Adapter.AcceptChangesDuringUpdate Then
-                        Me._otherAdminLoginsTableAdapter.Adapter.AcceptChangesDuringUpdate = False
-                        adaptersWithAcceptChangesDuringUpdate.Add(Me._otherAdminLoginsTableAdapter.Adapter)
+                If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._avanacatlogTableAdapter, Me._avanacatlogTableAdapter.Connection)
+                    Me._avanacatlogTableAdapter.Connection = CType(workConnection, Global.System.Data.SqlClient.SqlConnection)
+                    Me._avanacatlogTableAdapter.Transaction = CType(workTransaction, Global.System.Data.SqlClient.SqlTransaction)
+                    If Me._avanacatlogTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._avanacatlogTableAdapter.Adapter.AcceptChangesDuringUpdate = False
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._avanacatlogTableAdapter.Adapter)
+                    End If
+                End If
+                If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._avanacatlogimagesTableAdapter, Me._avanacatlogimagesTableAdapter.Connection)
+                    Me._avanacatlogimagesTableAdapter.Connection = CType(workConnection, Global.System.Data.SqlClient.SqlConnection)
+                    Me._avanacatlogimagesTableAdapter.Transaction = CType(workTransaction, Global.System.Data.SqlClient.SqlTransaction)
+                    If Me._avanacatlogimagesTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._avanacatlogimagesTableAdapter.Adapter.AcceptChangesDuringUpdate = False
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._avanacatlogimagesTableAdapter.Adapter)
                     End If
                 End If
                 '
@@ -5162,13 +6243,17 @@ Namespace avanaTableAdapters
                     Me._avanaControlPanelIPStatsTableAdapter.Connection = CType(revertConnections(Me._avanaControlPanelIPStatsTableAdapter), Global.System.Data.SqlClient.SqlConnection)
                     Me._avanaControlPanelIPStatsTableAdapter.Transaction = Nothing
                 End If
-                If (Not (Me._controlPanelIPStatsTableAdapter) Is Nothing) Then
-                    Me._controlPanelIPStatsTableAdapter.Connection = CType(revertConnections(Me._controlPanelIPStatsTableAdapter), Global.System.Data.SqlClient.SqlConnection)
-                    Me._controlPanelIPStatsTableAdapter.Transaction = Nothing
+                If (Not (Me._coloursTableAdapter) Is Nothing) Then
+                    Me._coloursTableAdapter.Connection = CType(revertConnections(Me._coloursTableAdapter), Global.System.Data.SqlClient.SqlConnection)
+                    Me._coloursTableAdapter.Transaction = Nothing
                 End If
-                If (Not (Me._otherAdminLoginsTableAdapter) Is Nothing) Then
-                    Me._otherAdminLoginsTableAdapter.Connection = CType(revertConnections(Me._otherAdminLoginsTableAdapter), Global.System.Data.SqlClient.SqlConnection)
-                    Me._otherAdminLoginsTableAdapter.Transaction = Nothing
+                If (Not (Me._avanacatlogTableAdapter) Is Nothing) Then
+                    Me._avanacatlogTableAdapter.Connection = CType(revertConnections(Me._avanacatlogTableAdapter), Global.System.Data.SqlClient.SqlConnection)
+                    Me._avanacatlogTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._avanacatlogimagesTableAdapter) Is Nothing) Then
+                    Me._avanacatlogimagesTableAdapter.Connection = CType(revertConnections(Me._avanacatlogimagesTableAdapter), Global.System.Data.SqlClient.SqlConnection)
+                    Me._avanacatlogimagesTableAdapter.Transaction = Nothing
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter
